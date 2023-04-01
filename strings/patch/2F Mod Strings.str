@@ -1,0 +1,29 @@
+#string:2F:000
+{
+[Style Right]
+Oh, hello Mario![Pause:5][br]
+Kolorado is inspecting[br]
+a newly found secret[br]
+at the end of this tunnel![br]
+[Wait][Next]
+Why don't you come back[br]
+later,[Pause:5] after the festivities[br]
+we should be gone for sure.[br]
+[Wait][End]
+}
+
+#string:2F:001
+{
+[Style Right]
+Oh, Mario, hello![br]
+[Wait][Next]
+We're standing guard[br]
+for Kolorado,[Pause:5] to ensure[br]
+that he can take his[br]
+time and be the first to[br]
+[Wait][Next]
+find the secret of this[br]
+newly found part of[br]
+Goomba Road![br]
+[Wait][End]
+}

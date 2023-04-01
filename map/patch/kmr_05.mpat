@@ -1,3 +1,6 @@
+#define .NpcID:Koopa        05
+#define .NpcID:Koopa2        06
+
 #new:Script $Script_ExitWalk_NewLZs {
     SetGroup  0000001B
     Call  UseExitHeading    ( 0000003C ~Entry:Entry2 )
@@ -20,4 +23,114 @@
     ~Vec4f:Entry0 % -110.0    0.0  -19.0   90.0
     ~Vec4f:Entry1 % 1397.0  200.0 -145.0  220.0
     ~Vec4f:Entry2 % 1397.0  200.0 -145.0  220.0
+}
+
+@ $Script_Main_EnterWalk {
+    Set   *GB_WorldLocation  .Location:GoombaVillage
+    Call  SetSpriteShading  ( .Shading:None )
+    Call  SetCamPerspective ( .Cam:Default 00000003  25`  16`  4096` )
+    Call  SetCamBGColor     ( .Cam:Default  0`  0`  0` )
+    Call  SetCamEnabled     ( .Cam:Default .True )
+    If  *GF_KMR02_ReturnedWithGoompa  ==  .False
+        Call  MakeNpcs  ( .True $NpcGroupList_8024280C )
+    Else
+        Call  MakeNpcs  ( .True $NpcGroupList_80242848 )
+    EndIf
+    ExecWait  $Script_80242890
+    Exec  $Script_802417E0
+    ExecWait  $Script_802433D8
+    Call  ModifyColliderFlags   ( 00000000 ~Collider:deilit1 7FFFFE00 )
+    Call  ModifyColliderFlags   ( 00000000 ~Collider:deilit2 7FFFFE00 )
+    Set   *Var0  $Script_802418C8
+    Exec  EnterWalk
+    Wait  1`
+    Call  GetEntryID    ( *Var0 )
+    If  *Var0  ==  ~Entry:Entry0
+        If  *GF_KMR05_EnemyWarning  ==  .False
+            Exec  $Script_80241C8C
+            Set   *GF_KMR05_EnemyWarning  .True
+        EndIf
+    EndIf
+    If *GotAllEggs == .True 
+        Call ModifyColliderFlags ( 00000000 ~Collider:No 7FFFFE00 )
+        Call SetNpcPos ( .NpcID:Koopa 0` -1000` 0` )
+        Call SetNpcPos ( .NpcID:Koopa2 0` -1000` 0` )
+    EndIf
+    Return
+    End
+}
+
+#new:NpcGroupList $NpcGroupList_Archeologist {
+    00000002 $NpcGroup_Koopa 00000005
+    00000000 00000000 00000000
+}
+
+#new:NpcGroup $NpcGroup_Koopa {
+    .NpcID:Koopa $NpcSettings_80241FC8 ~Vec3f:Koopa % 238 0 -112
+	00002D01 $Script_Init_Koopa1 00000000 00000000 0000010E
+	~NoDrops
+	~Movement:Koopa
+	~AnimationTable:Koopa % .Sprite:Archeologist
+	00000000 00000000 00000000 001A008C % This is a Koopa Troopa from the excavation team. T ...
+
+    .NpcID:Koopa2 $NpcSettings_80241FC8 ~Vec3f:Koopa2 % 238 0 -112
+	00002D01 $Script_Init_Koopa2 00000000 00000000 0000010E
+	~NoDrops
+	~Movement:Koopa2
+	~AnimationTable:Koopa2 % .Sprite:Archeologist
+	00000000 00000000 00000000 001A008C % This is a Koopa Troopa from the excavation team. T ...
+}
+
+#new:NpcSettings $NpcSettings_80241FC8
+{
+	00000000 002A0018 00000000 00000000 00000000 00000000 00000000 00000000
+	00000000 00000000 00630000
+}
+
+#new:Script $Script_Init_Koopa1
+{
+    0:  Call  BindNpcInteract   ( .Npc:Self $Script_Interact_Koopa1 )
+   6C:  Return
+   74:  End
+}
+
+#new:Script $Script_Interact_Koopa1
+{
+   C8:  Call  SpeakToPlayer ( .Npc:Self 00B80004 00B80001 00000000 002F0000 ) % variable string ID
+   E8:  Return
+   F0:  End
+}
+
+#new:Script $Script_Init_Koopa2
+{
+    0:  Call  BindNpcInteract   ( .Npc:Self $Script_Interact_Koopa2 )
+   6C:  Return
+   74:  End
+}
+
+#new:Script $Script_Interact_Koopa2
+{
+   C8:  Call  SpeakToPlayer ( .Npc:Self 00B80004 00B80001 00000000 002F0001 ) % variable string ID
+   E8:  Return
+   F0:  End
+}
+
+@ $NpcGroupList_8024280C
+{
+	00000001 $NpcGroup_80242014 00000004
+	00000001 $NpcGroup_80242204 00000004
+	00000001 $NpcGroup_8024242C 02000004
+	00000001 $NpcGroup_8024261C 02010004
+    00000002 $NpcGroup_Koopa 00000004
+	00000000 00000000 00000000
+}
+
+@ $NpcGroupList_80242848
+{
+	00000001 $NpcGroup_80242014 00000004
+	00000001 $NpcGroup_80242204 00000004
+	00000001 $NpcGroup_8024242C 000A0004
+	00000001 $NpcGroup_8024261C 00080004
+    00000002 $NpcGroup_Koopa 00000004
+	00000000 00000000 00000000
 }

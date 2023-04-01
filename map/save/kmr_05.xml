@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="kmr_05" author="unnamed" background="kmr_bg" textures="kmr_tex">
 	<Editor>
-		<Camera pos="-44.735195,100.128014,-16.572924" pitch="29.451817" yaw="355.783234"/>
-		<Camera pos="46.866707,65536.000000,-181.768066"/>
-		<Camera pos="65536.000000,11.258917,-196.113281"/>
-		<Camera pos="121.193367,-0.413132,65536.000000"/>
+		<Camera pos="26.638178,134.871628,260.866394" pitch="18.139997" yaw="359.040070"/>
+		<Camera pos="52.359154,65536.000000,-136.698792"/>
+		<Camera pos="65536.000000,172.000000,-56.000000"/>
+		<Camera pos="626.000000,172.000000,65536.000000"/>
 	</Editor>
 	<ModelTree>
 		<Node name="Root" id="74">
@@ -146,7 +146,7 @@
 		</Node>
 	</ModelTree>
 	<ColliderTree>
-		<Node name="Root" id="4F">
+		<Node name="Root" id="50">
 			<Node name="g425" id="4A">
 				<Node name="g344" id="8">
 					<Node name="deili1" id="0"/>
@@ -242,6 +242,7 @@
 			<Node name="NewLZsCollider" id="4C"/>
 			<Node name="MeshCollider" id="4D"/>
 			<Node name="MeshCollider" id="4E"/>
+			<Node name="No" id="4F"/>
 		</Node>
 	</ColliderTree>
 	<ZoneTree>
@@ -262,7 +263,7 @@
 		</Node>
 	</ZoneTree>
 	<MarkerTree>
-		<Node name="Root" id="F">
+		<Node name="Root" id="11">
 			<Node name="Entrances" id="1">
 				<Node name="Entry0" id="FFFFFFFF"/>
 				<Node name="Entry1" id="0"/>
@@ -282,6 +283,8 @@
 			<Node name="TreeFX_Tree1_1" id="C"/>
 			<Node name="Bomb_802433C8" id="D"/>
 			<Node name="Entry2" id="E"/>
+			<Node name="Koopa" id="F"/>
+			<Node name="Koopa2" id="10"/>
 		</Node>
 	</MarkerTree>
 	<LightSets>
@@ -6677,8 +6680,34 @@
 	</Models>
 	<Colliders>
 		<Collider ver="0" flags="0">
-			<MapObject name="Root" id="4F"/>
+			<MapObject name="Root" id="50"/>
 			<HitObject type="ROOT"/>
+		</Collider>
+		<Collider ver="0" flags="0">
+			<MapObject name="No" id="4F" hidden="true"/>
+			<HitObject type="HIT"/>
+			<HitMesh ver="0">
+				<TriangleBatch ver="0">
+					<VertexTable>
+						<Vertex xyz="50,0,-181" uv="-512,512"/>
+						<Vertex xyz="76,49,-121" uv="512,-512"/>
+						<Vertex xyz="50,33,-181" uv="-512,-512"/>
+						<Vertex xyz="76,0,-121" uv="512,512"/>
+						<Vertex xyz="76,49,-121" uv="512,-512"/>
+						<Vertex xyz="76,0,-121" uv="-512,512"/>
+						<Vertex xyz="104,0,-105" uv="512,512"/>
+						<Vertex xyz="50,33,-181" uv="512,-512"/>
+						<Vertex xyz="48,0,-220" uv="-512,512"/>
+						<Vertex xyz="50,0,-181" uv="512,512"/>
+					</VertexTable>
+					<TriangleList>
+						<Triangle ijk="0,1,2"/>
+						<Triangle ijk="1,0,3"/>
+						<Triangle ijk="4,5,6"/>
+						<Triangle ijk="7,8,9"/>
+					</TriangleList>
+				</TriangleBatch>
+			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
 			<MapObject name="MeshCollider" id="4E" hidden="true"/>
@@ -8652,7 +8681,7 @@
 			<HitObject type="ROOT"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="MeshZone" id="A"/>
+			<MapObject name="MeshZone" id="A" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8717,7 +8746,7 @@
 			<HitObject type="GROUP"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o1046" id="8" dumped="true" fileOffset="1D24"/>
+			<MapObject name="o1046" id="8" hidden="true" dumped="true" fileOffset="1D24"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8740,7 +8769,7 @@
 			<HitObject type="GROUP"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="bero1" id="6" dumped="true" fileOffset="1D0C"/>
+			<MapObject name="bero1" id="6" hidden="true" dumped="true" fileOffset="1D0C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8759,7 +8788,7 @@
 			<Camera type="TYPE_2" flag="true" boomLength="-1000000.000000" boomPitch="-180.000000" viewPitch="-180.000000" posA="0,0,0" posB="0,0,0" posC="0,0,0"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o1035" id="5" dumped="true" fileOffset="1D00"/>
+			<MapObject name="o1035" id="5" hidden="true" dumped="true" fileOffset="1D00"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8806,7 +8835,7 @@
 			<Camera type="TYPE_1" flag="false" boomLength="465.000000" boomPitch="15.000000" viewPitch="-5.300000" posA="1206,0,-220" posB="0,0,0" posC="0,0,0"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o1034" id="4" dumped="true" fileOffset="1CF4"/>
+			<MapObject name="o1034" id="4" hidden="true" dumped="true" fileOffset="1CF4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8833,7 +8862,7 @@
 			<Camera type="TYPE_5" flag="false" boomLength="465.000000" boomPitch="15.000000" viewPitch="-5.300000" posA="1206,1206,-220" posB="1401,-220,-55" posC="1206,0,-220"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o1040" id="3" dumped="true" fileOffset="1CE8"/>
+			<MapObject name="o1040" id="3" hidden="true" dumped="true" fileOffset="1CE8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8852,7 +8881,7 @@
 			<Camera type="TYPE_6" flag="true" boomLength="465.000000" boomPitch="15.000000" viewPitch="-5.500000" posA="-30,0,-100" posB="2000,0,-100" posC="0,0,0"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o1041" id="2" dumped="true" fileOffset="1CDC"/>
+			<MapObject name="o1041" id="2" hidden="true" dumped="true" fileOffset="1CDC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8871,7 +8900,7 @@
 			<Camera type="TYPE_6" flag="false" boomLength="465.000000" boomPitch="15.000000" viewPitch="-5.500000" posA="-30,0,80" posB="2000,0,80" posC="0,0,0"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="michi_1" id="1" dumped="true" fileOffset="1CD0"/>
+			<MapObject name="michi_1" id="1" hidden="true" dumped="true" fileOffset="1CD0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8890,7 +8919,7 @@
 			<Camera type="TYPE_6" flag="true" boomLength="465.000000" boomPitch="15.000000" viewPitch="-5.500000" posA="-30,0,80" posB="2000,0,80" posC="0,0,0"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o1036" id="0" dumped="true" fileOffset="1CC4"/>
+			<MapObject name="o1036" id="0" hidden="true" dumped="true" fileOffset="1CC4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8921,56 +8950,66 @@
 	</Zones>
 	<Markers>
 		<Marker ver="4" type="Root">
-			<MapObject name="Root" id="F"/>
+			<MapObject name="Root" id="11"/>
+		</Marker>
+		<Marker ver="4" type="NPC" pos="53,0,-163" yaw="-120.000000">
+			<MapObject name="Koopa2" id="10"/>
+			<Movement type="Stationary" data="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+			<Sprite sprite="B8" palette="0" animations="1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+		</Marker>
+		<Marker ver="4" type="NPC" pos="74,0,-124" yaw="-120.000000">
+			<MapObject name="Koopa" id="F"/>
+			<Movement type="Stationary" data="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+			<Sprite sprite="B8" palette="0" animations="1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 		</Marker>
 		<Marker ver="4" type="Entry" pos="50,0,-151" yaw="-120.000000">
 			<MapObject name="Entry2" id="E"/>
 		</Marker>
 		<Marker ver="4" type="Trigger" desc="Trigger" pos="488,245,-196" yaw="0.000000">
-			<MapObject name="Bomb_802433C8" id="D" hidden="true"/>
+			<MapObject name="Bomb_802433C8" id="D"/>
 			<BombTrigger radius="0.000000"/>
 		</Marker>
 		<Marker ver="4" type="Position" pos="524,314,-210" yaw="0.000000">
-			<MapObject name="TreeFX_Tree1_1" id="C" hidden="true"/>
+			<MapObject name="TreeFX_Tree1_1" id="C"/>
 		</Marker>
 		<Marker ver="4" type="Position" pos="439,314,-181" yaw="0.000000">
-			<MapObject name="TreeFX_Tree1_0" id="B" hidden="true"/>
+			<MapObject name="TreeFX_Tree1_0" id="B"/>
 		</Marker>
 		<Marker ver="4" type="Group">
 			<MapObject name="Entities" id="A"/>
 		</Marker>
 		<Marker ver="4" type="Entity" pos="436,300,-180" yaw="0.000000">
-			<MapObject name="Item80243368" id="9" hidden="true"/>
+			<MapObject name="Item80243368" id="9"/>
 			<Entity type="FFFFFFFF" flag="*GF_KMR05_Tree1_Coin" item="Coin" itemSpawnMode="Fall"/>
 		</Marker>
 		<Marker ver="4" type="Entity" pos="540,290,-180" yaw="0.000000">
-			<MapObject name="Item8024333C" id="8" hidden="true"/>
+			<MapObject name="Item8024333C" id="8"/>
 			<Entity type="FFFFFFFF" flag="*GF_KMR05_Tree1_Coin" item="Coin" itemSpawnMode="Fall"/>
 		</Marker>
 		<Marker ver="4" type="Entity" pos="133,140,-155" yaw="0.000000">
-			<MapObject name="Item80242890" id="7" hidden="true"/>
+			<MapObject name="Item80242890" id="7"/>
 			<Entity type="FFFFFFFF" flag="*GF_KMR05_Item_StarPiece" item="StarPiece" itemSpawnMode="Fixed_NeverVanish"/>
 		</Marker>
 		<Marker ver="4" type="Group">
 			<MapObject name="NPCs" id="6"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="960,210,-20" yaw="270.000000">
-			<MapObject name="Paragoomba_04" id="5" hidden="true"/>
+			<MapObject name="Paragoomba_04" id="5"/>
 			<Movement type="Wander" data="3C0,D2,FFFFFFEC,32,19,FFFF8001,1,3E3,D2,FFFFFFC7,D2,64,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite sprite="28" palette="0" animations="1,3,4,4,1,1,6,6,4,4,4,4,4,4,4,4"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="712,100,-95" yaw="270.000000">
-			<MapObject name="SpikedGoomba_03" id="4" hidden="true"/>
+			<MapObject name="SpikedGoomba_03" id="4"/>
 			<Movement type="Wander" data="276,64,19,28,14,FFFF8001,1,294,64,1E,A5,96,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite sprite="27" palette="0" animations="1,2,3,3,1,1,5,5,3,3,3,3,3,3,3,3"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="700,210,-165" yaw="90.000000">
-			<MapObject name="Goomba_02" id="3" hidden="true"/>
+			<MapObject name="Goomba_02" id="3"/>
 			<Movement type="Wander" data="2BC,D2,FFFFFF5B,1E,14,FFFF8001,1,2BC,D2,FFFFFF5B,78,82,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite sprite="26" palette="0" animations="1,2,3,3,1,1,5,5,3,3,3,3,3,3,3,3"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="305,50,-13" yaw="90.000000">
-			<MapObject name="Goomba_00" id="2" hidden="true"/>
+			<MapObject name="Goomba_00" id="2"/>
 			<Movement type="Wander" data="131,32,FFFFFFF3,1E,14,FFFF8001,1,14A,32,14,78,82,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite sprite="26" palette="0" animations="1,2,3,3,1,1,5,5,3,3,3,3,3,3,3,3"/>
 		</Marker>
@@ -8978,10 +9017,10 @@
 			<MapObject name="Entrances" id="1"/>
 		</Marker>
 		<Marker ver="4" type="Entry" pos="1397,200,-145" yaw="220.000000">
-			<MapObject name="Entry1" id="0" hidden="true"/>
+			<MapObject name="Entry1" id="0"/>
 		</Marker>
 		<Marker ver="4" type="Entry" pos="-110,0,-19" yaw="90.000000">
-			<MapObject name="Entry0" id="FFFFFFFF" hidden="true"/>
+			<MapObject name="Entry0" id="FFFFFFFF"/>
 		</Marker>
 	</Markers>
 	<ScriptData>
