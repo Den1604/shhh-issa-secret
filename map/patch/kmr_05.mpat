@@ -1,0 +1,23 @@
+#new:Script $Script_ExitWalk_NewLZs {
+    SetGroup  0000001B
+    Call  UseExitHeading    ( 0000003C ~Entry:Entry2 )
+    Exec  ExitWalk
+    Call  GotoMap   ( "kmr_05" 00000002 ) % kmr_03
+    Wait  100`
+    Return
+    End
+}
+
+@ $Script_802418C8 {
+    Bind  $Script_ExitWalk_80241810 .Trigger:FloorAbove ~Collider:deili1 00000001 00000000
+    Bind  $Script_ExitWalk_8024186C .Trigger:FloorAbove ~Collider:deili2 00000001 00000000
+    Bind  $Script_ExitWalk_NewLZs  .Trigger:FloorAbove ~Collider:NewLZsCollider 00000001 00000000
+    Return
+    End
+}
+
+@ $EntryList {
+    ~Vec4f:Entry0 % -110.0    0.0  -19.0   90.0
+    ~Vec4f:Entry1 % 1397.0  200.0 -145.0  220.0
+    ~Vec4f:Entry2 % 1397.0  200.0 -145.0  220.0
+}
