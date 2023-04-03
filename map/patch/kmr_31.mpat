@@ -9,6 +9,7 @@
     If *SawEgg == .False
         Bind  $Script_EggMusicFadeIn  .Trigger:FloorAbove ~Collider:MusicB 00000001 00000000
     EndIf
+    Bind  $Script_Obduction  .Trigger:FloorPressA ~Collider:Obduction 00000001 00000000
     Return
     End
 }
@@ -21,7 +22,7 @@
         Wait 10`
         Call PopSong ( )
         Wait 30`
-        Call PushSong  ( .Song:ShiverMountain 00000000 )
+        Call PushSong  ( .Song:PeachSneaking 00000000 )
     EndIf
     Return
     End
@@ -29,12 +30,21 @@
 
 @ $Script_SetupMusic {
     If *SawEgg == .True
-        Call  SetMusicTrack ( 00000000 .Song:ShiverMountain 00000000 00000008 )
+        Call  SetMusicTrack ( 00000000 .Song:PeachSneaking 00000000 00000008 )
         Call  ClearAmbientSounds ( 250` )
     Else
         Call  SetMusicTrack ( 00000000 .Song:PleasantPath 00000000 00000006 )
         Call  ClearAmbientSounds ( 250` )
     EndIf
+    Return
+    End
+}
+
+#new:Script $Script_Obduction
+{
+    Call DisablePlayerInput ( .True )
+    ExecWait $Script_PanCamera_CamPan
+    Call GotoMapSpecial ( "kmr_31" 00000000 0000000D )
     Return
     End
 }
