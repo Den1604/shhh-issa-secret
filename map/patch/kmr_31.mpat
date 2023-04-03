@@ -1,0 +1,40 @@
+@ $Script_Main {
+    Set   *GB_WorldLocation  .Location:GoombaRoad
+    Call  SetCamPerspective  ( .Cam:Default 00000003 00000019 00000010 00001000 )
+    Call  SetCamBGColor      ( .Cam:Default 00000000 00000000 00000000 )
+    Call  SetCamEnabled      ( .Cam:Default .True
+    Call  SetCamLeadPlayer   ( .Cam:Default .False )
+    Exec  $Script_SetupMusic
+    Exec  $Script_EnterMap
+    If *SawEgg == .False
+        Bind  $Script_EggMusicFadeIn  .Trigger:FloorAbove ~Collider:MusicB 00000001 00000000
+    EndIf
+    Return
+    End
+}
+
+#new:Script $Script_EggMusicFadeIn
+{
+    If *SawEgg == .False
+        Set *SawEgg .True
+        Call FadeOutMusic  ( 00000000 000000FA )
+        Wait 10`
+        Call PopSong ( )
+        Wait 30`
+        Call PushSong  ( .Song:ShiverMountain 00000000 )
+    EndIf
+    Return
+    End
+}
+
+@ $Script_SetupMusic {
+    If *SawEgg == .True
+        Call  SetMusicTrack ( 00000000 .Song:ShiverMountain 00000000 00000008 )
+        Call  ClearAmbientSounds ( 250` )
+    Else
+        Call  SetMusicTrack ( 00000000 .Song:PleasantPath 00000000 00000006 )
+        Call  ClearAmbientSounds ( 250` )
+    EndIf
+    Return
+    End
+}
