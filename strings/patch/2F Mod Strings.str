@@ -37,3 +37,20 @@ to keep the children searching[br]
 for eggs in a safe space![br]
 [Wait][End]
 }
+
+#message:2F:003
+{
+[Style Narrate]
+The door is locked![br]
+[Wait][End]
+}
+
+#message:2F:004
+{
+[Style Right]
+This place is off limits[br]
+for the Easter Egg Hunt,[Pause:5][br]
+Mario![br]
+[Wait][End]
+}
+

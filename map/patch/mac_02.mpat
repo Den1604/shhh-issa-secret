@@ -1,0 +1,44 @@
+#define .NpcID:FiceT_01             01
+
+@ $Script_Init_8024AC30 {
+    If  *GB_StoryProgress  ==  .Story:Ch2_StarSpritDeparted % FFFFFFCB
+        Call  SetNpcAnimation   ( .Npc:Self 00AB0006 )
+    Else
+        Call  SetNpcPos ( .Npc:Self  390`  0`  -50` )
+    EndIf
+    Call  SetNpcPos ( .Npc:Self  620` 0` 0` )
+    Call  BindNpcInteract   ( .Npc:Self $Script_Interact_New )
+    Return
+    End
+}
+
+#new:Script $Script_Interact_New
+{
+    Call DisablePlayerInput ( .True )
+    178:  	Call  SpeakToPlayer ( .NpcID:FiceT_01 00AB0006 00AB0006 00000000 002F0004 ) % variable string ID
+    Call DisablePlayerInput ( .False )
+    Return
+    End
+}
+
+@ $Script_MakeEntities {
+    Call  GetEntryID    ( *Var0 )
+    If  *Var0  ==  ~Entry:Entry5
+        If  *GF_MAC02_UnlockedHouse  ==  .False
+            Call  MakeEntity    ( .Entity:Padlock ~Vec4d:Entity80245E20 80000000 )
+            Set   *MapVar[0]  *Var0
+            BindLock  $Script_80245C58 .Trigger:WallPressA 00004000 $ItemList_80245C50 00000000 00000001
+        EndIf
+    EndIf
+    Call  MakeItemEntity    ( .Item:OddKey ~Vec3d:Item80245E84 .ItemSpawnMode:Fixed_NeverVanish *GF_MAC02_Item_OddKey )
+    Call  MakeEntity        ( .Entity:HiddenPanel ~Vec4d:Entity80245EA8 ~Model:o236 80000000 )
+    Call  AssignPanelFlag   ( *GF_MAC02_HiddenPanel )
+    Call  MakeEntity        ( .Entity:Signpost ~Vec4d:Entity80245EE0 80000000 )
+    Call  AssignScript      ( $Script_80245D60 )
+    Bind  $Script_80245DA8 .Trigger:WallPressA ~Collider:sign 00000001 00000000
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_02_1 )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_02_2 )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg3 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_02_3 )
+    Return
+    End
+}

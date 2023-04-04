@@ -1,0 +1,19 @@
+#string:00:023
+{
+	[Style Narrate]
+	[Pause 4][InputOn]I'm throwing a party at my[BR]
+	castle today![BR]
+	[Pause 10]Mario and Luigi, I would be[BR]
+	honored if you both could attend.[BR]
+	[Wait][BR]
+	[Next]
+	[Down 5]Many guests from distant towns [BR]
+	[Down 5]are hoping to meet you.[BR]
+	[Wait][BR]
+	[Up 10][Next]
+	There will be tasty sweets and[BR]
+	all kinds of entertainment![BR]
+	I hope to see you here soon![BR]
+	[Pause 15][Right 110]Sincerely, Peach[BR]
+	[Wait][Yield][End]
+}

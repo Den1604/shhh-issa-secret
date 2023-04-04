@@ -21,9 +21,9 @@
     Call  MakeItemEntity    ( .Item:HoneySyrup ~Vec3d:Item80241DE4 .ItemSpawnMode:Fixed_NeverVanish *GF_NOK13_Item_HoneySyrup )
     Call  MakeEntity    ( .Entity:Signpost ~Vec4d:BlockerSign 80000000 )
 	Call  AssignScript    ( $Script_ReadSign_Marker )
-    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *Egg1 )
-    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *Egg2 )
-    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg3 .ItemSpawnMode:Fixed_NeverVanish *Egg3 )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_nok_13_1 )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_nok_13_2 )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg3 .ItemSpawnMode:Fixed_NeverVanish *egg_nok_13_3 )
     Return
     End
 }

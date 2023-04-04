@@ -1,0 +1,89 @@
+#new:Script $Script_InteractWithDoor {
+    Call DisablePlayerInput ( .True )
+    64:  Call  ShowMessageAtScreenPos    ( 002F0003  160`  40` ) % You found the Hammer! Mario can do the Hammer atta ...
+    Call DisablePlayerInput ( .False )
+    Return
+    End
+}
+
+@ $Script_MakeEntities {
+    Call  MakeEntity    ( .Entity:BrickBlock ~Vec4d:Entity80245D64 80000000 )
+    Switch  *GB_StoryProgress
+        Case  <  .Story:Ch1_KooperJoinedParty % FFFFFFA4
+            If  *GF_NOK02_RecoveredShellB  ==  .False
+                Call  AssignScript  ( $Script_8024B488 )
+            EndIf
+        Case  >=  .Story:Ch1_KooperJoinedParty % FFFFFFA4
+            If  *GF_NOK02_Item_StarPiece  ==  .False
+                Call  AssignScript      ( $Script_80245D00 )
+                Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Item80245DF4 .ItemSpawnMode:Fixed_NeverVanish *GF_NOK02_Item_StarPiece )
+                Set   *MapVar[A]  *Var0
+            EndIf
+    EndSwitch
+    Call  CreatePushBlockGrid   ( 00000000 ~PushGrid:Grid_80245E38 00000000 )
+    Call  SetPushBlock  ( 00000000  0`  0` 00000001 )
+    If  *GF_NOK02_WarpPipe  ==  .False
+        If  *GF_TIK01_WarpPipes  ==  .True
+            Call  GetEntryID    ( *Var0 )
+            If  *Var0  !=  ~Entry:Entry2
+                Set   *GF_NOK02_WarpPipe  .True
+            EndIf
+        EndIf
+    EndIf
+    Call  MakeEntity    ( .Entity:BlueWarpPipe ~Vec4d:Entity80245EE4 ~Entry:Entry2 $Script_80245D34 ~Index:*GF_NOK02_WarpPipe 80000000 )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_nok_02 )
+    Return
+    End
+}
+
+@ $Script_Main {
+    Set   *GB_WorldLocation  .Location:KoopaVillage
+    Call  SetSpriteShading  ( .Shading:None )
+    Call  SetCamPerspective ( .Cam:Default 00000003  25`  16`  4096` )
+    Call  SetCamBGColor     ( .Cam:Default  0`  0`  0` )
+    Call  SetCamEnabled     ( .Cam:Default .True )
+    Call  SetCamLeadPlayer  ( .Cam:Default .False )
+    Call  GetEntryID        ( *Var0 )
+    If  *Var0  ==  ~Entry:Entry3
+        Call  MakeNpcs      ( .False $NpcGroupList_80251B24 )
+        ExecWait  $Script_MakeEntities
+        Exec  $Script_802456E0
+        Exec  $Script_802543B0
+        Call  FadeInMusic   ( 00000000 .Song:KoopaVillage 00000000 00000BB8 00000000 0000007F )
+        Wait  1`
+        Return
+    EndIf
+    Set   *AreaFlag[00F]  .False
+    Set   *AreaFlag[010]  .False
+    Set   *AreaFlag[012]  .False
+    Set   *GF_NOK02_Bush1_KoopaLeaf  .False
+    Set   *AreaFlag[013]  .False
+    If  *GB_StoryProgress  >=  .Story:Ch1_KooperJoinedParty % FFFFFFA4
+        Set   *GF_NOK02_RecoveredShellA  .True
+        Set   *GF_NOK02_RecoveredShellB  .True
+    EndIf
+    If  *GB_StoryProgress  <  .Story:Ch1_KooperJoinedParty % FFFFFFA4
+        Call  MakeNpcs  ( .False $NpcGroupList_80251AAC )
+    Else
+        Call  MakeNpcs  ( .False $NpcGroupList_80251AE8 )
+    EndIf
+    Call  ClearDefeatedEnemies ( )
+    ExecWait  $Script_MakeEntities
+    ExecWait  $Script_8025422C
+    Exec  $Script_802456E0
+    Bind  $Script_80246E20 .Trigger:WallPressA ~Collider:o236 00000001 00000000
+    ExecWait  $Script_80246B50
+    Call  GetDemoState  ( *Var0 )
+    If  *Var0  !=  00000000
+        ExecWait  $Script_802523B8
+        Return
+    EndIf
+    Exec  $Script_80244630
+    Call  ModifyColliderFlags   ( 00000000 ~Collider:deilitw 7FFFFE00 )
+    Call  ModifyColliderFlags   ( 00000000 ~Collider:deilitn 7FFFFE00 )
+    Exec  $Script_EnterWalk_80245868
+    Wait  1`
+    Bind  $Script_InteractWithDoor  .Trigger:WallPressA ~Collider:DoorCollider 00000001 00000000
+    Return
+    End
+}
