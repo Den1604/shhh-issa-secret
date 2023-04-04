@@ -1,4 +1,4 @@
-#string:2F:000
+#message:2F:000
 {
 [Style Right]
 Oh, hello Mario![Pause:5][br]
@@ -12,7 +12,7 @@ we should be gone for sure.[br]
 [Wait][End]
 }
 
-#string:2F:001
+#message:2F:001
 {
 [Style Right]
 Oh, Mario, hello![br]
@@ -25,5 +25,15 @@ time and be the first to[br]
 find the secret of this[br]
 newly found part of[br]
 Goomba Road![br]
+[Wait][End]
+}
+
+#message:2F:002
+{
+[Style Sign]
+Bridge closed off for[br]
+the annual Easter Egg Hunt[br]
+to keep the children searching[br]
+for eggs in a safe space![br]
 [Wait][End]
 }

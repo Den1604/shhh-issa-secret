@@ -1,0 +1,38 @@
+@ $Script_MakeEntities {
+    Call  MakeEntity    ( .Entity:Signpost ~Vec4d:Entity80241C08 80000000 )
+    Call  AssignScript  ( $Script_80241B94 )
+    If  *GF_NOK13_BadgeBlock_AttackFXB  ==  .False
+        Set   *AreaByte[1]  00000000
+        Call  MakeEntity    ( .Entity:BrickBlock ~Vec4d:Entity80241C5C 80000000 )
+        Call  AssignScript  ( $Script_80241A40 )
+        Call  MakeEntity    ( .Entity:BrickBlock ~Vec4d:Entity80241C90 80000000 )
+        Call  AssignScript  ( $Script_80241A78 )
+        Call  MakeEntity    ( .Entity:BrickBlock ~Vec4d:Entity80241CC4 80000000 )
+        Call  AssignScript  ( $Script_80241AB0 )
+    Else
+        Call  MakeEntity    ( .Entity:BrickBlock ~Vec4d:Entity80241D00 80000000 )
+        Call  MakeEntity    ( .Entity:BrickBlock ~Vec4d:Entity80241D24 80000000 )
+        Call  MakeEntity    ( .Entity:BrickBlock ~Vec4d:Entity80241D48 80000000 )
+        Call  MakeEntity    ( .Entity:RedBlock ~Vec4d:Entity80241D6C .Item:AttackFXB 80000000 )
+        Call  AssignBlockFlag   ( *GF_NOK13_BadgeBlock_AttackFXB )
+    EndIf
+    Call  MakeEntity        ( .Entity:HiddenPanel ~Vec4d:Entity80241DAC ~Model:jimen_u 80000000 )
+    Call  AssignPanelFlag   ( *GF_NOK13_HiddenPanel )
+    Call  MakeItemEntity    ( .Item:HoneySyrup ~Vec3d:Item80241DE4 .ItemSpawnMode:Fixed_NeverVanish *GF_NOK13_Item_HoneySyrup )
+    Call  MakeEntity    ( .Entity:Signpost ~Vec4d:BlockerSign 80000000 )
+	Call  AssignScript    ( $Script_ReadSign_Marker )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *Egg1 )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *Egg2 )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg3 .ItemSpawnMode:Fixed_NeverVanish *Egg3 )
+    Return
+    End
+}
+
+#new:Script $Script_ReadSign_Marker
+{
+	Call  DisablePlayerInput        ( .True )
+	Call  ShowMessageAtScreenPos    ( 002F0002 000000A0 00000028 )
+	Call  DisablePlayerInput        ( .False )
+	Return
+	End
+}

@@ -1,2 +1,6 @@
 000 = Flag_AllEggsCollected = GotAllEggs
 001 = Flag_SeenGoldenEgg = SawEgg
+002 = Flag_GottenEgg1 = Egg1
+003 = Flag_GottenEgg2 = Egg2
+004 = Flag_GottenEgg3 = Egg3
+005 = Flag_GottenEgg4 = Egg4

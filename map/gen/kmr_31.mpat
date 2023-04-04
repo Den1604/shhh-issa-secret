@@ -3,7 +3,7 @@
 #new:Header $Header
 {
 	[MainScript] $Script_Main
-	[Background] 80200000
+	[Background] 00000000
 	[EntryList] $EntryList
 	[EntryCount] 1
 }
