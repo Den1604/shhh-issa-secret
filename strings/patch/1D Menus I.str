@@ -1,0 +1,9 @@
+#string:1D:003
+{
+[Style Inspect]
+It's a colorful Easter Egg![BR]
+Collect as many as you can![BR]
+If you do, something might [BR]
+happen...[BR]
+[Wait][End]
+}

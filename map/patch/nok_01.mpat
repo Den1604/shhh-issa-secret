@@ -1,0 +1,13 @@
+@ $Script_MakeEntities {
+    Call  MakeEntity    ( .Entity:BrickBlock ~Vec4d:Entity80243540 80000000 )
+    If  *GF_NOK01_RecoveredShellB  ==  .False
+        Call  AssignScript  ( $Script_8024A758 )
+    EndIf
+    Call  MakeEntity        ( .Entity:SavePoint ~Vec4d:Entity8024358C 80000000 )
+    Call  MakeEntity        ( .Entity:HiddenPanel ~Vec4d:Entity802435B0 ~Model:o4 80000000 )
+    Call  AssignPanelFlag   ( *GF_NOK01_HiddenPanel )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_nok_01_1 )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_nok_01_2 )
+    Return
+    End
+}

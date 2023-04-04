@@ -6,6 +6,7 @@
     Else
         Call  SetNpcPos ( .Npc:Self  390`  0`  -50` )
     EndIf
+    Call SetNpcYaw ( .Npc:Self 270` )
     Call  SetNpcPos ( .Npc:Self  620` 0` 0` )
     Call  BindNpcInteract   ( .Npc:Self $Script_Interact_New )
     Return
@@ -15,7 +16,7 @@
 #new:Script $Script_Interact_New
 {
     Call DisablePlayerInput ( .True )
-    178:  	Call  SpeakToPlayer ( .NpcID:FiceT_01 00AB0006 00AB0006 00000000 002F0004 ) % variable string ID
+    178:  	Call  SpeakToPlayer ( .NpcID:FiceT_01 00AB0004 00AB0001 00000000 002F0004 ) % variable string ID
     Call DisablePlayerInput ( .False )
     Return
     End
@@ -39,6 +40,23 @@
     0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_02_1 )
     0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_02_2 )
     0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg3 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_02_3 )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg4 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_02_4 )
+    60:  	Call  MakeEntity    ( .Entity:BoardedFloor ~Vec4d:FloorBoard 80000000 )
+    84:  	Call  AssignScript  ( $Script_80242A9C )
     Return
     End
+}
+
+@ $Script_80245D60 {
+    Call  DisablePlayerInput        ( .True )
+    Call  ShowMessageAtScreenPos    ( 002F0005  160`  40` ) % Private
+    Call  DisablePlayerInput        ( .False )
+    Return
+    End
+}
+
+#new:Script $Script_80242A9C
+{
+   1C:  Return
+   24:  End
 }

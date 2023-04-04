@@ -54,3 +54,12 @@ Mario![br]
 [Wait][End]
 }
 
+#message:2F:005
+{
+[Style Sign]
+Sewers closed off for[br]
+the annual Easter Egg Hunt[br]
+to keep the children searching[br]
+for eggs in a safe space![br]
+[Wait][End]
+}
