@@ -51,7 +51,7 @@
             Set   *GF_KMR05_EnemyWarning  .True
         EndIf
     EndIf
-    If *GotAllEggs == .True 
+    If *GotEnoughEggs == .True 
         Call ModifyColliderFlags ( 00000000 ~Collider:No 7FFFFE00 )
         Call SetNpcPos ( .NpcID:Koopa 0` -1000` 0` )
         Call SetNpcPos ( .NpcID:Koopa2 0` -1000` 0` )

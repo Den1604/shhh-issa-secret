@@ -1,9 +1,12 @@
 #define .NpcID:Rowf        27
+#define .NpcID:Peach        28
 
 @ $Function_8024522C
 {
   [A4]  LA        A3, $Global_ItemHudScripts
-}@ $Script_Main {
+}
+
+@ $Script_Main {
   Set   *GB_WorldLocation  .Location:ToadTown
   Call  SetSpriteShading  ( .Shading:None )
   Call  SetCamPerspective ( .Cam:Default 00000003  25`  90`  4096` )
@@ -77,6 +80,11 @@
   Exec  $Script_8025023C
   Exec  $Script_80262604
   Call  SetCamSpeed   ( .Cam:Default *Fixed[2.0] )
+  Call $GetStarPieceCount ( *Var[0] )
+  %PLACEHOLDER!!!
+  If *Var[0] > 00000003
+    Set *GotEnoughEggs .True
+  EndIf
   Return
   End
 }
@@ -87,6 +95,7 @@
   0000000A $NpcGroup_8025CCA8 00000000
   00000001 $NpcGroup_8025EBC8 00000000
   00000001 $NpcGroup_8025EDB8 00000000
+  00000001 $NpcGroup_Peach 00000000
   00000000 00000000 00000000
 }
 
@@ -181,4 +190,48 @@
   EndSwitch
   Return
   End
+}
+
+#new:NpcGroup $NpcGroup_Peach
+{
+  .NpcID:Peach $NpcSettings_802566A4 ~Vec3f:Peach % -213 -54 256
+  00002D09 $Script_Init_Peach 00000000 00000000 0000005A
+  ~NoDrops
+  ~Movement:Peach
+  ~AnimationTable:Peach % .Sprite:Rowf
+  00000000 00000000 00000000 00000000 % This guy's pretty funky. His name is Rowf. He sell ...
+}
+
+#new:Script $Script_Init_Peach
+{
+  Call SetNpcPos ( .Npc:Self ~Vec3D:Peach )
+  Call  SetNpcYaw ( .Npc:Self  217` )
+  Call BindNpcInteract ( .Npc:Self $Script_Interact_Peach )
+  Return
+  End
+}
+
+#new:Script $Script_Interact_Peach
+{
+  Call DisablePlayerInput ( .True )
+  If *GotEnoughEggs == .False
+    Call SpeakToPlayer ( .NpcID:Peach 00D60002 00D60004 00000000 002F0006 )
+  Else
+    Call SpeakToPlayer ( .NpcID:Peach 00D60002 00D60004 00000000 002F0007 )
+  EndIf
+  Call DisablePlayerInput ( .False )
+  Return
+  End
+}
+
+#new:Function $GetStarPieceCount {
+  PUSH RA
+  %A0 has script context - assume var to put count in is in first argument
+  LW A1, C (A0) %get args
+  LAB A2, 8010F29F %get star piece count
+  JAL ~Func:set_variable
+    LW A1, 0 (A1) %get first arg
+  POP RA
+  JR RA
+  LI V0, 2
 }

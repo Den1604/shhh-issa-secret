@@ -63,3 +63,34 @@ to keep the children searching[br]
 for eggs in a safe space![br]
 [Wait][End]
 }
+
+#message:2F:006
+{
+[Style Sign]
+Hello mario[br]
+something something easter[br]
+egg hunt[br]
+[wait][next]
+X many eggs have been hidden[br]
+how many do you have?[br]
+once you have a big amount[br]
+of eggs, talk to me again![br]
+[Wait][End]
+}
+
+#message:2F:007
+{
+[Style Sign]
+Hello mario[br]
+you have gotten a lot[br]
+of eggs so far!![br]
+[wait][next]
+i was gonna give you[br]
+cake but it is still[br]
+in the oven lmao[br]
+[wait][next]
+but i did see 2 archeologists[br]
+and kolorado schmoving to[br]
+koopa village just saying bro[br]
+[Wait][End]
+}

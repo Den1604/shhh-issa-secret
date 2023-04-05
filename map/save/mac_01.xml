@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="mac_01" author="unnamed" background="nok_bg" textures="mac_tex">
 	<Editor>
-		<Camera pos="7.971847,-853.295593,135.561935" pitch="38.719925" yaw="356.480103"/>
+		<Camera pos="176.633621,78.800262,85.283127" pitch="12.280000" yaw="358.399963"/>
 		<Camera pos="301.911774,65536.000000,42.543003"/>
 		<Camera pos="65536.000000,-16.477795,338.414978"/>
 		<Camera pos="-212.994736,-862.451294,65536.000000"/>
@@ -418,7 +418,7 @@
 		</Node>
 	</ZoneTree>
 	<MarkerTree>
-		<Node name="Root" id="45">
+		<Node name="Root" id="46">
 			<Node name="Entrances" id="5">
 				<Node name="Entry0" id="FFFFFFFF"/>
 				<Node name="Entry1" id="0"/>
@@ -492,6 +492,7 @@
 			<Node name="Egg1" id="42"/>
 			<Node name="Egg2" id="43"/>
 			<Node name="Egg3" id="44"/>
+			<Node name="Peach" id="45"/>
 		</Node>
 	</MarkerTree>
 	<LightSets>
@@ -13073,7 +13074,12 @@
 	</Zones>
 	<Markers>
 		<Marker ver="4" type="Root">
-			<MapObject name="Root" id="45"/>
+			<MapObject name="Root" id="46"/>
+		</Marker>
+		<Marker ver="4" type="NPC" pos="184,20,-90" yaw="0.000000">
+			<MapObject name="Peach" id="45"/>
+			<Movement type="Stationary" data="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+			<Sprite sprite="D6" palette="0" animations="4,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 		</Marker>
 		<Marker ver="4" type="Position" pos="429,20,-226" yaw="0.000000">
 			<MapObject name="Egg3" id="44"/>
