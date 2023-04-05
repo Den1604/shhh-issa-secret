@@ -1,0 +1,9 @@
+@ $Script_MakeEntities {
+    Call  MakeEntity        ( .Entity:HiddenPanel ~Vec4d:Entity802452A8 ~Model:o262 80000000 )
+    Call  AssignPanelFlag   ( *GF_MAC00_HiddenPanel )
+    Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Item802452E0 .ItemSpawnMode:Fixed_NeverVanish *GF_MAC00_Item_StarPiece )
+    Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_00 )
+    Bind  $Script_80245260 .Trigger:WallPressA ~Collider:sign 00000001 00000000
+    Return
+    End
+}

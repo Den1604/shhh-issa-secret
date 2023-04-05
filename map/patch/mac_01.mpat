@@ -1,4 +1,184 @@
+#define .NpcID:Rowf        27
+
 @ $Function_8024522C
 {
   [A4]  LA        A3, $Global_ItemHudScripts
+}@ $Script_Main {
+  Set   *GB_WorldLocation  .Location:ToadTown
+  Call  SetSpriteShading  ( .Shading:None )
+  Call  SetCamPerspective ( .Cam:Default 00000003  25`  90`  4096` )
+  Call  SetCamBGColor     ( .Cam:Default  0`  0`  0` )
+  Call  SetCamEnabled     ( .Cam:Default .True )
+  Call  SetCamLeadPlayer  ( .Cam:Default .False )
+  Set   *AreaFlag[00E]  .False
+  Set   *AreaFlag[00F]  .False
+  Set   *AreaFlag[010]  .False
+  Set   *AreaFlag[011]  .False
+  Set   *AreaFlag[012]  .False
+  Set   *AreaFlag[013]  .False
+  Set   *AreaFlag[014]  .False
+  Set   *AreaFlag[015]  .False
+  If  *GB_StoryProgress  <  .Story:Epilogue % 60
+    Exec  $Script_80248070
+  Else
+    Call  EnableGroup   ( ~Model:jutan1 .False )
+  EndIf
+  Switch  *GB_StoryProgress
+    Case  ==  .Story:Intro % FFFFFF80
+      Call  MakeNpcs  ( .False $NpcGroupList_8025FA2C )
+    Case  >=  .Story:Epilogue % 60
+      Call  MakeNpcs  ( .False $NpcGroupList_80261830 )
+    Case  <  .Story:Ch1_MerlinRevealedKoopaBros % FFFFFF9C
+      Call  MakeNpcs  ( .False $NpcGroupList_8025EFF0 )
+    Case  <  .Story:Ch1_StarSpritDeparted % FFFFFFB5
+      Call  MakeNpcs  ( .False $NpcGroupList_8025F044 )
+    Case  ==  .Story:Ch1_DefeatedJrTroopa % FFFFFFB6
+      Call  MakeNpcs  ( .False $NpcGroupList_8025F080 )
+    Case  .Story:Ch3_StarSpritDeparted  to  .Story:Ch4_StarSpiritRescued % FFFFFFF3 to 5
+      Call  MakeNpcs  ( .False $NpcGroupList_8025F0BC )
+    Case  ==  .Story:Ch6_ReturnedToToadTown % 3C
+      Call  MakeNpcs  ( .False $NpcGroupList_8025F0F8 )
+    Default
+      Call  MakeNpcs  ( .False $NpcGroupList_8025EFA8 )
+  EndSwitch
+  If  *GB_StoryProgress  >=  .Story:Ch1_MerlinRevealedKoopaBros % FFFFFF9C
+    Call  ModifyColliderFlags   ( 00000000 ~Collider:tt 7FFFFE00 )
+  EndIf
+  Exec  $Script_8025A2F0
+  Exec  $Script_MakeEntities
+  Exec  $Script_80247D18
+  Exec  $Script_80248818
+  Exec  $Script_80248428
+  Exec  $Script_80246770
+  Call  UseDoorSounds ( .DoorSounds:Large )
+  Call  UseAdvancedDoorSounds ( .DoorSounds:Basic )
+  Exec  $Script_EnterWalk_80246C94
+  Wait  1`
+  Call  EnableTexPanning      ( ~Model:hikari .True )
+  Thread
+    SetGroup  00000000
+    Set   *Var0  00000000
+    Set   *Var1  00000000
+    Label  0
+    Add   *Var0  FFFFFF9C
+    Add   *Var1  FFFFFF38
+    If  *Var0  <  00000000
+      Add   *Var0  00010000
+    EndIf
+    If  *Var1  <  00000000
+      Add   *Var0  00010000
+    EndIf
+    Call  SetTexPanOffset   ( 00000003 00000000 *Var0 00000000 )
+    Call  SetTexPanOffset   ( 00000003 00000001 *Var1 *Var1 )
+    Wait  1`
+    Goto  0
+  EndThread
+  Bind  $Script_8024F27C .Trigger:WallPressA ~Collider:o335 00000001 00000000
+  Exec  $Script_8025023C
+  Exec  $Script_80262604
+  Call  SetCamSpeed   ( .Cam:Default *Fixed[2.0] )
+  Return
+  End
+}
+
+@ $NpcGroupList_8025EFA8 {
+  00000001 $NpcGroup_80253298 00000000
+  00000002 $NpcGroup_802566FC 00000000
+  0000000A $NpcGroup_8025CCA8 00000000
+  00000001 $NpcGroup_8025EBC8 00000000
+  00000001 $NpcGroup_8025EDB8 00000000
+  00000000 00000000 00000000
+}
+
+@ $NpcGroup_802566FC {
+  .NpcID:Rowf $NpcSettings_802566A4 ~Vec3f:NPC_80260A6C % -213 -54 256
+  00002D09 $Script_Init_802560B4 00000000 00000000 0000005A
+  ~NoDrops
+  ~Movement:NPC_80260A6C
+  ~AnimationTable:NPC_80260A6C % .Sprite:Rowf
+  00000000 00000000 $ExtraAnimationList_80256684 001A0024 % This guy's pretty funky. His name is Rowf. He sell ...
+  %
+  % $NpcGroup_802566FC[1F0]
+  00000002 $NpcSettings_802566D0 ~Vec3f:NPC_802568EC % -250 0 263
+  00002D09 $Script_Init_802564C0 00000000 00000000 0000005A
+  ~NoDrops
+  ~Movement:NPC_802568EC
+  ~AnimationTable:NPC_802568EC % .Sprite:Rowf
+  00000000 00000000 $ExtraAnimationList_80256684 001A0025 % This is Rhuff. He's Rowf's kid. He looks just like ...
+}
+
+@ $Script_Init_802560B4 {
+  Call SetNpcPos ( .NpcID:Rowf ~Vec3d:RowfPos )
+  Call BindNpcInteract ( .NpcID:Rowf $RowfInteract )
+  Return
+  End
+}
+
+#new:Script $RowfInteract
+{
+  Call DisablePlayerInput ( .True )
+  Call SpeakToPlayer ( .NpcID:Rowf 00A70004 00A70001 00000000 002F0004 )
+  Call DisablePlayerInput ( .False )
+  Return
+  End
+}
+
+@ $Script_MakeEntities {
+  If  *GB_StoryProgress  <  .Story:Epilogue % 60
+    Call  MakeEntity    ( .Entity:SavePoint ~Vec4d:Entity802473D8 80000000 )
+  EndIf
+  Bind  $Script_80247380 .Trigger:WallPressA ~Collider:o406 00000001 00000000
+  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_01_1 )
+  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_01_2 )
+  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg3 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_01_3 )
+  Return
+  End
+}
+
+@ $Script_Init_8025FE34 {
+  Call  SetNpcScale   ( .Npc:Self *Fixed[0.75] *Fixed[0.75] *Fixed[0.75] )
+  Call  SetNpcPos     ( .Npc:Self  -250`  -1000`  295` )
+  Call  SetNpcYaw     ( .Npc:Self  270` )
+  Call  BindNpcInteract   ( .Npc:Self $Script_Interact_8025FE04 )
+  Return
+  End
+}
+
+@ $Script_Init_8025FDB0 {
+  Call  SetNpcPos ( .Npc:Self  -225`  -1000`  320` )
+  Call  SetNpcYaw ( .Npc:Self  270` )
+  Call  BindNpcInteract   ( .Npc:Self $Script_Interact_8025FD80 )
+  Return
+  End
+}
+
+@ $Script_Init_802564C0 {
+  Call  SetNpcScale   ( 00000002 *Fixed[0.75] *Fixed[0.75] *Fixed[0.75] )
+  Call  SetNpcPos     ( 00000002  -230`  -1000`  320` )
+  Call  InterpNpcYaw  ( 00000002  -90`  0` )
+  Call  SetNpcAnimation   ( 00000002 00A70001 )
+  Switch  *GB_StoryProgress
+    Case  <  .Story:Ch1_DefeatedJrTroopa % FFFFFFB6
+      Call  BindNpcInteract   ( .Npc:Self $Script_Interact_802549F8 )
+    Case  <  .Story:Ch2_BeganPeachMission % FFFFFFCA
+      Call  BindNpcInteract   ( .Npc:Self $Script_Interact_80254A28 )
+      If  *GF_MAC01_Met_Rhuff  ==  .False
+        Call  BindNpcIdle   ( .Npc:Self $Script_Idle_80255280 )
+      Else
+        Call  SetNpcPos ( .Npc:Self  -305`  -1000`  330` )
+        Call  SetNpcYaw ( .Npc:Self  90` )
+      EndIf
+    Case  <  .Story:Ch3_StarSpritDeparted % FFFFFFF3
+      Call  BindNpcInteract   ( .Npc:Self $Script_Interact_80254A58 )
+      Call  BindNpcIdle       ( .Npc:Self $Script_Idle_80255500 )
+    Default
+      If  *GF_MAC01_CalculatorReturned  ==  .True
+        Call  BindNpcInteract   ( .Npc:Self $Script_Interact_80254A58 )
+        Call  BindNpcIdle       ( .Npc:Self $Script_Idle_80255500 )
+      Else
+        Call  BindNpcInteract   ( .Npc:Self $Script_Interact_80254B44 )
+      EndIf
+  EndSwitch
+  Return
+  End
 }

@@ -4,6 +4,7 @@
         Wait  5`
         Call  SetMusicTrack ( 00000000 .Song:MailCall 00000000 00000008 )
         Set *GB_StoryProgress 000000B7
+        Set *GF_MAC01_Met_Rhuff .True
     EndThread
     Call  InterpPlayerYaw   (  90`  0` )
     Call  SetPlayerPos  (  -50`  30`  -80` )

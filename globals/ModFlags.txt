@@ -14,3 +14,7 @@
 00D = Flag_GottenEgg_nok_12_1 = egg_nok_12_1
 00E = Flag_GottenEgg_nok_12_2 = egg_nok_12_2
 00F = Flag_GottenEgg_nok_12_3 = egg_nok_12_3
+010 = Flag_GottenEgg_mac_00 = egg_mac_00
+011 = Flag_GottenEgg_mac_01_1 = egg_mac_01_1
+012 = Flag_GottenEgg_mac_01_2 = egg_mac_01_2
+013 = Flag_GottenEgg_mac_01_3 = egg_mac_01_3
