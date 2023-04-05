@@ -1,3 +1,9 @@
+#string:1F:00E
+{
+	You don't have a Hammer. Do you[BR]
+	you even need one right now?[End]
+}
+
 #string:1F:016
 {
 	Shows the number of Easter Eggs[BR]
