@@ -10,3 +10,7 @@
 009 = Flag_GottenEgg_mac_02_4 = egg_mac_02_4
 00A = Flag_GottenEgg_nok_01_2 = egg_nok_01_1
 00B = Flag_GottenEgg_nok_02_2 = egg_nok_01_2
+00C = Flag_GottenEgg_nok_11 = egg_nok_11
+00D = Flag_GottenEgg_nok_12_1 = egg_nok_12_1
+00E = Flag_GottenEgg_nok_12_2 = egg_nok_12_2
+00F = Flag_GottenEgg_nok_12_3 = egg_nok_12_3

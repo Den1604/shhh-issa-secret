@@ -1,0 +1,28 @@
+@ $Script_MakeEntities {
+    If  *GB_StoryProgress  <=  .Story:Ch1_KnockedSwitchFromTree % FFFFFF9D
+        If  *GB_StoryProgress  ==  .Story:Ch1_KnockedSwitchFromTree % FFFFFF9D
+            Call  MakeEntity        ( .Entity:BlueSwitch ~Vec4d:Entity80242A20 80000000 )
+            Call  AssignAreaFlag    ( 00000001 )
+        Else
+            Call  MakeEntity        ( .Entity:BlueSwitch ~Vec4d:Entity80242A5C 80000000 )
+            Call  AssignAreaFlag    ( 00000001 )
+            Set   *MapVar[0]  *Var0
+        EndIf
+    EndIf
+    Call  MakeEntity    ( .Entity:YellowBlock ~Vec4d:Entity80242AB0 .Item:POWBlock 80000000 )
+    Call  AssignBlockFlag   ( *GF_NOK12_ItemBlock_POWBlock )
+    Call  MakeEntity    ( .Entity:BrickBlock ~Vec4d:Entity80242AE8 80000000 )
+    Call  AssignScript  ( $Script_80242870 )
+    Call  MakeEntity    ( .Entity:BrickBlock ~Vec4d:Entity80242B1C 80000000 )
+    Call  MakeEntity    ( .Entity:BrickBlock ~Vec4d:Entity80242B40 80000000 )
+    Call  MakeEntity    ( .Entity:BrickBlock ~Vec4d:Entity80242B64 80000000 )
+    Call  MakeEntity    ( .Entity:MultiCoinBrick ~Vec4d:Entity80242B88 80000000 )
+    Call  AssignBlockFlag   ( *GF_NOK12_MultiCoinBrick )
+    %Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Item80242BBC .ItemSpawnMode:Fixed_NeverVanish *GF_NOK12_Item_StarPiece )
+    Call  MakeItemEntity    ( .Item:SleepySheep ~Vec3d:Item80242BE0 .ItemSpawnMode:Fixed_NeverVanish *GF_NOK12_Item_SleepySheep )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_nok_12_1 )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_nok_12_2 )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_nok_12_3 )
+    Return
+    End
+}
