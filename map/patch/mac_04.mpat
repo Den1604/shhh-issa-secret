@@ -1,0 +1,33 @@
+@ $Script_MakeEntities {
+    If  *GB_StoryProgress  <  .Story:Ch4_ReturnedStoreroomKey % FFFFFFF9
+        Call  MakeEntity        ( .Entity:Padlock ~Vec4d:Entity8024F2D0 80000000 )
+        Call  AssignScript      ( $Script_8024EFF4 )
+        Set   *MapVar[0]  *Var0
+        Call  SetEntityCullMode ( 00000003 )
+        BindLock  $Script_8024F018 .Trigger:WallPressA 00004000 $ItemList_8024F010 00000000 00000001
+    EndIf
+    Call  MakeItemEntity    ( 00020021 ~Vec3d:Item8024F34C 00000000 *GF_MAC04_Item_ToyTrain )
+    Thread
+        If  *GB_StoryProgress  <  .Story:Ch4_GotToyTrain % FFFFFFFA
+            Loop
+                If  *GF_MAC04_Item_ToyTrain  !=  .False
+                    Set   *GB_StoryProgress  .Story:Ch4_GotToyTrain
+                    BreakLoop
+                EndIf
+                Wait  1`
+            EndLoop
+        EndIf
+    EndThread
+    Call  MakeItemEntity    ( 00020081 ~Vec3d:Item8024F3E8 .ItemSpawnMode:Fixed_NeverVanish *GF_MAC04_Item_SnowmanDoll )
+    Call  MakeItemEntity    ( 0002008B ~Vec3d:Item8024F40C .ItemSpawnMode:Fixed_NeverVanish *GF_MAC04_Item_VoltShroom )
+    Call  MakeItemEntity    ( 0002009A ~Vec3d:Item8024F430 .ItemSpawnMode:Fixed_NeverVanish *GF_MAC04_Item_DizzyDial )
+    Call  MakeEntity        ( .Entity:ScriptSpring ~Vec4d:Entity8024F454 80000000 )
+    Call  AssignScript      ( $Script_8024EFAC )
+    Call  SetEntityCullMode ( 00000002 )
+    Bind  $Script_8024F278 .Trigger:WallPressA ~Collider:sign 00000001 00000000
+    Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_04_1 )
+    Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_04_2 )
+    Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg3 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_04_3 )
+    Return
+    End
+}

@@ -1,0 +1,16 @@
+@ $Script_MakeEntities {
+    Call  MakeEntity        ( .Entity:SavePoint ~Vec4d:Entity80244400 80000000 )
+    Call  MakeEntity        ( .Entity:HiddenPanel ~Vec4d:Entity80244424 ~Model:o106 80000000 )
+    Call  AssignPanelFlag   ( *GF_MAC05_HiddenPanel )
+    Call  MakeEntity        ( .Entity:MultiCoinBrick ~Vec4d:Entity8024445C 80000000 )
+    Call  AssignBlockFlag   ( *GF_MAC05_MultiCoinBrick )
+    Bind  $Script_80244370 .Trigger:WallPressA ~Collider:sign 00000001 00000000
+    Bind  $Script_802443B8 .Trigger:WallPressA ~Collider:o154 00000001 00000000
+    Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_05_1 )
+    Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_05_2 )
+    Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg3 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_05_3 )
+    Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg4 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_05_4 )
+    Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg5 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_05_5 )
+    Return
+    End
+}

@@ -18,3 +18,14 @@
 011 = Flag_GottenEgg_mac_01_1 = egg_mac_01_1
 012 = Flag_GottenEgg_mac_01_2 = egg_mac_01_2
 013 = Flag_GottenEgg_mac_01_3 = egg_mac_01_3
+014 = Flag_GottenEgg_mac_03_1 = egg_mac_03_1
+015 = Flag_GottenEgg_mac_03_2 = egg_mac_03_2
+016 = Flag_GottenEgg_mac_03_3 = egg_mac_03_3
+017 = Flag_GottenEgg_mac_04_1 = egg_mac_04_1
+018 = Flag_GottenEgg_mac_04_2 = egg_mac_04_2
+019 = Flag_GottenEgg_mac_04_3 = egg_mac_04_3
+01A = Flag_GottenEgg_mac_05_1 = egg_mac_05_1
+01B = Flag_GottenEgg_mac_05_2 = egg_mac_05_2
+01C = Flag_GottenEgg_mac_05_3 = egg_mac_05_3
+01D = Flag_GottenEgg_mac_05_4 = egg_mac_05_4
+01E = Flag_GottenEgg_mac_05_5 = egg_mac_05_5
