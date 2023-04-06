@@ -206,6 +206,9 @@
 @ $Script_80250C5C
 {
     Call  DisablePlayerInput	( .True )
+    Exec  $Script_GetLuigi
+    Call  ModifyColliderFlags ( 00000000 ~Collider:o245 7FFFFE00 )
+    Call  ModifyColliderFlags ( 00000000 ~Collider:o246 7FFFFE00 )
     Call  SetNpcPos		( 00000001  220`  30`  -70` )
     Call  SetNpcYaw		( 00000001  90` )
     Call  UseSettingsFrom		( .Cam:Default  320`  30`  -70` )
@@ -219,14 +222,14 @@
         Call  SetNpcSpeed	( 00000001 *Fixed[3.0] )
         Call  SetNpcAnimation	( 00000001 0082000A )
         Exec  $Script_8024F5A4 *VarA
-        Call  NpcMoveTo		( 00000001  320`  -70`  0` )
-        Call  NpcMoveTo		( 00000001  460`  -70`  0` )
-        Call  NpcMoveTo		( 00000001  570`  -170`  0` )
-        Call  SetNpcAnimation	( 00000001 00820004 )
+        Call  SetNpcPos		( 00000001  0`  -1000`  0` )
         Kill  *VarA
     EndThread
     Call  802D1270		( 00000140 FFFFFFBA *Fixed[3.0] )
     Call  PanToTarget	( .Cam:Default 00000000 00000000 )
+    Exec  $Script_80243B64
+    Call  ModifyColliderFlags ( 00000000 ~Collider:o245 00000000 )
+    Call  ModifyColliderFlags ( 00000000 ~Collider:o246 00000000 )
     Call  DisablePlayerInput	( .False )
 %   1D0:  Call  802D1270		( 000001CC FFFFFFBA *Fixed[3.0] )
 %   1E8:  Call  802D1270		( 0000023A FFFFFF56 *Fixed[3.0] )
@@ -250,6 +253,101 @@
 %   324:  Call  GotoMap	( $ASCII_80253010 00000005 ) % mac_00
 %   338:  Wait  100`
 %   344:  Call  DisablePlayerInput	( .False )
+    Return
+    End
+}
+
+#new:Script $Script_GetLuigi
+{
+    Call  $Function_ForcePartnerSwap    ( .Partner:Goombario  )
+    Return
+    End
+}
+
+#new:Function $Function_ForcePartnerSwap {
+    ADDIU     SP, SP, -18
+    SW        RA, 10 (SP)
+    LW        V0, C (A0)
+    JAL       ~Func:get_variable
+    LW        A1, 0 (V0)
+    JAL       ~Func:switch_to_partner
+    DADDU     A0, V0, R0
+    LW        RA, 10 (SP)
+    ADDIU     V0, R0, 2
+    JR        RA
+    ADDIU     SP, SP, 18
+}
+
+@ $Script_Main {
+    Set   *GB_WorldLocation  .Location:MariosHouse
+    Call  GetEntryID    ( *Var0 )
+    If  *Var0  ==  ~Entry:Entry2
+        Set   *GB_StoryProgress  .Story:Epilogue
+    EndIf
+    Call  GetEntryID    ( *Var0 )
+    If  *Var0  ==  ~Entry:Entry4
+        Set   *MapFlag[0A]  .False
+        If  *GF_KMR20_ReunitedWithLuigi  ==  .False
+            Set   *GF_KMR20_ReunitedWithLuigi  .True
+            If  *GB_StoryProgress  <  .Story:Ch3_InvitedToBoosMansion % FFFFFFCE
+                Set   *MapFlag[0A]  .True
+            EndIf
+        EndIf
+    EndIf
+    Set   *MapFlag[0C]  .False
+    Call  SetSpriteShading  ( .Shading:None )
+    Call  SetCamPerspective ( .Cam:Default 00000003  25`  16`  4096` )
+    Call  SetCamBGColor     ( .Cam:Default  0`  0`  0` )
+    Call  SetCamEnabled     ( .Cam:Default .True )
+    Call  SetCamLeadPlayer  ( .Cam:Default .False )
+    Exec  $Script_80242C40
+    Call  GetEntryID        ( *Var0 )
+    If  *Var0  ==  ~Entry:Entry0
+        Call  MakeNpcs  ( .False $NpcGroupList_8024A88C )
+    EndIf
+    ExecWait  $Script_MakeEntities
+    Call  EnableGroup   ( ~Model:g100 .False )
+    Exec  $Script_80246794
+    Exec  $Script_8024721C
+    Exec  $Script_80244228
+    Exec  $Script_80245638
+    If  *GB_StoryProgress  <  .Story:Epilogue % 60
+        Exec  $Script_8024A3A0
+    EndIf
+    Call  GetEntryID    ( *Var0 )
+    Switch  *Var0
+        Case  ==  ~Entry:Entry0
+            Call  $Function_80240310 ( )
+            Exec  $Script_8024FD70
+            Wait  5`
+        Case  ==  ~Entry:Entry1
+            Exec  $Script_80250C5C
+        Case  ==  ~Entry:Entry2
+            Wait  60`
+            Exec  $Script_8025232C
+        Case  ==  ~Entry:Entry3
+            Exec  $Script_80243B64
+            Exec  $Script_80252490
+        Case  ==  ~Entry:Entry4
+            Set   *GF_Map_MariosHouse  .True
+            If  *MapFlag[0A]  ==  .True
+                Exec  $Script_8024AC34
+                Thread
+                    Call  DisablePlayerPhysics  ( .True )
+                    Call  SetPlayerPos  (  0`  -1000`  0` )
+                    Label  0
+                    If  *MapFlag[0B]  ==  .False
+                        Wait  1`
+                        Goto  0
+                    EndIf
+                    Set   *VarA  $Script_80243B64
+                    Exec  $Script_80242DA0
+                EndThread
+            Else
+                Set   *VarA  $Script_80243B64
+                Exec  $Script_80242DA0
+            EndIf
+    EndSwitch
     Return
     End
 }
