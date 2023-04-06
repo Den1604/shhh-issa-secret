@@ -29,3 +29,13 @@
 01C = Flag_GottenEgg_mac_05_3 = egg_mac_05_3
 01D = Flag_GottenEgg_mac_05_4 = egg_mac_05_4
 01E = Flag_GottenEgg_mac_05_5 = egg_mac_05_5
+
+030 = Flag_GottenEgg_kmr_00_1 = egg_kmr_00_1
+031 = Flag_GottenEgg_kmr_02_1 = egg_kmr_02_1
+032 = Flag_GottenEgg_kmr_02_2 = egg_kmr_02_2
+033 = Flag_GottenEgg_kmr_03_1 = egg_kmr_03_1
+034 = Flag_GottenEgg_kmr_03_2 = egg_kmr_03_2
+035 = Flag_GottenEgg_kmr_04_1 = egg_kmr_04_1
+036 = Flag_GottenEgg_kmr_04_2 = egg_kmr_04_2
+037 = Flag_GottenEgg_kmr_04_3 = egg_kmr_04_3
+038 = Flag_GottenEgg_kmr_05_1 = egg_kmr_05_1

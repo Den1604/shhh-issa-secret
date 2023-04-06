@@ -1,0 +1,18 @@
+@ $Script_MakeEntities
+{
+    0:  If  *GF_KMR04_Hammer1Block  ==  .False
+   10:  	Call  MakeEntity	( .Entity:Hammer1Block ~Vec4d:Entity80241AB0 80000000 )
+   34:  	Call  AssignScript	( $Script_80241A80 )
+   44:  EndIf
+   4C:  Call  MakeEntity	( .Entity:BrickBlock ~Vec4d:Entity80241AEC 80000000 )
+   70:  Call  MakeEntity	( .Entity:BrickBlock ~Vec4d:Entity80241B10 80000000 )
+   94:  Call  MakeEntity	( .Entity:BrickBlock ~Vec4d:Entity80241B34 80000000 )
+   B8:  Call  MakeEntity	( .Entity:BrickBlock ~Vec4d:Entity80241B58 80000000 )
+   DC:  Call  MakeEntity	( .Entity:MultiCoinBrick ~Vec4d:Entity80241B7C 80000000 )
+  100:  Call  AssignBlockFlag	( *GF_KMR04_MultiCoinBrick )
+  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_04_1 )
+  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_04_2 )
+  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg3 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_04_3 )
+  134:  Return
+  13C:  End
+}

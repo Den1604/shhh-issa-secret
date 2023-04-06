@@ -1,0 +1,32 @@
+@ $Script_MakeEntities
+{
+    0:  If  *GB_StoryProgress  <  .Story:Ch0_LeftThePlayground % FFFFFF8B
+   10:  	Call  MakeEntity	( .Entity:Hammer1Block ~Vec4d:Entity80241540 80000000 )
+   34:  	Call  AssignScript	( $Script_80241470 )
+   44:  Else
+   4C:  	Call  ModifyColliderFlags	( 00000000 ~Collider:tt1 7FFFFE00 )
+   64:  EndIf
+   6C:  If  *GF_KMR03_Hammer1Block  ==  .False
+   7C:  	Call  MakeEntity	( .Entity:Hammer2Block ~Vec4d:Entity802415AC 80000000 )
+   A0:  	Call  AssignScript	( $Script_802414A8 )
+   B0:  EndIf
+   B8:  Call  MakeEntity		( .Entity:HiddenYellowBlock ~Vec4d:Entity802415E8 .Item:RepelGel 80000000 )
+   E0:  Call  AssignBlockFlag	( *GF_KMR03_HiddenItem_RepelGel )
+   F0:  Call  MakeEntity		( .Entity:BrickBlock ~Vec4d:Entity80241620 80000000 )
+  114:  Call  MakeEntity		( .Entity:BrickBlock ~Vec4d:Entity80241644 80000000 )
+  138:  Call  MakeEntity		( .Entity:YellowBlock ~Vec4d:Entity80241668 .Item:Coin 80000000 )
+  160:  Call  AssignBlockFlag	( *GF_KMR03_ItemBlock_Coin )
+  170:  Call  MakeEntity		( .Entity:SimpleSpring ~Vec4d:Entity802416A0 100` 80000000 )
+  198:  Call  MakeItemEntity	( .Item:Coin ~Vec3d:Item802416C8 .ItemSpawnMode:Fixed_NeverVanish *GF_KMR03_Item_CoinA )
+  1BC:  Call  MakeItemEntity	( .Item:Coin ~Vec3d:Item802416EC .ItemSpawnMode:Fixed_NeverVanish *GF_KMR03_Item_CoinB )
+  1E0:  Call  MakeItemEntity	( .Item:Coin ~Vec3d:Item80241710 .ItemSpawnMode:Fixed_NeverVanish *GF_KMR03_Item_CoinC )
+  204:  Call  MakeItemEntity	( .Item:Coin ~Vec3d:Item80241734 .ItemSpawnMode:Fixed_NeverVanish *GF_KMR03_Item_CoinD )
+  228:  Call  MakeItemEntity	( .Item:FireFlower ~Vec3d:Item80241758 .ItemSpawnMode:Fixed_NeverVanish *GF_KMR02_Item_FireFlower )
+  24C:  Call  MakeEntity		( .Entity:HiddenPanel ~Vec4d:Entity8024177C ~Model:jimen_1 80000000 )
+  274:  Call  AssignPanelFlag	( *GF_KMR03_HiddenPanel )
+  284:  Call  MakeEntity		( .Entity:HealingBlock ~Vec4d:Entity802417B4 80000000 )
+  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_03_1 )
+  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_03_2 )
+  2A8:  Return
+  2B0:  End
+}

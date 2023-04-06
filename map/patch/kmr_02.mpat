@@ -1,0 +1,28 @@
+@ $Script_MakeEntities
+{
+    0:  Switch  *GB_StoryProgress
+    C:  	Case  <  .Story:Ch0_GateCrushed % FFFFFF85
+   18:  	Case  <  .Story:Ch0_SmashedGateBlock % FFFFFF8E
+   24:  		Call  MakeEntity	( .Entity:Hammer1BlockWide ~Vec4d:Entity80254FF4 80000000 )
+   48:  		Call  AssignScript	( $Script_80254A00 )
+   58:  	Case  <  .Story:Ch0_TwinkGaveLuckyStar % FFFFFF98
+   64:  		Call  ModifyColliderFlags	( 00000000 ~Collider:tt2 7FFFFE00 )
+   7C:  EndSwitch
+   84:  If  *GF_KMR02_WarpPipe  ==  .False
+   94:  	If  *GF_TIK01_WarpPipes  ==  .True
+   A4:  		Call  GetEntryID	( *Var0 )
+   B4:  		If  *Var0  !=  ~Entry:Entry3
+   C4:  			Set   *GF_KMR02_WarpPipe  .True
+   D4:  		EndIf
+   DC:  	EndIf
+   E4:  EndIf
+   EC:  Call  MakeEntity	( .Entity:BlueWarpPipe ~Vec4d:Entity802550BC ~Entry:Entry3 $Script_802549D0 ~Index:*GF_KMR02_WarpPipe 80000000 )
+  11C:  Call  MakeEntity	( .Entity:SavePoint ~Vec4d:Entity802550EC 80000000 )
+  140:  If  *GB_StoryProgress  >=  .Story:Ch0_TwinkGaveLuckyStar % FFFFFF98
+  150:  	Call  MakeItemEntity	( .Item:ShootingStar ~Vec3d:Item80255120 .ItemSpawnMode:Fixed_NeverVanish *GF_KMR02_Item_ShootingStar )
+  174:  EndIf
+  Call  MakeItemEntity	( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_02_1 )
+  Call  MakeItemEntity	( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_02_2 )
+  17C:  Return
+  184:  End
+}
