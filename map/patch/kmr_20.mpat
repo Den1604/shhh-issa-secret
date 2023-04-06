@@ -202,3 +202,54 @@
     Return
     End
 }
+
+@ $Script_80250C5C
+{
+    Call  DisablePlayerInput	( .True )
+    Call  SetNpcPos		( 00000001  220`  30`  -70` )
+    Call  SetNpcYaw		( 00000001  90` )
+    Call  UseSettingsFrom		( .Cam:Default  320`  30`  -70` )
+    Call  SetPanTarget	( .Cam:Default  320`  30`  -70` )
+    Call  SetCamSpeed	( .Cam:Default *Fixed[90.0] )
+    Call  PanToTarget	( .Cam:Default 00000000 00000001 )
+    Wait  60`
+    Exec  $Script_8024FCE4
+    Thread
+        Wait  10`
+        Call  SetNpcSpeed	( 00000001 *Fixed[3.0] )
+        Call  SetNpcAnimation	( 00000001 0082000A )
+        Exec  $Script_8024F5A4 *VarA
+        Call  NpcMoveTo		( 00000001  320`  -70`  0` )
+        Call  NpcMoveTo		( 00000001  460`  -70`  0` )
+        Call  NpcMoveTo		( 00000001  570`  -170`  0` )
+        Call  SetNpcAnimation	( 00000001 00820004 )
+        Kill  *VarA
+    EndThread
+    Call  802D1270		( 00000140 FFFFFFBA *Fixed[3.0] )
+    Call  PanToTarget	( .Cam:Default 00000000 00000000 )
+    Call  DisablePlayerInput	( .False )
+%   1D0:  Call  802D1270		( 000001CC FFFFFFBA *Fixed[3.0] )
+%   1E8:  Call  802D1270		( 0000023A FFFFFF56 *Fixed[3.0] )
+%   200:  Call  SetPlayerJumpscale	( *Fixed[1.0] )
+%   210:  Call  PlayerJump	( ~Vec3d:JumpDest_80250E6C  15` )
+%   22C:  ExecWait  $Script_8024F6BC
+%   238:  Call  SetNpcAnimation		( 00000001 0082000C )
+%   24C:  Wait  10`
+%   258:  Thread
+%   260:  	Call  SetNpcAnimation	( 00000001 0082000D )
+%   274:  	Call  PlaySoundAtNpc	( 00000001 .Sound:Jump 00000000 )
+%   28C:  	Wait  7`
+%   298:  	Wait  7`
+%   2A4:  	Call  SetNpcAnimation	( 00000001 00820004 )
+%   2B8:  	Call  PlaySoundAtNpc	( 00000001 .Sound:SoftLand 00000000 )
+%   2D0:  EndThread
+%   2D8:  Call  SetNpcJumpscale	( 00000001 *Fixed[1.0] )
+%   2EC:  Call  NpcJump0	( 00000001  594`  30`  -216`  15` )
+%   30C:  ExecWait  $Script_8024F840
+%   318:  Exec  $Script_80242D78
+%   324:  Call  GotoMap	( $ASCII_80253010 00000005 ) % mac_00
+%   338:  Wait  100`
+%   344:  Call  DisablePlayerInput	( .False )
+    Return
+    End
+}
