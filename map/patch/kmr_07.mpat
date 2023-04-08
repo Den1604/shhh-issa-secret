@@ -1,0 +1,10 @@
+@ $Script_MakeEntities
+{
+    0:  Call  MakeEntity	( .Entity:SimpleSpring ~Vec4d:Entity80241E10 65` 80000000 )
+   28:  Set   *MapVar[0]  *Var0
+   38:  Call  MakeEntity	( .Entity:SavePoint ~Vec4d:Entity80241E48 80000000 )
+   Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_07_1 )
+   Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_07_2 )
+   5C:  Return
+   64:  End
+}

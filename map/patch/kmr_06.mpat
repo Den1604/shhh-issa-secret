@@ -3,3 +3,18 @@
 [B0]  LTW       V1, S2 ($Global_ItemIconRasters)
 [CC]  LTW       A1, S2 ($Global_ItemIconPalettes)
 }
+@ $NpcGroupList_80242580
+{
+	%00000001 $NpcGroup_802421A0 000B0003
+	%00000001 $NpcGroup_80242390 00090003
+	00000000 00000000 00000000
+}
+
+@ $Script_MakeEntities
+{
+    0:  Call  MakeEntity		( .Entity:HealingBlock ~Vec4d:Entity802425B0 80000000 )
+   24:  Call  MakeEntity		( .Entity:RedBlock ~Vec4d:Entity802425D4 .Item:StarPiece 80000000 )
+   4C:  Call  AssignBlockFlag	( *egg_kmr_06_1 )
+   5C:  Return
+   64:  End
+}

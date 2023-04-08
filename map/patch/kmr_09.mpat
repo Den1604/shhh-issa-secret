@@ -1,0 +1,20 @@
+@ $NpcGroupList_8024256C
+{
+	%00000001 $NpcGroup_80241950 00010003
+	%00000001 $NpcGroup_80241B40 00010003
+	%00000001 $NpcGroup_8024218C 00000003
+	%00000001 $NpcGroup_8024237C 00080003
+	00000000 00000000 00000000
+}
+
+@ $Script_MakeEntities
+{
+    0:  Call  MakeEntity		( .Entity:YellowBlock ~Vec4d:Entity802425B0 .Item:Coin 80000000 )
+   28:  Call  AssignBlockFlag	( *GF_KMR09_ItemBlock_CoinA )
+   38:  Call  MakeEntity		( .Entity:RedBlock ~Vec4d:Entity802425E8 .Item:StarPiece 80000000 )
+   Call  AssignBlockFlag	( *egg_kmr_09_1 )
+   5C:  Call  MakeEntity		( .Entity:YellowBlock ~Vec4d:Entity8024260C .Item:Coin 80000000 )
+   84:  Call  AssignBlockFlag	( *GF_KMR09_ItemBlock_CoinB )
+   94:  Return
+   9C:  End
+}

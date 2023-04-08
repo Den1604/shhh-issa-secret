@@ -1,0 +1,20 @@
+@ $Script_MakeEntities
+{
+    0:  Call  MakeEntity	( .Entity:YellowBlock ~Vec4d:Entity80241088 .Item:SleepySheep 80000000 )
+   28:  Call  AssignBlockFlag	( *GF_KMR10_ItemBlock_SleepySheep )
+   38:  Call  MakeEntity	( .Entity:Chest ~Vec4d:Entity802410C0 00000000 80000000 )
+   60:  Call  AssignFlag	( *GF_KMR10_Chest_HammerThrow )
+   70:  Call  AssignScript	( $Script_8024103C )
+   80:  If  *GF_KMR10_KnockedSpringOutOfTree  ==  .False
+   90:  	Call  MakeEntity	( .Entity:ScriptSpring ~Vec4d:Entity80241118 80000000 )
+   B4:  	Call  AssignScript	( $Script_80240F84 )
+   C4:  	Set   *MapVar[0]  *Var0
+   D4:  Else
+   DC:  	Call  MakeEntity	( .Entity:ScriptSpring ~Vec4d:Entity80241164 80000000 )
+  100:  	Call  AssignScript	( $Script_80240F84 )
+  110:  EndIf
+  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_10_1 )
+  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_10_2 )
+  118:  Return
+  120:  End
+}

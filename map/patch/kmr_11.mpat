@@ -1,0 +1,32 @@
+@ $Script_MakeEntities
+{
+    0:  If  *GB_StoryProgress  <=  .Story:Ch0_FoundGatehouseSwitch % FFFFFF91
+   10:  	If  *GB_StoryProgress  ==  .Story:Ch0_FoundGatehouseSwitch % FFFFFF91
+   20:  		Call  MakeEntity		( .Entity:BlueSwitch ~Vec4d:Entity80245EA8 80000000 )
+   44:  		Call  AssignAreaFlag	( 00000004 )
+   54:  		Set   *MapVar[0]  *Var0
+   64:  		Bind  $Script_80242CF4 .Trigger:AreaFlagSet *AreaFlag[004] 00000001 00000000
+   80:  		Bind  $Script_80245AB0 .Trigger:WallPressA ~Collider:tt 00000001 00000000
+   9C:  	Else
+   A4:  		Call  MakeEntity		( .Entity:BlueSwitch ~Vec4d:Entity80245F2C 80000000 )
+   C8:  		Call  AssignAreaFlag	( 00000004 )
+   D8:  		Set   *MapVar[0]  *Var0
+   E8:  		Bind  $Script_80242CF4 .Trigger:AreaFlagSet *AreaFlag[004] 00000001 00000000
+  104:  		Bind  $Script_80245AB0 .Trigger:WallPressA ~Collider:tt 00000001 00000000
+  120:  	EndIf
+  128:  EndIf
+  130:  Call  MakeEntity	( .Entity:BrickBlock ~Vec4d:Entity80245FB8 80000000 )
+  154:  If  *GF_KMR11_ItemBlock_SuperShroom  ==  .False
+  164:  	Call  AssignScript	( $Script_80245DCC )
+  174:  Else
+  17C:  	Call  MakeEntity		( .Entity:YellowBlock ~Vec4d:Entity80246004 .Item:SuperShroom 80000000 )
+  1A4:  	Call  AssignBlockFlag	( *GF_KMR11_ItemBlock_SuperShroom )
+  1B4:  EndIf
+  1BC:  Call  MakeEntity		( .Entity:HiddenPanel ~Vec4d:Entity80246044 ~Model:point 80000000 )
+  1E4:  Call  AssignPanelFlag	( *GF_KMR11_HiddenPanel )
+  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_11_1 )
+  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_11_2 )
+  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg3 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_11_3 )
+  1F4:  Return
+  1FC:  End
+}
