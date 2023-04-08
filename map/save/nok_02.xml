@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="nok_02" author="unnamed" background="nok_bg" textures="nok_tex">
 	<Editor>
-		<Camera pos="321.750549,159.415375,-255.113724" pitch="24.880013" yaw="273.749725"/>
-		<Camera pos="0.000000,65536.000000,-33.000000"/>
+		<Camera pos="-180.458145,60.339119,11.253302" pitch="20.520014" yaw="344.400085"/>
+		<Camera pos="-217.475464,65536.000000,-112.054291"/>
 		<Camera pos="65536.000000,19.000000,-33.000000"/>
 		<Camera pos="0.000000,19.000000,65536.000000"/>
 	</Editor>
@@ -416,7 +416,7 @@
 		</Node>
 	</ZoneTree>
 	<MarkerTree>
-		<Node name="Root" id="28">
+		<Node name="Root" id="2B">
 			<Node name="Entrances" id="4">
 				<Node name="Entry0" id="FFFFFFFF"/>
 				<Node name="Entry1" id="0"/>
@@ -461,6 +461,9 @@
 			<Node name="Bush6_Drop1" id="25"/>
 			<Node name="Bomb_8025421C" id="26"/>
 			<Node name="Egg1" id="27"/>
+			<Node name="Archeologist_20" id="28"/>
+			<Node name="Archeologist_21" id="29"/>
+			<Node name="Kolorado_22" id="2A"/>
 		</Node>
 	</MarkerTree>
 	<LightSets>
@@ -502,7 +505,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o448" id="CC" hidden="true" dumped="true" fileOffset="1A524"/>
+			<MapObject name="o448" id="CC" dumped="true" fileOffset="1A524"/>
 			<ShapeMesh ver="3" texture="nok_midori03tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -537,7 +540,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o447" id="CA" hidden="true" dumped="true" fileOffset="1A408"/>
+			<MapObject name="o447" id="CA" dumped="true" fileOffset="1A408"/>
 			<ShapeMesh ver="3" texture="nok_midori03tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -572,7 +575,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o446" id="C8" hidden="true" dumped="true" fileOffset="1A2EC"/>
+			<MapObject name="o446" id="C8" dumped="true" fileOffset="1A2EC"/>
 			<ShapeMesh ver="3" texture="nok_midori03tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -607,7 +610,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o445" id="C6" hidden="true" dumped="true" fileOffset="1A1D0"/>
+			<MapObject name="o445" id="C6" dumped="true" fileOffset="1A1D0"/>
 			<ShapeMesh ver="3" texture="nok_midori03tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -642,7 +645,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o444" id="C4" hidden="true" dumped="true" fileOffset="1A0B4"/>
+			<MapObject name="o444" id="C4" dumped="true" fileOffset="1A0B4"/>
 			<ShapeMesh ver="3" texture="nok_midori03tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -677,7 +680,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o443" id="C2" hidden="true" dumped="true" fileOffset="19F98"/>
+			<MapObject name="o443" id="C2" dumped="true" fileOffset="19F98"/>
 			<ShapeMesh ver="3" texture="nok_midori03tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -711,7 +714,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0" panUnit="0">
-			<MapObject name="o314" id="C0" hidden="true" dumped="true" fileOffset="19E64"/>
+			<MapObject name="o314" id="C0" dumped="true" fileOffset="19E64"/>
 			<ShapeMesh ver="3" texture="nok_hanastif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -751,7 +754,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0" panUnit="0">
-			<MapObject name="o459" id="BE" hidden="true" dumped="true" fileOffset="19D40"/>
+			<MapObject name="o459" id="BE" dumped="true" fileOffset="19D40"/>
 			<ShapeMesh ver="3" texture="nok_hanastif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -777,7 +780,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0" panUnit="0">
-			<MapObject name="o458" id="BD" hidden="true" dumped="true" fileOffset="19CB8"/>
+			<MapObject name="o458" id="BD" dumped="true" fileOffset="19CB8"/>
 			<ShapeMesh ver="3" texture="nok_hanastif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -803,7 +806,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0" panUnit="0">
-			<MapObject name="o457" id="BC" hidden="true" dumped="true" fileOffset="19C30"/>
+			<MapObject name="o457" id="BC" dumped="true" fileOffset="19C30"/>
 			<ShapeMesh ver="3" texture="nok_hanastif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -837,7 +840,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0" panUnit="0">
-			<MapObject name="o456" id="BA" hidden="true" dumped="true" fileOffset="19B0C"/>
+			<MapObject name="o456" id="BA" dumped="true" fileOffset="19B0C"/>
 			<ShapeMesh ver="3" texture="nok_hanastif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -863,7 +866,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0" panUnit="0">
-			<MapObject name="o455" id="B9" hidden="true" dumped="true" fileOffset="19A84"/>
+			<MapObject name="o455" id="B9" dumped="true" fileOffset="19A84"/>
 			<ShapeMesh ver="3" texture="nok_hanastif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -889,7 +892,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0" panUnit="0">
-			<MapObject name="o454" id="B8" hidden="true" dumped="true" fileOffset="199FC"/>
+			<MapObject name="o454" id="B8" dumped="true" fileOffset="199FC"/>
 			<ShapeMesh ver="3" texture="nok_hanastif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -915,7 +918,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0" panUnit="0">
-			<MapObject name="o462" id="B7" hidden="true" dumped="true" fileOffset="19974"/>
+			<MapObject name="o462" id="B7" dumped="true" fileOffset="19974"/>
 			<ShapeMesh ver="3" texture="nok_hanastif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -941,7 +944,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0" panUnit="0">
-			<MapObject name="o461" id="B6" hidden="true" dumped="true" fileOffset="198EC"/>
+			<MapObject name="o461" id="B6" dumped="true" fileOffset="198EC"/>
 			<ShapeMesh ver="3" texture="nok_hanastif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -967,7 +970,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0" panUnit="0">
-			<MapObject name="o460" id="B5" hidden="true" dumped="true" fileOffset="19864"/>
+			<MapObject name="o460" id="B5" dumped="true" fileOffset="19864"/>
 			<ShapeMesh ver="3" texture="nok_hanastif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -993,7 +996,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0" panUnit="0">
-			<MapObject name="o312" id="B4" hidden="true" dumped="true" fileOffset="197DC"/>
+			<MapObject name="o312" id="B4" dumped="true" fileOffset="197DC"/>
 			<ShapeMesh ver="3" texture="nok_hanastif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1057,7 +1060,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o311" id="B2" hidden="true" dumped="true" fileOffset="196C0"/>
+			<MapObject name="o311" id="B2" dumped="true" fileOffset="196C0"/>
 			<ShapeMesh ver="3" texture="nok_back_2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1177,7 +1180,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o310" id="B0" hidden="true" dumped="true" fileOffset="195A4"/>
+			<MapObject name="o310" id="B0" dumped="true" fileOffset="195A4"/>
 			<ShapeMesh ver="3" texture="nok_kabekusatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1247,7 +1250,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o318" id="AE" hidden="true" dumped="true" fileOffset="1946C"/>
+			<MapObject name="o318" id="AE" dumped="true" fileOffset="1946C"/>
 			<ShapeMesh ver="3" texture="nok_kusakusa1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1273,7 +1276,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o267" id="AD" hidden="true" dumped="true" fileOffset="193E4"/>
+			<MapObject name="o267" id="AD" dumped="true" fileOffset="193E4"/>
 			<ShapeMesh ver="3" texture="nok_kusakusa1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1299,7 +1302,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o266" id="AC" hidden="true" dumped="true" fileOffset="1935C"/>
+			<MapObject name="o266" id="AC" dumped="true" fileOffset="1935C"/>
 			<ShapeMesh ver="3" texture="nok_kusakusa1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1325,7 +1328,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o265" id="AB" hidden="true" dumped="true" fileOffset="192D4"/>
+			<MapObject name="o265" id="AB" dumped="true" fileOffset="192D4"/>
 			<ShapeMesh ver="3" texture="nok_kusakusa1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1351,7 +1354,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o264" id="AA" hidden="true" dumped="true" fileOffset="1924C"/>
+			<MapObject name="o264" id="AA" dumped="true" fileOffset="1924C"/>
 			<ShapeMesh ver="3" texture="nok_kusakusa1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1377,7 +1380,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o263" id="A9" hidden="true" dumped="true" fileOffset="191C4"/>
+			<MapObject name="o263" id="A9" dumped="true" fileOffset="191C4"/>
 			<ShapeMesh ver="3" texture="nok_kusakusa1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1403,7 +1406,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o261" id="A8" hidden="true" dumped="true" fileOffset="1913C"/>
+			<MapObject name="o261" id="A8" dumped="true" fileOffset="1913C"/>
 			<ShapeMesh ver="3" texture="nok_kusakusa1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1429,7 +1432,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o260" id="A7" hidden="true" dumped="true" fileOffset="190B4"/>
+			<MapObject name="o260" id="A7" dumped="true" fileOffset="190B4"/>
 			<ShapeMesh ver="3" texture="nok_kusakusa1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1463,7 +1466,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o269" id="A5" hidden="true" dumped="true" fileOffset="18F90"/>
+			<MapObject name="o269" id="A5" dumped="true" fileOffset="18F90"/>
 			<ShapeMesh ver="3" texture="nok_sakutif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1495,7 +1498,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o280" id="A4" hidden="true" dumped="true" fileOffset="18F08"/>
+			<MapObject name="o280" id="A4" dumped="true" fileOffset="18F08"/>
 			<ShapeMesh ver="3" texture="nok_sakutif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1539,7 +1542,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o281" id="A3" hidden="true" dumped="true" fileOffset="18E80"/>
+			<MapObject name="o281" id="A3" dumped="true" fileOffset="18E80"/>
 			<ShapeMesh ver="3" texture="nok_sakutif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1599,7 +1602,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o284" id="A0" hidden="true" dumped="true" fileOffset="18CC4"/>
+			<MapObject name="o284" id="A0" dumped="true" fileOffset="18CC4"/>
 			<ShapeMesh ver="3" texture="nok_hapa34tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1718,7 +1721,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o283" id="9F" hidden="true" dumped="true" fileOffset="18C3C"/>
+			<MapObject name="o283" id="9F" dumped="true" fileOffset="18C3C"/>
 			<ShapeMesh ver="3" texture="nok_miki4tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1809,7 +1812,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o308" id="9D" hidden="true" dumped="true" fileOffset="18B1C"/>
+			<MapObject name="o308" id="9D" dumped="true" fileOffset="18B1C"/>
 			<ShapeMesh ver="3" texture="nok_hapa34tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1889,7 +1892,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o307" id="9C" hidden="true" dumped="true" fileOffset="18A94"/>
+			<MapObject name="o307" id="9C" dumped="true" fileOffset="18A94"/>
 			<ShapeMesh ver="3" texture="nok_miki4tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1979,7 +1982,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o291" id="9A" hidden="true" dumped="true" fileOffset="18968"/>
+			<MapObject name="o291" id="9A" dumped="true" fileOffset="18968"/>
 			<ShapeMesh ver="3" texture="nok_hapa34tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2027,7 +2030,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o289" id="99" hidden="true" dumped="true" fileOffset="188E0"/>
+			<MapObject name="o289" id="99" dumped="true" fileOffset="188E0"/>
 			<ShapeMesh ver="3" texture="nok_hapa34tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2075,7 +2078,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o288" id="98" hidden="true" dumped="true" fileOffset="18858"/>
+			<MapObject name="o288" id="98" dumped="true" fileOffset="18858"/>
 			<ShapeMesh ver="3" texture="nok_hapa34tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2123,7 +2126,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o287" id="97" hidden="true" dumped="true" fileOffset="187D0"/>
+			<MapObject name="o287" id="97" dumped="true" fileOffset="187D0"/>
 			<ShapeMesh ver="3" texture="nok_hapa34tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2172,7 +2175,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o282" id="96" hidden="true" dumped="true" fileOffset="18748"/>
+			<MapObject name="o282" id="96" dumped="true" fileOffset="18748"/>
 			<ShapeMesh ver="3" texture="nok_miki4tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2287,7 +2290,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o226" id="91" hidden="true" dumped="true" fileOffset="1845C"/>
+			<MapObject name="o226" id="91" dumped="true" fileOffset="1845C"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2343,7 +2346,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o224" id="8F" hidden="true" dumped="true" fileOffset="18334"/>
+			<MapObject name="o224" id="8F" dumped="true" fileOffset="18334"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2423,7 +2426,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o223" id="8E" hidden="true" dumped="true" fileOffset="182AC"/>
+			<MapObject name="o223" id="8E" dumped="true" fileOffset="182AC"/>
 			<ShapeMesh ver="3" texture="nok_block_ctif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2477,7 +2480,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o222" id="8D" hidden="true" dumped="true" fileOffset="18224"/>
+			<MapObject name="o222" id="8D" dumped="true" fileOffset="18224"/>
 			<ShapeMesh ver="3" texture="nok_blooktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2521,7 +2524,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o225" id="8C" hidden="true" dumped="true" fileOffset="1819C"/>
+			<MapObject name="o225" id="8C" dumped="true" fileOffset="1819C"/>
 			<ShapeMesh ver="3" texture="nok_blooktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2607,7 +2610,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o212" id="89" hidden="true" dumped="true" fileOffset="17FDC"/>
+			<MapObject name="o212" id="89" dumped="true" fileOffset="17FDC"/>
 			<ShapeMesh ver="3" texture="nok_mado_9tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2633,7 +2636,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o453" id="88" hidden="true" dumped="true" fileOffset="17F54"/>
+			<MapObject name="o453" id="88" dumped="true" fileOffset="17F54"/>
 			<ShapeMesh ver="3" texture="nok_blooktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2659,7 +2662,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o209" id="87" hidden="true" dumped="true" fileOffset="17ECC"/>
+			<MapObject name="o209" id="87" dumped="true" fileOffset="17ECC"/>
 			<ShapeMesh ver="3" texture="nok_blooktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2737,7 +2740,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o208" id="86" hidden="true" dumped="true" fileOffset="17E44"/>
+			<MapObject name="o208" id="86" dumped="true" fileOffset="17E44"/>
 			<ShapeMesh ver="3" texture="nok_block_ctif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2779,7 +2782,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o207" id="85" hidden="true" dumped="true" fileOffset="17DBC"/>
+			<MapObject name="o207" id="85" dumped="true" fileOffset="17DBC"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2882,7 +2885,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o356" id="82" hidden="true" dumped="true" fileOffset="17BF8"/>
+			<MapObject name="o356" id="82" dumped="true" fileOffset="17BF8"/>
 			<ShapeMesh ver="3" texture="nok_simatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2938,7 +2941,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o355" id="81" hidden="true" dumped="true" fileOffset="17B70"/>
+			<MapObject name="o355" id="81" dumped="true" fileOffset="17B70"/>
 			<ShapeMesh ver="3" texture="nok_yuka6tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3058,7 +3061,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o210" id="80" hidden="true" dumped="true" fileOffset="17AE8"/>
+			<MapObject name="o210" id="80" dumped="true" fileOffset="17AE8"/>
 			<ShapeMesh ver="3" texture="nok_sabaku_btif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3101,7 +3104,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o465" id="7F" hidden="true" dumped="true" fileOffset="17A60"/>
+			<MapObject name="o465" id="7F" dumped="true" fileOffset="17A60"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3169,7 +3172,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o211" id="7E" hidden="true" dumped="true" fileOffset="179D8"/>
+			<MapObject name="o211" id="7E" dumped="true" fileOffset="179D8"/>
 			<ShapeMesh ver="3" texture="nok_yuka6tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3265,7 +3268,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o478" id="7B" hidden="true" dumped="true" fileOffset="17804"/>
+			<MapObject name="o478" id="7B" dumped="true" fileOffset="17804"/>
 			<ShapeMesh ver="3" texture="">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3325,7 +3328,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o477" id="7A" hidden="true" dumped="true" fileOffset="1777C"/>
+			<MapObject name="o477" id="7A" dumped="true" fileOffset="1777C"/>
 			<ShapeMesh ver="3" texture="">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3367,7 +3370,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o476" id="79" hidden="true" dumped="true" fileOffset="176F4"/>
+			<MapObject name="o476" id="79" dumped="true" fileOffset="176F4"/>
 			<ShapeMesh ver="3" texture="">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3489,7 +3492,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o475" id="78" hidden="true" dumped="true" fileOffset="1766C"/>
+			<MapObject name="o475" id="78" dumped="true" fileOffset="1766C"/>
 			<ShapeMesh ver="3" texture="nok_miki4tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3545,7 +3548,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o474" id="77" hidden="true" dumped="true" fileOffset="175E4"/>
+			<MapObject name="o474" id="77" dumped="true" fileOffset="175E4"/>
 			<ShapeMesh ver="3" texture="">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3574,7 +3577,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o473" id="76" hidden="true" dumped="true" fileOffset="1755C"/>
+			<MapObject name="o473" id="76" dumped="true" fileOffset="1755C"/>
 			<ShapeMesh ver="3" texture="nok_yuka6tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3626,7 +3629,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o472" id="74" hidden="true" dumped="true" fileOffset="17434"/>
+			<MapObject name="o472" id="74" dumped="true" fileOffset="17434"/>
 			<ShapeMesh ver="3" texture="nok_midori03tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3682,7 +3685,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o469" id="73" hidden="true" dumped="true" fileOffset="173AC"/>
+			<MapObject name="o469" id="73" dumped="true" fileOffset="173AC"/>
 			<ShapeMesh ver="3" texture="">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3797,7 +3800,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o471" id="72" hidden="true" dumped="true" fileOffset="17324"/>
+			<MapObject name="o471" id="72" dumped="true" fileOffset="17324"/>
 			<ShapeMesh ver="3" texture="">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3927,7 +3930,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o468" id="71" hidden="true" dumped="true" fileOffset="1729C"/>
+			<MapObject name="o468" id="71" dumped="true" fileOffset="1729C"/>
 			<ShapeMesh ver="3" texture="nok_yuka6tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4025,7 +4028,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o434" id="6F" hidden="true" dumped="true" fileOffset="1717C"/>
+			<MapObject name="o434" id="6F" dumped="true" fileOffset="1717C"/>
 			<ShapeMesh ver="3" texture="">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4075,7 +4078,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o433" id="6E" hidden="true" dumped="true" fileOffset="170F4"/>
+			<MapObject name="o433" id="6E" dumped="true" fileOffset="170F4"/>
 			<ShapeMesh ver="3" texture="nok_radio2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4125,7 +4128,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o442" id="6D" hidden="true" dumped="true" fileOffset="1706C"/>
+			<MapObject name="o442" id="6D" dumped="true" fileOffset="1706C"/>
 			<ShapeMesh ver="3" texture="nok_yuka6tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4253,7 +4256,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o441" id="6C" hidden="true" dumped="true" fileOffset="16FE4"/>
+			<MapObject name="o441" id="6C" dumped="true" fileOffset="16FE4"/>
 			<ShapeMesh ver="3" texture="nok_yuka6tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4409,7 +4412,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o185" id="68" hidden="true" dumped="true" fileOffset="16D90"/>
+			<MapObject name="o185" id="68" dumped="true" fileOffset="16D90"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4465,7 +4468,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o183" id="66" hidden="true" dumped="true" fileOffset="16C74"/>
+			<MapObject name="o183" id="66" dumped="true" fileOffset="16C74"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4521,7 +4524,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o182" id="64" hidden="true" dumped="true" fileOffset="16B4C"/>
+			<MapObject name="o182" id="64" dumped="true" fileOffset="16B4C"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4589,7 +4592,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o180" id="63" hidden="true" dumped="true" fileOffset="16AC4"/>
+			<MapObject name="o180" id="63" dumped="true" fileOffset="16AC4"/>
 			<ShapeMesh ver="3" texture="nok_block_ctif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4629,7 +4632,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o171" id="62" hidden="true" dumped="true" fileOffset="16A3C"/>
+			<MapObject name="o171" id="62" dumped="true" fileOffset="16A3C"/>
 			<ShapeMesh ver="3" texture="nok_mado_9tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4655,7 +4658,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o181" id="61" hidden="true" dumped="true" fileOffset="169B4"/>
+			<MapObject name="o181" id="61" dumped="true" fileOffset="169B4"/>
 			<ShapeMesh ver="3" texture="nok_blooktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4737,7 +4740,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o168" id="5F" hidden="true" dumped="true" fileOffset="16884"/>
+			<MapObject name="o168" id="5F" dumped="true" fileOffset="16884"/>
 			<ShapeMesh ver="3" texture="nok_blooktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4811,7 +4814,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o167" id="5E" hidden="true" dumped="true" fileOffset="167FC"/>
+			<MapObject name="o167" id="5E" dumped="true" fileOffset="167FC"/>
 			<ShapeMesh ver="3" texture="nok_block_ctif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4886,7 +4889,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o166" id="5D" hidden="true" dumped="true" fileOffset="16774"/>
+			<MapObject name="o166" id="5D" dumped="true" fileOffset="16774"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -5037,7 +5040,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o165" id="5C" hidden="true" dumped="true" fileOffset="166EC"/>
+			<MapObject name="o165" id="5C" dumped="true" fileOffset="166EC"/>
 			<ShapeMesh ver="3" texture="nok_blooktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -5081,7 +5084,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o179" id="5B" hidden="true" dumped="true" fileOffset="16664"/>
+			<MapObject name="o179" id="5B" dumped="true" fileOffset="16664"/>
 			<ShapeMesh ver="3" texture="nok_blooktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -5133,7 +5136,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o432" id="59" hidden="true" dumped="true" fileOffset="16540"/>
+			<MapObject name="o432" id="59" dumped="true" fileOffset="16540"/>
 			<ShapeMesh ver="3" texture="nok_n_yasikitif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -5215,7 +5218,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o431" id="58" hidden="true" dumped="true" fileOffset="164B8"/>
+			<MapObject name="o431" id="58" dumped="true" fileOffset="164B8"/>
 			<ShapeMesh ver="3" texture="nok_n_yasihatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -5275,7 +5278,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o430" id="57" hidden="true" dumped="true" fileOffset="16430"/>
+			<MapObject name="o430" id="57" dumped="true" fileOffset="16430"/>
 			<ShapeMesh ver="3" texture="nok_hana_ftif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -5456,7 +5459,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o184" id="54" hidden="true" dumped="true" fileOffset="16268"/>
+			<MapObject name="o184" id="54" dumped="true" fileOffset="16268"/>
 			<ShapeMesh ver="3" texture="">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -5498,7 +5501,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o420" id="52" hidden="true" dumped="true" fileOffset="1614C"/>
+			<MapObject name="o420" id="52" dumped="true" fileOffset="1614C"/>
 			<ShapeMesh ver="3" texture="">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -5536,7 +5539,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o486" id="50" hidden="true" dumped="true" fileOffset="1602C"/>
+			<MapObject name="o486" id="50" dumped="true" fileOffset="1602C"/>
 			<ShapeMesh ver="3" texture="">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -5592,7 +5595,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o487" id="4F" hidden="true" dumped="true" fileOffset="15FA4"/>
+			<MapObject name="o487" id="4F" dumped="true" fileOffset="15FA4"/>
 			<ShapeMesh ver="3" texture="nok_amitif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -5670,7 +5673,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o480" id="4D" hidden="true" dumped="true" fileOffset="15E7C"/>
+			<MapObject name="o480" id="4D" dumped="true" fileOffset="15E7C"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -5774,7 +5777,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o479" id="4C" hidden="true" dumped="true" fileOffset="15DF4"/>
+			<MapObject name="o479" id="4C" dumped="true" fileOffset="15DF4"/>
 			<ShapeMesh ver="3" texture="nok_yuka6tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -5824,7 +5827,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o169" id="4B" hidden="true" dumped="true" fileOffset="15D6C"/>
+			<MapObject name="o169" id="4B" dumped="true" fileOffset="15D6C"/>
 			<ShapeMesh ver="3" texture="nok_sabaku_btif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -5856,7 +5859,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o170" id="4A" hidden="true" dumped="true" fileOffset="15CE4"/>
+			<MapObject name="o170" id="4A" dumped="true" fileOffset="15CE4"/>
 			<ShapeMesh ver="3" texture="nok_kabegami_ftif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -6000,7 +6003,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o423" id="48" hidden="true" dumped="true" fileOffset="15BC0"/>
+			<MapObject name="o423" id="48" dumped="true" fileOffset="15BC0"/>
 			<ShapeMesh ver="3" texture="nok_n_yasikitif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -6066,7 +6069,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o422" id="47" hidden="true" dumped="true" fileOffset="15B38"/>
+			<MapObject name="o422" id="47" dumped="true" fileOffset="15B38"/>
 			<ShapeMesh ver="3" texture="nok_n_yasihatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -6126,7 +6129,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o421" id="46" hidden="true" dumped="true" fileOffset="15AB0"/>
+			<MapObject name="o421" id="46" dumped="true" fileOffset="15AB0"/>
 			<ShapeMesh ver="3" texture="nok_hana_ftif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -6298,7 +6301,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o489" id="44" hidden="true" dumped="true" fileOffset="1598C"/>
+			<MapObject name="o489" id="44" dumped="true" fileOffset="1598C"/>
 			<ShapeMesh ver="3" texture="nok_yuka6tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -6426,7 +6429,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o483" id="43" hidden="true" dumped="true" fileOffset="15904"/>
+			<MapObject name="o483" id="43" dumped="true" fileOffset="15904"/>
 			<ShapeMesh ver="3" texture="nok_hontif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -6464,7 +6467,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o482" id="42" hidden="true" dumped="true" fileOffset="1587C"/>
+			<MapObject name="o482" id="42" dumped="true" fileOffset="1587C"/>
 			<ShapeMesh ver="3" texture="nok_hon2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -6536,7 +6539,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o426" id="40" hidden="true" dumped="true" fileOffset="1575C"/>
+			<MapObject name="o426" id="40" dumped="true" fileOffset="1575C"/>
 			<ShapeMesh ver="3" texture="">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -6586,7 +6589,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o425" id="3F" hidden="true" dumped="true" fileOffset="156D4"/>
+			<MapObject name="o425" id="3F" dumped="true" fileOffset="156D4"/>
 			<ShapeMesh ver="3" texture="nok_radio2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -6661,7 +6664,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o149" id="3B" hidden="true" dumped="true" fileOffset="1547C"/>
+			<MapObject name="o149" id="3B" dumped="true" fileOffset="1547C"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -6717,7 +6720,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o371" id="39" hidden="true" dumped="true" fileOffset="1535C"/>
+			<MapObject name="o371" id="39" dumped="true" fileOffset="1535C"/>
 			<ShapeMesh ver="3" texture="nok_yuka6tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -6767,7 +6770,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o148" id="38" hidden="true" dumped="true" fileOffset="152D4"/>
+			<MapObject name="o148" id="38" dumped="true" fileOffset="152D4"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -6808,7 +6811,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o155" id="36" hidden="true" dumped="true" fileOffset="151B0"/>
+			<MapObject name="o155" id="36" dumped="true" fileOffset="151B0"/>
 			<ShapeMesh ver="3" texture="nok_block_ctif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -6842,7 +6845,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o154" id="35" hidden="true" dumped="true" fileOffset="15128"/>
+			<MapObject name="o154" id="35" dumped="true" fileOffset="15128"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -6898,7 +6901,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o156" id="34" hidden="true" dumped="true" fileOffset="150A0"/>
+			<MapObject name="o156" id="34" dumped="true" fileOffset="150A0"/>
 			<ShapeMesh ver="3" texture="nok_blooktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -6963,7 +6966,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o153" id="32" hidden="true" dumped="true" fileOffset="14F78"/>
+			<MapObject name="o153" id="32" dumped="true" fileOffset="14F78"/>
 			<ShapeMesh ver="3" texture="nok_block_ctif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -7017,7 +7020,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o152" id="31" hidden="true" dumped="true" fileOffset="14EF0"/>
+			<MapObject name="o152" id="31" dumped="true" fileOffset="14EF0"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -7097,7 +7100,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o150" id="30" hidden="true" dumped="true" fileOffset="14E68"/>
+			<MapObject name="o150" id="30" dumped="true" fileOffset="14E68"/>
 			<ShapeMesh ver="3" texture="nok_blooktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -7141,7 +7144,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o151" id="2F" hidden="true" dumped="true" fileOffset="14DE0"/>
+			<MapObject name="o151" id="2F" dumped="true" fileOffset="14DE0"/>
 			<ShapeMesh ver="3" texture="nok_blooktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -7227,7 +7230,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o238" id="2C" hidden="true" dumped="true" fileOffset="14C20"/>
+			<MapObject name="o238" id="2C" dumped="true" fileOffset="14C20"/>
 			<ShapeMesh ver="3" texture="nok_mado_9tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -7253,7 +7256,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o452" id="2B" hidden="true" dumped="true" fileOffset="14B98"/>
+			<MapObject name="o452" id="2B" dumped="true" fileOffset="14B98"/>
 			<ShapeMesh ver="3" texture="nok_blooktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -7279,7 +7282,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o147" id="2A" hidden="true" dumped="true" fileOffset="14B10"/>
+			<MapObject name="o147" id="2A" dumped="true" fileOffset="14B10"/>
 			<ShapeMesh ver="3" texture="nok_blooktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -7333,7 +7336,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o146" id="29" hidden="true" dumped="true" fileOffset="14A88"/>
+			<MapObject name="o146" id="29" dumped="true" fileOffset="14A88"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -7389,7 +7392,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o145" id="28" hidden="true" dumped="true" fileOffset="14A00"/>
+			<MapObject name="o145" id="28" dumped="true" fileOffset="14A00"/>
 			<ShapeMesh ver="3" texture="nok_block_ctif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -7439,7 +7442,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o239" id="25" hidden="true" dumped="true" fileOffset="14834"/>
+			<MapObject name="o239" id="25" dumped="true" fileOffset="14834"/>
 			<ShapeMesh ver="3" texture="nok_yuka7tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -7483,7 +7486,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o164" id="24" hidden="true" dumped="true" fileOffset="147AC"/>
+			<MapObject name="o164" id="24" dumped="true" fileOffset="147AC"/>
 			<ShapeMesh ver="3" texture="nok_yuka7tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -7533,7 +7536,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o370" id="23" hidden="true" dumped="true" fileOffset="14724"/>
+			<MapObject name="o370" id="23" dumped="true" fileOffset="14724"/>
 			<ShapeMesh ver="3" texture="nok_yuka6tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -7591,7 +7594,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o163" id="22" hidden="true" dumped="true" fileOffset="1469C"/>
+			<MapObject name="o163" id="22" dumped="true" fileOffset="1469C"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -7726,7 +7729,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o390" id="20" hidden="true" dumped="true" fileOffset="14574"/>
+			<MapObject name="o390" id="20" dumped="true" fileOffset="14574"/>
 			<ShapeMesh ver="3" texture="nok_hontif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -7943,7 +7946,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o377" id="1F" hidden="true" dumped="true" fileOffset="144EC"/>
+			<MapObject name="o377" id="1F" dumped="true" fileOffset="144EC"/>
 			<ShapeMesh ver="3" texture="nok_hon2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -8063,7 +8066,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o374" id="1E" hidden="true" dumped="true" fileOffset="14464"/>
+			<MapObject name="o374" id="1E" dumped="true" fileOffset="14464"/>
 			<ShapeMesh ver="3" texture="nok_hon2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -8164,7 +8167,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o393" id="1D" hidden="true" dumped="true" fileOffset="143DC"/>
+			<MapObject name="o393" id="1D" dumped="true" fileOffset="143DC"/>
 			<ShapeMesh ver="3" texture="nok_hontif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -8401,7 +8404,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o373" id="1B" hidden="true" dumped="true" fileOffset="142C0"/>
+			<MapObject name="o373" id="1B" dumped="true" fileOffset="142C0"/>
 			<ShapeMesh ver="3" texture="nok_yuka6tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -8535,7 +8538,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o494" id="19" hidden="true" dumped="true" fileOffset="14194"/>
+			<MapObject name="o494" id="19" dumped="true" fileOffset="14194"/>
 			<ShapeMesh ver="3" texture="nok_tesuritif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -8718,7 +8721,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o492" id="18" hidden="true" dumped="true" fileOffset="1410C"/>
+			<MapObject name="o492" id="18" dumped="true" fileOffset="1410C"/>
 			<ShapeMesh ver="3" texture="nok_huton_02tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -8786,7 +8789,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o161" id="17" hidden="true" dumped="true" fileOffset="14084"/>
+			<MapObject name="o161" id="17" dumped="true" fileOffset="14084"/>
 			<ShapeMesh ver="3" texture="nok_yukatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -8816,7 +8819,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o236" id="16" hidden="true" dumped="true" fileOffset="13FFC"/>
+			<MapObject name="o236" id="16" dumped="true" fileOffset="13FFC"/>
 			<ShapeMesh ver="3" texture="nok_yuka6tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -8980,7 +8983,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o158" id="15" hidden="true" dumped="true" fileOffset="13F74"/>
+			<MapObject name="o158" id="15" dumped="true" fileOffset="13F74"/>
 			<ShapeMesh ver="3" texture="nok_tana_3tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -9102,7 +9105,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o240" id="13" hidden="true" dumped="true" fileOffset="13E50"/>
+			<MapObject name="o240" id="13" dumped="true" fileOffset="13E50"/>
 			<ShapeMesh ver="3" texture="nok_tizutif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -9132,7 +9135,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o162" id="12" hidden="true" dumped="true" fileOffset="13DC8"/>
+			<MapObject name="o162" id="12" dumped="true" fileOffset="13DC8"/>
 			<ShapeMesh ver="3" texture="nok_block_ctif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -9164,7 +9167,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o160" id="11" hidden="true" dumped="true" fileOffset="13D40"/>
+			<MapObject name="o160" id="11" dumped="true" fileOffset="13D40"/>
 			<ShapeMesh ver="3" texture="nok_blooktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -9212,7 +9215,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o501" id="E" hidden="true" dumped="true" fileOffset="13B64"/>
+			<MapObject name="o501" id="E" dumped="true" fileOffset="13B64"/>
 			<ShapeMesh ver="3" texture="nok_jimentif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -9294,7 +9297,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o418" id="D" hidden="true" dumped="true" fileOffset="13ADC"/>
+			<MapObject name="o418" id="D" dumped="true" fileOffset="13ADC"/>
 			<ShapeMesh ver="3" texture="nok_green_etif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -9378,7 +9381,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o353" id="B" hidden="true" dumped="true" fileOffset="139B8"/>
+			<MapObject name="o353" id="B" dumped="true" fileOffset="139B8"/>
 			<ShapeMesh ver="3" texture="nok_jimentif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -9457,7 +9460,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o351" id="A" hidden="true" dumped="true" fileOffset="138AC"/>
+			<MapObject name="o351" id="A" dumped="true" fileOffset="138AC"/>
 			<ShapeMesh ver="3" texture="nok_green_etif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -9525,7 +9528,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o500" id="9" hidden="true" dumped="true" fileOffset="13824"/>
+			<MapObject name="o500" id="9" dumped="true" fileOffset="13824"/>
 			<ShapeMesh ver="3" texture="nok_jimentif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -9567,7 +9570,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o4" id="8" hidden="true" dumped="true" fileOffset="1379C"/>
+			<MapObject name="o4" id="8" dumped="true" fileOffset="1379C"/>
 			<ShapeMesh ver="3" texture="nok_green_etif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -9782,7 +9785,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o274" id="7" hidden="true" dumped="true" fileOffset="13690"/>
+			<MapObject name="o274" id="7" dumped="true" fileOffset="13690"/>
 			<ShapeMesh ver="3" texture="nok_renga12tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -9820,7 +9823,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o234" id="6" hidden="true" dumped="true" fileOffset="13608"/>
+			<MapObject name="o234" id="6" dumped="true" fileOffset="13608"/>
 			<ShapeMesh ver="3" texture="nok_renga_edgetif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -9846,7 +9849,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o3" id="5" hidden="true" dumped="true" fileOffset="13580"/>
+			<MapObject name="o3" id="5" dumped="true" fileOffset="13580"/>
 			<ShapeMesh ver="3" texture="nok_renga10tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -9903,7 +9906,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o1" id="4" hidden="true" dumped="true" fileOffset="13474"/>
+			<MapObject name="o1" id="4" dumped="true" fileOffset="13474"/>
 			<ShapeMesh ver="3" texture="nok_frametif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -9957,7 +9960,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o258" id="3" hidden="true" dumped="true" fileOffset="133EC"/>
+			<MapObject name="o258" id="3" dumped="true" fileOffset="133EC"/>
 			<ShapeMesh ver="3" texture="nok_berosaidetif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -9995,7 +9998,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o270" id="2" hidden="true" dumped="true" fileOffset="13364"/>
+			<MapObject name="o270" id="2" dumped="true" fileOffset="13364"/>
 			<ShapeMesh ver="3" texture="nok_berosaidetif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -10033,7 +10036,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o259" id="1" hidden="true" dumped="true" fileOffset="132DC"/>
+			<MapObject name="o259" id="1" dumped="true" fileOffset="132DC"/>
 			<ShapeMesh ver="3" texture="nok_renga_edgetif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -10059,7 +10062,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="o271" id="0" hidden="true" dumped="true" fileOffset="13254"/>
+			<MapObject name="o271" id="0" dumped="true" fileOffset="13254"/>
 			<ShapeMesh ver="3" texture="nok_renga_edgetif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -10091,7 +10094,7 @@
 			<HitObject type="ROOT"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="DoorCollider" id="56"/>
+			<MapObject name="DoorCollider" id="56" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10119,7 +10122,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o461" id="54" dumped="true" fileOffset="1A00"/>
+			<MapObject name="o461" id="54" hidden="true" dumped="true" fileOffset="1A00"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10137,7 +10140,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o460" id="53" dumped="true" fileOffset="19F4"/>
+			<MapObject name="o460" id="53" hidden="true" dumped="true" fileOffset="19F4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10155,7 +10158,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o459" id="52" dumped="true" fileOffset="19E8"/>
+			<MapObject name="o459" id="52" hidden="true" dumped="true" fileOffset="19E8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10173,7 +10176,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o458" id="51" dumped="true" fileOffset="19DC"/>
+			<MapObject name="o458" id="51" hidden="true" dumped="true" fileOffset="19DC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10191,7 +10194,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o427" id="50" dumped="true" fileOffset="19D0"/>
+			<MapObject name="o427" id="50" hidden="true" dumped="true" fileOffset="19D0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10209,7 +10212,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o332" id="4F" dumped="true" fileOffset="19C4"/>
+			<MapObject name="o332" id="4F" hidden="true" dumped="true" fileOffset="19C4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10227,7 +10230,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o346" id="4E" dumped="true" fileOffset="19B8"/>
+			<MapObject name="o346" id="4E" hidden="true" dumped="true" fileOffset="19B8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10284,7 +10287,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o282" id="4A" dumped="true" fileOffset="1988"/>
+			<MapObject name="o282" id="4A" hidden="true" dumped="true" fileOffset="1988"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10302,7 +10305,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o281" id="49" dumped="true" fileOffset="197C"/>
+			<MapObject name="o281" id="49" hidden="true" dumped="true" fileOffset="197C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10320,7 +10323,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o226" id="48" dumped="true" fileOffset="1970"/>
+			<MapObject name="o226" id="48" hidden="true" dumped="true" fileOffset="1970"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10340,7 +10343,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o283" id="47" dumped="true" fileOffset="1964"/>
+			<MapObject name="o283" id="47" hidden="true" dumped="true" fileOffset="1964"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10364,7 +10367,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o381" id="45" dumped="true" fileOffset="194C"/>
+			<MapObject name="o381" id="45" hidden="true" dumped="true" fileOffset="194C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10436,7 +10439,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o364" id="44" dumped="true" fileOffset="1940"/>
+			<MapObject name="o364" id="44" hidden="true" dumped="true" fileOffset="1940"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10504,7 +10507,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o280" id="43" dumped="true" fileOffset="1934"/>
+			<MapObject name="o280" id="43" hidden="true" dumped="true" fileOffset="1934"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10597,7 +10600,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o210" id="42" dumped="true" fileOffset="1928"/>
+			<MapObject name="o210" id="42" hidden="true" dumped="true" fileOffset="1928"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10635,7 +10638,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o301" id="3F" dumped="true" fileOffset="1904"/>
+			<MapObject name="o301" id="3F" hidden="true" dumped="true" fileOffset="1904"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10653,7 +10656,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o300" id="3E" dumped="true" fileOffset="18F8"/>
+			<MapObject name="o300" id="3E" hidden="true" dumped="true" fileOffset="18F8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10671,7 +10674,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o302" id="3D" dumped="true" fileOffset="18EC"/>
+			<MapObject name="o302" id="3D" hidden="true" dumped="true" fileOffset="18EC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10691,7 +10694,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o299" id="3C" dumped="true" fileOffset="18E0"/>
+			<MapObject name="o299" id="3C" hidden="true" dumped="true" fileOffset="18E0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10711,7 +10714,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o286" id="3B" dumped="true" fileOffset="18D4"/>
+			<MapObject name="o286" id="3B" hidden="true" dumped="true" fileOffset="18D4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10729,7 +10732,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o285" id="3A" dumped="true" fileOffset="18C8"/>
+			<MapObject name="o285" id="3A" hidden="true" dumped="true" fileOffset="18C8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10747,7 +10750,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o284" id="39" dumped="true" fileOffset="18BC"/>
+			<MapObject name="o284" id="39" hidden="true" dumped="true" fileOffset="18BC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10767,7 +10770,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o287" id="38" dumped="true" fileOffset="18B0"/>
+			<MapObject name="o287" id="38" hidden="true" dumped="true" fileOffset="18B0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10791,7 +10794,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o298" id="36" dumped="true" fileOffset="1898"/>
+			<MapObject name="o298" id="36" hidden="true" dumped="true" fileOffset="1898"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10870,7 +10873,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o292" id="35" dumped="true" fileOffset="188C"/>
+			<MapObject name="o292" id="35" hidden="true" dumped="true" fileOffset="188C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10919,7 +10922,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o291" id="34" dumped="true" fileOffset="1880"/>
+			<MapObject name="o291" id="34" hidden="true" dumped="true" fileOffset="1880"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10995,7 +10998,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o518" id="32" dumped="true" fileOffset="1868"/>
+			<MapObject name="o518" id="32" hidden="true" dumped="true" fileOffset="1868"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11037,7 +11040,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o252" id="31" dumped="true" fileOffset="185C"/>
+			<MapObject name="o252" id="31" hidden="true" dumped="true" fileOffset="185C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11063,7 +11066,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o362" id="30" dumped="true" fileOffset="1850"/>
+			<MapObject name="o362" id="30" hidden="true" dumped="true" fileOffset="1850"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11101,7 +11104,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o316" id="2D" dumped="true" fileOffset="182C"/>
+			<MapObject name="o316" id="2D" hidden="true" dumped="true" fileOffset="182C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11119,7 +11122,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o315" id="2C" dumped="true" fileOffset="1820"/>
+			<MapObject name="o315" id="2C" hidden="true" dumped="true" fileOffset="1820"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11137,7 +11140,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o317" id="2B" dumped="true" fileOffset="1814"/>
+			<MapObject name="o317" id="2B" hidden="true" dumped="true" fileOffset="1814"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11155,7 +11158,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o314" id="2A" dumped="true" fileOffset="1808"/>
+			<MapObject name="o314" id="2A" hidden="true" dumped="true" fileOffset="1808"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11173,7 +11176,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o312" id="29" dumped="true" fileOffset="17FC"/>
+			<MapObject name="o312" id="29" hidden="true" dumped="true" fileOffset="17FC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11191,7 +11194,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o311" id="28" dumped="true" fileOffset="17F0"/>
+			<MapObject name="o311" id="28" hidden="true" dumped="true" fileOffset="17F0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11209,7 +11212,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o310" id="27" dumped="true" fileOffset="17E4"/>
+			<MapObject name="o310" id="27" hidden="true" dumped="true" fileOffset="17E4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11229,7 +11232,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o313" id="26" dumped="true" fileOffset="17D8"/>
+			<MapObject name="o313" id="26" hidden="true" dumped="true" fileOffset="17D8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11253,7 +11256,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o368" id="24" dumped="true" fileOffset="17C0"/>
+			<MapObject name="o368" id="24" hidden="true" dumped="true" fileOffset="17C0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11271,7 +11274,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o367" id="23" dumped="true" fileOffset="17B4"/>
+			<MapObject name="o367" id="23" hidden="true" dumped="true" fileOffset="17B4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11305,7 +11308,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o308" id="22" dumped="true" fileOffset="17A8"/>
+			<MapObject name="o308" id="22" hidden="true" dumped="true" fileOffset="17A8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11398,7 +11401,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o307" id="21" dumped="true" fileOffset="179C"/>
+			<MapObject name="o307" id="21" hidden="true" dumped="true" fileOffset="179C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11454,7 +11457,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o479" id="1F" dumped="true" fileOffset="1784"/>
+			<MapObject name="o479" id="1F" hidden="true" dumped="true" fileOffset="1784"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11566,7 +11569,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o480" id="1E" dumped="true" fileOffset="1778"/>
+			<MapObject name="o480" id="1E" hidden="true" dumped="true" fileOffset="1778"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11592,7 +11595,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o462" id="1D" dumped="true" fileOffset="176C"/>
+			<MapObject name="o462" id="1D" hidden="true" dumped="true" fileOffset="176C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11665,7 +11668,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o390" id="1C" dumped="true" fileOffset="1760"/>
+			<MapObject name="o390" id="1C" hidden="true" dumped="true" fileOffset="1760"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11782,7 +11785,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o408" id="1B" dumped="true" fileOffset="1754"/>
+			<MapObject name="o408" id="1B" hidden="true" dumped="true" fileOffset="1754"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11810,7 +11813,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o236" id="1A" dumped="true" fileOffset="1748"/>
+			<MapObject name="o236" id="1A" hidden="true" dumped="true" fileOffset="1748"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11844,7 +11847,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o426" id="17" dumped="true" fileOffset="1724"/>
+			<MapObject name="o426" id="17" hidden="true" dumped="true" fileOffset="1724"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11872,7 +11875,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o425" id="16" dumped="true" fileOffset="1718"/>
+			<MapObject name="o425" id="16" hidden="true" dumped="true" fileOffset="1718"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11916,7 +11919,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o424" id="15" dumped="true" fileOffset="170C"/>
+			<MapObject name="o424" id="15" hidden="true" dumped="true" fileOffset="170C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11946,7 +11949,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o423" id="14" dumped="true" fileOffset="1700"/>
+			<MapObject name="o423" id="14" hidden="true" dumped="true" fileOffset="1700"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11968,7 +11971,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o422" id="13" dumped="true" fileOffset="16F4"/>
+			<MapObject name="o422" id="13" hidden="true" dumped="true" fileOffset="16F4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12008,7 +12011,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o421" id="12" dumped="true" fileOffset="16E8"/>
+			<MapObject name="o421" id="12" hidden="true" dumped="true" fileOffset="16E8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12030,7 +12033,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o474" id="10" dumped="true" fileOffset="16D0"/>
+			<MapObject name="o474" id="10" hidden="true" dumped="true" fileOffset="16D0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12052,7 +12055,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o473" id="F" dumped="true" fileOffset="16C4"/>
+			<MapObject name="o473" id="F" hidden="true" dumped="true" fileOffset="16C4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12074,7 +12077,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o472" id="E" dumped="true" fileOffset="16B8"/>
+			<MapObject name="o472" id="E" hidden="true" dumped="true" fileOffset="16B8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12104,7 +12107,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o471" id="D" dumped="true" fileOffset="16AC"/>
+			<MapObject name="o471" id="D" hidden="true" dumped="true" fileOffset="16AC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12126,7 +12129,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o348" id="C" dumped="true" fileOffset="16A0"/>
+			<MapObject name="o348" id="C" hidden="true" dumped="true" fileOffset="16A0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12162,7 +12165,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o279" id="B" dumped="true" fileOffset="1694"/>
+			<MapObject name="o279" id="B" hidden="true" dumped="true" fileOffset="1694"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12184,7 +12187,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o419" id="A" dumped="true" fileOffset="1688"/>
+			<MapObject name="o419" id="A" hidden="true" dumped="true" fileOffset="1688"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12202,7 +12205,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o417" id="9" dumped="true" fileOffset="167C"/>
+			<MapObject name="o417" id="9" hidden="true" dumped="true" fileOffset="167C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12232,7 +12235,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o258" id="6" dumped="true" fileOffset="1658"/>
+			<MapObject name="o258" id="6" hidden="true" dumped="true" fileOffset="1658"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12256,7 +12259,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="deilitw" id="5" dumped="true" fileOffset="164C"/>
+			<MapObject name="deilitw" id="5" hidden="true" dumped="true" fileOffset="164C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12274,7 +12277,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="deiliw" id="4" dumped="true" fileOffset="1640"/>
+			<MapObject name="deiliw" id="4" hidden="true" dumped="true" fileOffset="1640"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12296,7 +12299,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o270" id="2" dumped="true" fileOffset="1628"/>
+			<MapObject name="o270" id="2" hidden="true" dumped="true" fileOffset="1628"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12320,7 +12323,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="deilitn" id="1" dumped="true" fileOffset="161C"/>
+			<MapObject name="deilitn" id="1" hidden="true" dumped="true" fileOffset="161C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12338,7 +12341,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="deilin" id="0" dumped="true" fileOffset="1610"/>
+			<MapObject name="deilin" id="0" hidden="true" dumped="true" fileOffset="1610"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12370,7 +12373,7 @@
 			<HitObject type="GROUP"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o210" id="B" dumped="true" fileOffset="25EC"/>
+			<MapObject name="o210" id="B" hidden="true" dumped="true" fileOffset="25EC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12405,7 +12408,7 @@
 			<HitObject type="GROUP"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o169" id="9" dumped="true" fileOffset="25D4"/>
+			<MapObject name="o169" id="9" hidden="true" dumped="true" fileOffset="25D4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12440,7 +12443,7 @@
 			<HitObject type="GROUP"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o278" id="7" dumped="true" fileOffset="25BC"/>
+			<MapObject name="o278" id="7" hidden="true" dumped="true" fileOffset="25BC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12463,7 +12466,7 @@
 			<Camera type="TYPE_4" flag="false" boomLength="370.000000" boomPitch="20.000000" viewPitch="-10.000000" posA="-246,-35,-308" posB="-322,-35,-223" posC="0,0,-35"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o163" id="6" dumped="true" fileOffset="25B0"/>
+			<MapObject name="o163" id="6" hidden="true" dumped="true" fileOffset="25B0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12490,7 +12493,7 @@
 			<HitObject type="GROUP"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o271" id="4" dumped="true" fileOffset="2598"/>
+			<MapObject name="o271" id="4" hidden="true" dumped="true" fileOffset="2598"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12509,7 +12512,7 @@
 			<Camera type="TYPE_2" flag="true" boomLength="430.000000" boomPitch="17.000000" viewPitch="-7.000000" posA="50,0,-500" posB="-50,0,-500" posC="0,0,0"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o277" id="3" dumped="true" fileOffset="258C"/>
+			<MapObject name="o277" id="3" hidden="true" dumped="true" fileOffset="258C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12532,7 +12535,7 @@
 			<Camera type="TYPE_0" flag="false" boomLength="420.000000" boomPitch="15.000000" viewPitch="-6.000000" posA="10,0,0" posB="0,0,0" posC="0,0,0"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o316" id="2" dumped="true" fileOffset="2580"/>
+			<MapObject name="o316" id="2" hidden="true" dumped="true" fileOffset="2580"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12551,7 +12554,7 @@
 			<Camera type="TYPE_2" flag="false" boomLength="430.000000" boomPitch="17.000000" viewPitch="-7.000000" posA="330,380,378" posB="330,328,-378" posC="380,0,328"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o315" id="1" dumped="true" fileOffset="2574"/>
+			<MapObject name="o315" id="1" hidden="true" dumped="true" fileOffset="2574"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12573,7 +12576,7 @@
 			<Camera type="TYPE_2" flag="false" boomLength="430.000000" boomPitch="17.000000" viewPitch="-7.000000" posA="-500,-335,208" posB="-500,374,-130" posC="-335,0,374"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o4" id="0" dumped="true" fileOffset="2568"/>
+			<MapObject name="o4" id="0" hidden="true" dumped="true" fileOffset="2568"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12604,7 +12607,22 @@
 	</Zones>
 	<Markers>
 		<Marker ver="4" type="Root">
-			<MapObject name="Root" id="28"/>
+			<MapObject name="Root" id="2B"/>
+		</Marker>
+		<Marker ver="4" type="NPC" pos="-247,0,-99" yaw="0.000000">
+			<MapObject name="Kolorado_22" id="2A"/>
+			<Movement type="Stationary" data="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+			<Sprite sprite="B6" palette="0" animations="1,2,3,3,1,1,1,1,1,1,1,1,1,1,1,1"/>
+		</Marker>
+		<Marker ver="4" type="NPC" pos="-166,0,-135" yaw="0.000000">
+			<MapObject name="Archeologist_21" id="29"/>
+			<Movement type="Stationary" data="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+			<Sprite sprite="B8" palette="0" animations="1,4,6,6,1,1,1,1,1,1,1,1,1,1,1,1"/>
+		</Marker>
+		<Marker ver="4" type="NPC" pos="-204,0,-116" yaw="0.000000">
+			<MapObject name="Archeologist_20" id="28"/>
+			<Movement type="Stationary" data="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+			<Sprite sprite="B8" palette="0" animations="1,2,3,3,1,1,1,1,1,1,1,1,1,1,1,1"/>
 		</Marker>
 		<Marker ver="4" type="Position" pos="66,0,69" yaw="0.000000">
 			<MapObject name="Egg1" id="27"/>

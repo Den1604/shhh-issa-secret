@@ -7,6 +7,8 @@
         Set *GF_MAC01_Met_Rhuff .True
         Set *GF_KMR05_EnemyWarning .True
         Set *GF_KMR02_ReturnedWithGoompa .True
+        Set *GF_StartedChapter1 .True
+        Set *GF_NOK02_Item_StarPiece .True
     EndThread
     Call  InterpPlayerYaw   (  90`  0` )
     Call  SetPlayerPos  (  -50`  30`  -80` )

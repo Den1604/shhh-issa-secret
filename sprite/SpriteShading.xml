@@ -335,4 +335,12 @@
 			<PointLight flags="5" pos="141,3,25" color="84,70,83" coef="0.010000" unk="0"/>
 		</ShadingProfile>
 	</ShadingGroup>
+	<ShadingGroup>
+		<ShadingProfile name="kmr_31" power="1E" ambient="153,153,153">
+			<PointLight flags="5" pos="-1072,70,425" color="255,255,255" coef="0.020000" unk="0"/>
+			<PointLight flags="5" pos="-45,9,389" color="255,255,255" coef="0.020000" unk="0"/>
+			<PointLight flags="5" pos="-332,18,-197" color="255,255,0" coef="0.002500" unk="0"/>
+			<PointLight flags="5" pos="295,66,109" color="255,255,255" coef="0.020000" unk="0"/>
+		</ShadingProfile>
+	</ShadingGroup>
 </SpriteShading>

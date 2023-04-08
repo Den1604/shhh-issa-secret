@@ -1,3 +1,7 @@
+#define .NpcID:Archeologist_20        14
+#define .NpcID:Archeologist_21        15
+#define .NpcID:Kolorado_22            16
+
 #new:Script $Script_InteractWithDoor {
     Call DisablePlayerInput ( .True )
     64:  Call  ShowMessageAtScreenPos    ( 002F0003  160`  40` ) % You found the Hammer! Mario can do the Hammer atta ...
@@ -62,8 +66,8 @@
         Set   *GF_NOK02_RecoveredShellA  .True
         Set   *GF_NOK02_RecoveredShellB  .True
     EndIf
-    If  *GB_StoryProgress  <  .Story:Ch1_KooperJoinedParty % FFFFFFA4
-        Call  MakeNpcs  ( .False $NpcGroupList_80251AAC )
+    If  *GotEnoughEggs == .True
+        Call  MakeNpcs  ( .False $NPCGroupList_NewOne )
     Else
         Call  MakeNpcs  ( .False $NpcGroupList_80251AE8 )
     EndIf
@@ -86,4 +90,86 @@
     Bind  $Script_InteractWithDoor  .Trigger:WallPressA ~Collider:DoorCollider 00000001 00000000
     Return
     End
+}
+
+#new:NpcGroupList $NPCGroupList_NewOne {
+    00000006 $NpcGroup_8024FD9C 00000000
+    00000004 $NpcGroup_80250B2C 00000000
+    00000001 $NpcGroup_8025093C 00000000
+    00000001 $NpcGroup_802518BC 00000000
+    00000003 $NpcGroup_Archeologists 00000000
+    00000000 00000000 00000000
+}
+
+
+#new:NpcGroup $NpcGroup_Archeologists
+{
+    .NpcID:Kolorado_22 $NpcSettings_80241FC8 ~Vec3f:Kolorado_22 % 238 0 -112
+	00002D01 $Script_Init_Kolorado 00000000 00000000 0000005A
+	~NoDrops
+	~Movement:Kolorado_22
+	~AnimationTable:Kolorado_22 % .Sprite:Kolorado
+	00000000 00000000 00000000 001A008B % He's the archaeologist, Kolorado. He's famous as b ...
+
+    .NpcID:Archeologist_20 $NpcSettings_80241FC8 ~Vec3f:Archeologist_20 % 238 0 -112
+	00002D01 $Script_Init_Koopa1 00000000 00000000 0000010E
+	~NoDrops
+	~Movement:Archeologist_20
+	~AnimationTable:Archeologist_20 % .Sprite:Archeologist
+	00000000 00000000 00000000 001A008C % This is a Koopa Troopa from the excavation team. T ...
+
+    .NpcID:Archeologist_21 $NpcSettings_80241FC8 ~Vec3f:Archeologist_21 % 238 0 -112
+	00002D01 $Script_Init_Koopa2 00000000 00000000 0000010E
+	~NoDrops
+	~Movement:Archeologist_21
+	~AnimationTable:Archeologist_21 % .Sprite:Archeologist
+	00000000 00000000 00000000 001A008C % This is a Koopa Troopa from the excavation team. T ...
+}
+
+#new:NpcSettings $NpcSettings_80241FC8
+{
+	00000000 002A0018 00000000 00000000 00000000 00000000 00000000 00000000
+	00000000 00000000 00630000
+}
+
+#new:Script $Script_Init_Kolorado
+{
+    0:  Call  BindNpcInteract   ( .Npc:Self $Script_Interact_Kolorado )
+   6C:  Return
+   74:  End
+}
+
+#new:Script $Script_Interact_Kolorado
+{
+   C8:  Call  SpeakToPlayer ( .Npc:Self 00B60008 00B60001 00000000 002F000A )
+   E8:  Return
+   F0:  End
+}
+
+#new:Script $Script_Init_Koopa1
+{
+    0:  Call  BindNpcInteract   ( .Npc:Self $Script_Interact_Koopa1 )
+   6C:  Return
+   74:  End
+}
+
+#new:Script $Script_Interact_Koopa1
+{
+   C8:  Call  SpeakToPlayer ( .Npc:Self 00B80004 00B80001 00000000 002F0008 )
+   E8:  Return
+   F0:  End
+}
+
+#new:Script $Script_Init_Koopa2
+{
+    0:  Call  BindNpcInteract   ( .Npc:Self $Script_Interact_Koopa2 )
+   6C:  Return
+   74:  End
+}
+
+#new:Script $Script_Interact_Koopa2
+{
+   C8:  Call  SpeakToPlayer ( .Npc:Self 00B80004 00B80001 00000000 002F0009 )
+   E8:  Return
+   F0:  End
 }

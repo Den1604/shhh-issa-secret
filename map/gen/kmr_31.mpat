@@ -16,12 +16,22 @@
 #new:Script_Main $Script_Main
 {
 	Set   *GB_WorldLocation  .Location:GoombaRoad
+	Call  SetSpriteShading   ( .Shading:kmr_31 )
 	Call  SetCamPerspective  ( .Cam:Default 00000003 00000019 00000010 00001000 )
 	Call  SetCamBGColor      ( .Cam:Default 00000000 00000000 00000000 )
 	Call  SetCamEnabled      ( .Cam:Default .True
 	Call  SetCamLeadPlayer   ( .Cam:Default .False )
+	Exec  $Script_MakeEntities
 	Exec  $Script_SetupMusic
 	Exec  $Script_EnterMap
+	Return
+	End
+}
+
+#new:Script $Script_MakeEntities
+{
+	Call  MakeEntity    ( .Entity:Signpost ~Vec4d:Sign 80000000 )
+	Call  AssignScript    ( $Script_ReadSign_Sign )
 	Return
 	End
 }
@@ -80,5 +90,22 @@
 	Bind  $Script_Exit_entry_s .Trigger:FloorAbove ~Collider:exit_trigger_s 00000001 00000000
 	Return
 	End
+}
+
+#new:Script $Script_ReadSign_Sign
+{
+	Call  DisablePlayerInput        ( .True )
+	Call  ShowMessageAtScreenPos    ( $String_ReadSign_Sign 000000A0 00000028 )
+	Call  DisablePlayerInput        ( .False )
+	Return
+	End
+}
+
+#new:String $String_ReadSign_Sign
+{
+	[DelayOff][STYLE:SIGN]
+	[CenterX:FF]
+	[Down:03]Write message here.
+	[DelayOn][WAIT][END]
 }
 

@@ -22,7 +22,15 @@
     Call  MakeItemEntity    ( .Item:SleepySheep ~Vec3d:Item80242BE0 .ItemSpawnMode:Fixed_NeverVanish *GF_NOK12_Item_SleepySheep )
     0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_nok_12_1 )
     0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_nok_12_2 )
-    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_nok_12_3 )
+    0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg3 .ItemSpawnMode:Fixed_NeverVanish *egg_nok_12_3 )
     Return
     End
+}
+
+@ $NpcGroupList_8024533C {
+    % 00000001 $NpcGroup_80244950 05090001
+    % 00000001 $NpcGroup_80244D30 050F0001
+    % 00000001 $NpcGroup_80244F20 05010002
+    % 00000001 $NpcGroup_80245110 05040002
+    00000000 00000000 00000000
 }

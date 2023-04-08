@@ -1,7 +1,7 @@
 #message:2F:000
 {
 [Style Right]
-Oh, hello Mario![Pause:5][br]
+Oh,[Pause:5] hello Mario![Pause:10][br]
 Kolorado is inspecting[br]
 a newly found secret[br]
 at the end of this tunnel![br]
@@ -15,7 +15,7 @@ we should be gone for sure.[br]
 #message:2F:001
 {
 [Style Right]
-Oh, Mario, hello![br]
+Oh,[Pause:5] Mario,[Pause:5] hello![br]
 [Wait][Next]
 We're standing guard[br]
 for Kolorado,[Pause:5] to ensure[br]
@@ -66,7 +66,7 @@ for eggs in a safe space![br]
 
 #message:2F:006
 {
-[Style Sign]
+[Style Right]
 Hello mario[br]
 something something easter[br]
 egg hunt[br]
@@ -80,7 +80,7 @@ of eggs, talk to me again![br]
 
 #message:2F:007
 {
-[Style Sign]
+[Style Right]
 Hello mario[br]
 you have gotten a lot[br]
 of eggs so far!![br]
@@ -92,5 +92,79 @@ in the oven lmao[br]
 but i did see 2 archeologists[br]
 and kolorado schmoving to[br]
 koopa village just saying bro[br]
+[Wait][End]
+}
+
+#message:2F:008
+{
+[Style Right]
+Kolorado did not tell us[br]
+what he found,[Pause:5] but he[br]
+did say that the area[br]
+is safe,[Pause:5] so we left.[br]
+[Wait][End]
+}
+
+#message:2F:009
+{
+[Style Right]
+We left because Kolorado[br]
+said there was nothing[br]
+but lush forest beyond[br]
+that opening.[br]
+[Wait][End]
+}
+
+#message:2F:00A
+{
+[Style Right]
+Old boy![Pause:5][br]
+I was inspecting a hidden,[Pause:5][br]
+lush part of the forest[br]
+in Goomba Road.[br]
+[Wait][Next]
+You should take a look[br]
+at it yourself![Pause:15][br]
+It is a sight to behold,[Pause:5][br]
+old boy.[br]
+[Wait][End]
+}
+
+#message:2F:00B
+{
+[Style Sign]
+Welcome to the end of our[br]
+small easter hack![br]
+But, well[Pause:5].[Pause:5].[Pause:5].[br]
+[Wait][Next]
+For now[Pause:5].[Pause:5].[Pause:5].[Pause:15][br]
+[Rainbow][Size 32]CREDITS![/fx][SizeReset][br]
+[br]
+[Wait][Next]
+[Color:08]Den [Color:00]- [Color:05]Lead Developer, Scripter,[br]
+Mapper, Egg Hider and[br]
+Luigi Partner Implementor[br]
+[br]
+[wait][next]
+[Color:04]Boss05 [Color:00]- [Color:05]Lead Developer,[br]
+Scripter, Writer, Musician[br]
+and Egg Hiding Extraordinaire[br]
+[Wait][Next]
+[Color:08]Rainichus [Color:00]- [Color:05]Made a patch that[br]
+replaces the Star Pieces String[br]
+in the Player Menu[br]
+[Wait][Next]
+[Color:05]Quackles [Color:00]- [Color:05]Made a function which[br]
+allows for checking the current[br]
+Star Piece count.[br]
+[Wait][Next]
+[Color:00]And thank [Rainbow]YOU[/fx] for playing[br]
+our romhack![br]
+If you have not already, maybe[br]
+try and find all eggs?[br]
+[wait][next]
+[Color:00]Press [A] in the center of the[br]
+golden light to play the ending[br]
+cutscene of the hack![br]
 [Wait][End]
 }
