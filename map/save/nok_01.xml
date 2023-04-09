@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="nok_01" author="unnamed" background="nok_bg" textures="nok_tex">
 	<Editor>
-		<Camera pos="14.408033,45.482937,403.230591" pitch="17.199999" yaw="328.068451"/>
-		<Camera pos="10.123149,65536.000000,282.711700"/>
+		<Camera pos="282.504120,141.883667,444.157654" pitch="10.320000" yaw="337.359985"/>
+		<Camera pos="280.839600,65536.000000,16.916252"/>
 		<Camera pos="65536.000000,21.000000,0.000000"/>
-		<Camera pos="248.019089,4.387870,65536.000000"/>
+		<Camera pos="308.600830,54.275364,65536.000000"/>
 	</Editor>
 	<ModelTree>
-		<Node name="Root" id="D4">
+		<Node name="Root" id="D7">
 			<Node name="g3" id="8">
 				<Node name="o1" id="0"/>
 				<Node name="o264" id="1"/>
@@ -282,10 +282,13 @@
 				<Node name="o289" id="D1"/>
 				<Node name="o325" id="D2"/>
 			</Node>
+			<Node name="Split Model" id="D4"/>
+			<Node name="Split Model" id="D5"/>
+			<Node name="Split Model" id="D6"/>
 		</Node>
 	</ModelTree>
 	<ColliderTree>
-		<Node name="Root" id="4E">
+		<Node name="Root" id="4F">
 			<Node name="g95" id="8">
 				<Node name="g96" id="3">
 					<Node name="deilisw" id="0"/>
@@ -384,6 +387,7 @@
 				<Node name="o422" id="4B"/>
 				<Node name="o423" id="4C"/>
 			</Node>
+			<Node name="MeshCollider" id="4E"/>
 		</Node>
 	</ColliderTree>
 	<ZoneTree>
@@ -453,9 +457,143 @@
 	</LightSets>
 	<Models>
 		<Model ver="2" type="ROOT" lightset="1">
-			<MapObject name="Root" id="D4" dumped="true" fileOffset="1740C"/>
+			<MapObject name="Root" id="D7" dumped="true" fileOffset="1740C"/>
 			<BoundingBox empty="false" min="-600,-100,-600" max="600,211,600"/>
 			<PropertyList>
+			</PropertyList>
+		</Model>
+		<Model ver="2" type="MODEL" lightset="0">
+			<MapObject name="Split Model" id="D6"/>
+			<ShapeMesh ver="3" texture="mac_bunting_2">
+				<DisplayList>
+					<F3DEX2 cmd="E7000000,0"/>
+					<F3DEX2 cmd="D9FDFFFF,0"/>
+					<F3DEX2 cmd="D9FFFFFF,200400"/>
+					<TriangleBatch ver="0">
+						<VertexTable>
+							<Vertex xyz="376,58,-52" uv="1907,204"/>
+							<Vertex xyz="292,75,-41" uv="-1883,972"/>
+							<Vertex xyz="376,75,-52" uv="1907,972"/>
+							<Vertex xyz="292,58,-41" uv="-1883,204"/>
+							<Vertex xyz="292,75,-41" uv="-1883,972"/>
+							<Vertex xyz="292,58,-41" uv="-1883,204"/>
+							<Vertex xyz="221,45,-69" uv="-4765,204"/>
+							<Vertex xyz="221,62,-69" uv="-4765,988"/>
+							<Vertex xyz="376,58,-52" uv="1907,204"/>
+							<Vertex xyz="376,75,-52" uv="1907,972"/>
+							<Vertex xyz="438,62,-100" uv="5472,972"/>
+							<Vertex xyz="438,45,-100" uv="5472,204"/>
+						</VertexTable>
+						<TriangleList>
+							<Triangle ijk="0,1,2"/>
+							<Triangle ijk="0,3,1"/>
+							<Triangle ijk="4,5,6"/>
+							<Triangle ijk="4,6,7"/>
+							<Triangle ijk="8,9,10"/>
+							<Triangle ijk="8,10,11"/>
+						</TriangleList>
+					</TriangleBatch>
+				</DisplayList>
+			</ShapeMesh>
+			<PropertyList>
+				<Property v="5C,0,D"/>
+				<Property v="5F,0,0"/>
+			</PropertyList>
+		</Model>
+		<Model ver="2" type="MODEL" lightset="0">
+			<MapObject name="Split Model" id="D5"/>
+			<ShapeMesh ver="3" texture="mac_bunting_1">
+				<DisplayList>
+					<F3DEX2 cmd="E7000000,0"/>
+					<F3DEX2 cmd="D9FDFFFF,0"/>
+					<F3DEX2 cmd="D9FFFFFF,200400"/>
+					<TriangleBatch ver="0">
+						<VertexTable>
+							<Vertex xyz="18,51,-45" uv="-1039,206"/>
+							<Vertex xyz="97,60,-79" uv="-4096,206"/>
+							<Vertex xyz="97,77,-79" uv="-4096,974"/>
+							<Vertex xyz="18,51,-45" uv="-1039,206"/>
+							<Vertex xyz="97,77,-79" uv="-4096,974"/>
+							<Vertex xyz="18,68,-45" uv="-1039,974"/>
+							<Vertex xyz="-10,48,-33" uv="33,206"/>
+							<Vertex xyz="18,68,-45" uv="-1039,974"/>
+							<Vertex xyz="-10,65,-33" uv="33,974"/>
+							<Vertex xyz="-10,48,-33" uv="33,206"/>
+							<Vertex xyz="18,51,-45" uv="-1039,206"/>
+							<Vertex xyz="18,68,-45" uv="-1039,974"/>
+							<Vertex xyz="-124,60,13" uv="4096,206"/>
+							<Vertex xyz="-42,51,-19" uv="1182,206"/>
+							<Vertex xyz="-42,68,-19" uv="1182,974"/>
+							<Vertex xyz="-124,60,13" uv="4096,206"/>
+							<Vertex xyz="-42,68,-19" uv="1182,974"/>
+							<Vertex xyz="-124,77,13" uv="4096,974"/>
+							<Vertex xyz="-42,51,-19" uv="1182,206"/>
+							<Vertex xyz="-10,65,-33" uv="33,974"/>
+							<Vertex xyz="-42,68,-19" uv="1182,974"/>
+							<Vertex xyz="-42,51,-19" uv="1182,206"/>
+							<Vertex xyz="-10,48,-33" uv="33,206"/>
+							<Vertex xyz="-10,65,-33" uv="33,974"/>
+						</VertexTable>
+						<TriangleList>
+							<Triangle ijk="0,1,2"/>
+							<Triangle ijk="3,4,5"/>
+							<Triangle ijk="6,7,8"/>
+							<Triangle ijk="9,10,11"/>
+							<Triangle ijk="12,13,14"/>
+							<Triangle ijk="15,16,17"/>
+							<Triangle ijk="18,19,20"/>
+							<Triangle ijk="21,22,23"/>
+						</TriangleList>
+					</TriangleBatch>
+				</DisplayList>
+			</ShapeMesh>
+			<PropertyList>
+				<Property v="5C,0,D"/>
+				<Property v="5F,0,0"/>
+			</PropertyList>
+		</Model>
+		<Model ver="2" type="MODEL" lightset="0">
+			<MapObject name="Split Model" id="D4"/>
+			<ShapeMesh ver="3" texture="mac_bunting_2">
+				<DisplayList>
+					<F3DEX2 cmd="E7000000,0"/>
+					<F3DEX2 cmd="D9FDFFFF,0"/>
+					<F3DEX2 cmd="D9FFFFFF,200400"/>
+					<TriangleBatch ver="0">
+						<VertexTable>
+							<Vertex xyz="-219,51,132" uv="-1039,206"/>
+							<Vertex xyz="-165,60,89" uv="-4096,206"/>
+							<Vertex xyz="-165,77,89" uv="-4096,974"/>
+							<Vertex xyz="-219,68,132" uv="-1039,974"/>
+							<Vertex xyz="-244,48,152" uv="33,206"/>
+							<Vertex xyz="-219,68,132" uv="-1039,974"/>
+							<Vertex xyz="-244,65,152" uv="33,974"/>
+							<Vertex xyz="-219,51,132" uv="-1039,206"/>
+							<Vertex xyz="-324,60,211" uv="4096,206"/>
+							<Vertex xyz="-271,51,173" uv="1182,206"/>
+							<Vertex xyz="-271,68,173" uv="1182,974"/>
+							<Vertex xyz="-324,77,211" uv="4096,974"/>
+							<Vertex xyz="-271,51,173" uv="1182,206"/>
+							<Vertex xyz="-244,65,152" uv="33,974"/>
+							<Vertex xyz="-271,68,173" uv="1182,974"/>
+							<Vertex xyz="-244,48,152" uv="33,206"/>
+						</VertexTable>
+						<TriangleList>
+							<Triangle ijk="0,1,2"/>
+							<Triangle ijk="0,2,3"/>
+							<Triangle ijk="4,5,6"/>
+							<Triangle ijk="4,7,5"/>
+							<Triangle ijk="8,9,10"/>
+							<Triangle ijk="8,10,11"/>
+							<Triangle ijk="12,13,14"/>
+							<Triangle ijk="12,15,13"/>
+						</TriangleList>
+					</TriangleBatch>
+				</DisplayList>
+			</ShapeMesh>
+			<PropertyList>
+				<Property v="5C,0,D"/>
+				<Property v="5F,0,0"/>
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
@@ -8813,8 +8951,108 @@
 	</Models>
 	<Colliders>
 		<Collider ver="0" flags="0">
-			<MapObject name="Root" id="4E"/>
+			<MapObject name="Root" id="4F"/>
 			<HitObject type="ROOT"/>
+		</Collider>
+		<Collider ver="0" flags="0">
+			<MapObject name="MeshCollider" id="4E" hidden="true"/>
+			<HitObject type="HIT"/>
+			<HitMesh ver="0">
+				<TriangleBatch ver="0">
+					<VertexTable>
+						<Vertex xyz="376,58,-52" uv="1907,204"/>
+						<Vertex xyz="292,75,-41" uv="-1883,972"/>
+						<Vertex xyz="376,75,-52" uv="1907,972"/>
+						<Vertex xyz="376,58,-52" uv="1907,204"/>
+						<Vertex xyz="292,58,-41" uv="-1883,204"/>
+						<Vertex xyz="292,75,-41" uv="-1883,972"/>
+						<Vertex xyz="292,75,-41" uv="-1883,972"/>
+						<Vertex xyz="292,58,-41" uv="-1883,204"/>
+						<Vertex xyz="221,45,-69" uv="-4765,204"/>
+						<Vertex xyz="292,75,-41" uv="-1883,972"/>
+						<Vertex xyz="221,45,-69" uv="-4765,204"/>
+						<Vertex xyz="221,62,-69" uv="-4765,988"/>
+						<Vertex xyz="376,58,-52" uv="1907,204"/>
+						<Vertex xyz="376,75,-52" uv="1907,972"/>
+						<Vertex xyz="438,62,-100" uv="5472,972"/>
+						<Vertex xyz="376,58,-52" uv="1907,204"/>
+						<Vertex xyz="438,62,-100" uv="5472,972"/>
+						<Vertex xyz="438,45,-100" uv="5472,204"/>
+						<Vertex xyz="18,51,-45" uv="-1039,206"/>
+						<Vertex xyz="97,60,-79" uv="-4096,206"/>
+						<Vertex xyz="97,77,-79" uv="-4096,974"/>
+						<Vertex xyz="18,51,-45" uv="-1039,206"/>
+						<Vertex xyz="97,77,-79" uv="-4096,974"/>
+						<Vertex xyz="18,68,-45" uv="-1039,974"/>
+						<Vertex xyz="-10,48,-33" uv="33,206"/>
+						<Vertex xyz="18,68,-45" uv="-1039,974"/>
+						<Vertex xyz="-10,65,-33" uv="33,974"/>
+						<Vertex xyz="-10,48,-33" uv="33,206"/>
+						<Vertex xyz="18,51,-45" uv="-1039,206"/>
+						<Vertex xyz="18,68,-45" uv="-1039,974"/>
+						<Vertex xyz="-124,60,13" uv="4096,206"/>
+						<Vertex xyz="-42,51,-19" uv="1182,206"/>
+						<Vertex xyz="-42,68,-19" uv="1182,974"/>
+						<Vertex xyz="-124,60,13" uv="4096,206"/>
+						<Vertex xyz="-42,68,-19" uv="1182,974"/>
+						<Vertex xyz="-124,77,13" uv="4096,974"/>
+						<Vertex xyz="-42,51,-19" uv="1182,206"/>
+						<Vertex xyz="-10,65,-33" uv="33,974"/>
+						<Vertex xyz="-42,68,-19" uv="1182,974"/>
+						<Vertex xyz="-42,51,-19" uv="1182,206"/>
+						<Vertex xyz="-10,48,-33" uv="33,206"/>
+						<Vertex xyz="-10,65,-33" uv="33,974"/>
+						<Vertex xyz="-219,51,132" uv="-1039,206"/>
+						<Vertex xyz="-165,60,89" uv="-4096,206"/>
+						<Vertex xyz="-165,77,89" uv="-4096,974"/>
+						<Vertex xyz="-219,51,132" uv="-1039,206"/>
+						<Vertex xyz="-165,77,89" uv="-4096,974"/>
+						<Vertex xyz="-219,68,132" uv="-1039,974"/>
+						<Vertex xyz="-244,48,152" uv="33,206"/>
+						<Vertex xyz="-219,68,132" uv="-1039,974"/>
+						<Vertex xyz="-244,65,152" uv="33,974"/>
+						<Vertex xyz="-244,48,152" uv="33,206"/>
+						<Vertex xyz="-219,51,132" uv="-1039,206"/>
+						<Vertex xyz="-219,68,132" uv="-1039,974"/>
+						<Vertex xyz="-324,60,211" uv="4096,206"/>
+						<Vertex xyz="-271,51,173" uv="1182,206"/>
+						<Vertex xyz="-271,68,173" uv="1182,974"/>
+						<Vertex xyz="-324,60,211" uv="4096,206"/>
+						<Vertex xyz="-271,68,173" uv="1182,974"/>
+						<Vertex xyz="-324,77,211" uv="4096,974"/>
+						<Vertex xyz="-271,51,173" uv="1182,206"/>
+						<Vertex xyz="-244,65,152" uv="33,974"/>
+						<Vertex xyz="-271,68,173" uv="1182,974"/>
+						<Vertex xyz="-271,51,173" uv="1182,206"/>
+						<Vertex xyz="-244,48,152" uv="33,206"/>
+						<Vertex xyz="-244,65,152" uv="33,974"/>
+					</VertexTable>
+					<TriangleList>
+						<Triangle ijk="0,1,2" doubleSided="true"/>
+						<Triangle ijk="3,4,5" doubleSided="true"/>
+						<Triangle ijk="6,7,8" doubleSided="true"/>
+						<Triangle ijk="9,10,11" doubleSided="true"/>
+						<Triangle ijk="12,13,14" doubleSided="true"/>
+						<Triangle ijk="15,16,17" doubleSided="true"/>
+						<Triangle ijk="18,19,20" doubleSided="true"/>
+						<Triangle ijk="21,22,23" doubleSided="true"/>
+						<Triangle ijk="24,25,26" doubleSided="true"/>
+						<Triangle ijk="27,28,29" doubleSided="true"/>
+						<Triangle ijk="30,31,32" doubleSided="true"/>
+						<Triangle ijk="33,34,35" doubleSided="true"/>
+						<Triangle ijk="36,37,38" doubleSided="true"/>
+						<Triangle ijk="39,40,41" doubleSided="true"/>
+						<Triangle ijk="42,43,44" doubleSided="true"/>
+						<Triangle ijk="45,46,47" doubleSided="true"/>
+						<Triangle ijk="48,49,50" doubleSided="true"/>
+						<Triangle ijk="51,52,53" doubleSided="true"/>
+						<Triangle ijk="54,55,56" doubleSided="true"/>
+						<Triangle ijk="57,58,59" doubleSided="true"/>
+						<Triangle ijk="60,61,62" doubleSided="true"/>
+						<Triangle ijk="63,64,65" doubleSided="true"/>
+					</TriangleList>
+				</TriangleBatch>
+			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
 			<MapObject name="g90" id="4D" dumped="true" fileOffset="1554"/>
@@ -10835,7 +11073,7 @@
 		<Marker ver="4" type="Position" pos="-39,0,405" yaw="0.000000">
 			<MapObject name="Egg2" id="24"/>
 		</Marker>
-		<Marker ver="4" type="Position" pos="185,0,108" yaw="0.000000">
+		<Marker ver="4" type="Position" pos="175,0,119" yaw="0.000000">
 			<MapObject name="Egg1" id="23"/>
 		</Marker>
 		<Marker ver="4" type="Trigger" desc="Trigger" pos="198,0,147" yaw="0.000000">
