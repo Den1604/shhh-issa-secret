@@ -88,6 +88,7 @@
     Exec  $Script_EnterWalk_80245868
     Wait  1`
     Bind  $Script_InteractWithDoor  .Trigger:WallPressA ~Collider:DoorCollider 00000001 00000000
+    Bind  $Script_InteractWithDoor  .Trigger:WallPressA ~Collider:KootCanceller 00000001 00000000
     Return
     End
 }
