@@ -1,3 +1,5 @@
+#define .NpcID:Luigi        01
+
 @ $Script_Main {
     Set   *GB_WorldLocation  .Location:GoombaRoad
 	Call  SetSpriteShading   ( .Shading:kmr_31 )
@@ -46,6 +48,7 @@
 {
     Call DisablePlayerInput ( .True )
     Call DisablePlayerPhysics ( .True )
+    Call DisablePartnerAI ( 00000001 )
     ExecWait $Script_PanCamera_CamPan
     Thread
         Call GetPlayerPos ( *VarA *VarB *VarC )
@@ -53,6 +56,14 @@
         Call ShowEmote ( 00000000 .Emote:Exclamation -45` 30` .False *VarA *VarB *VarC 0` )
         Wait 10`
         Call SetPlayerAnimation ( 0001002B )
+    EndThread
+    Thread
+        Call NpcFacePlayer ( .Npc:Partner 15` )
+        Call SetNpcAnimation ( .Npc:Partner 0001000B )
+        Wait 60`
+        Call SetNpcAnimation ( .Npc:Partner 00010002 )
+        Wait 20`
+        Call NpcMoveTo ( .Npc:Partner ~Vec2D:PartnerMoveTo1 45` )
     EndThread
     ExecWait $Script_MarioFlyLoop
     Call  $Function_802405EC ( )

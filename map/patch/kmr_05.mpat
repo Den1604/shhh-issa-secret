@@ -98,8 +98,10 @@
 
 #new:Script $Script_Interact_Koopa1
 {
+    Call DisablePlayerInput ( .True )
    C8:  Call  SpeakToPlayer ( .Npc:Self 00B80004 00B80001 00000000 002F0000 ) % variable string ID
-   E8:  Return
+    Call DisablePlayerInput ( .False )
+    E8:  Return
    F0:  End
 }
 
@@ -112,8 +114,10 @@
 
 #new:Script $Script_Interact_Koopa2
 {
-   C8:  Call  SpeakToPlayer ( .Npc:Self 00B80004 00B80001 00000000 002F0001 ) % variable string ID
-   E8:  Return
+    Call DisablePlayerInput ( .True )
+    C8:  Call  SpeakToPlayer ( .Npc:Self 00B80004 00B80001 00000000 002F0001 ) % variable string ID
+    Call DisablePlayerInput ( .False )
+    E8:  Return
    F0:  End
 }
 
