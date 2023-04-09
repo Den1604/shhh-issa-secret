@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="mac_03" author="unnamed" background="nok_bg" textures="mac_tex">
 	<Editor>
-		<Camera pos="-14.894355,80.407364,290.111084" pitch="8.679999" yaw="358.879974"/>
-		<Camera pos="-481.549561,65536.000000,191.268280"/>
+		<Camera pos="-404.675629,103.527618,685.074341" pitch="8.999999" yaw="0.000000"/>
+		<Camera pos="-442.549408,65536.000000,150.298538"/>
 		<Camera pos="65536.000000,54.000000,12.000000"/>
-		<Camera pos="-456.917419,91.699768,65536.000000"/>
+		<Camera pos="-168.368851,71.388718,65536.000000"/>
 	</Editor>
 	<ModelTree>
 		<Node name="Root" id="89">
@@ -178,7 +178,7 @@
 			</Node>
 			<Node name="DrawnModel" id="86"/>
 			<Node name="DrawnModel" id="87"/>
-			<Node name="DrawnModel" id="88"/>
+			<Node name="Split Model" id="88"/>
 		</Node>
 	</ModelTree>
 	<ColliderTree>
@@ -357,7 +357,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="DrawnModel" id="88"/>
+			<MapObject name="Split Model" id="88"/>
 			<ShapeMesh ver="3" texture="mac_bunting_2">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -365,25 +365,34 @@
 					<F3DEX2 cmd="D9FFFFFF,200400"/>
 					<TriangleBatch ver="0">
 						<VertexTable>
-							<Vertex xyz="-440,108,175" uv="-2033,1024"/>
-							<Vertex xyz="-478,102,176" uv="-148,1024"/>
-							<Vertex xyz="-440,90,175" uv="-2033,237"/>
-							<Vertex xyz="-478,83,176" uv="-148,237"/>
-							<Vertex xyz="-522,90,175" uv="2033,237"/>
-							<Vertex xyz="-522,107,175" uv="2033,1024"/>
+							<Vertex xyz="-477,95,172" uv="-207,1024" rgba="-1,-1,-1,-1"/>
+							<Vertex xyz="-440,83,172" uv="-2044,202" rgba="-1,-1,-1,-1"/>
+							<Vertex xyz="-440,104,172" uv="-2044,1024" rgba="-1,-1,-1,-1"/>
+							<Vertex xyz="-477,95,172" uv="-207,1024" rgba="-1,-1,-1,-1"/>
+							<Vertex xyz="-477,74,172" uv="-207,202" rgba="-1,-1,-1,-1"/>
+							<Vertex xyz="-440,83,172" uv="-2044,202" rgba="-1,-1,-1,-1"/>
 						</VertexTable>
 						<TriangleList>
 							<Triangle ijk="0,1,2"/>
-							<Triangle ijk="3,2,4"/>
-							<Triangle ijk="1,5,2"/>
-							<Triangle ijk="4,2,5"/>
-							<Triangle ijk="5,5,2"/>
+							<Triangle ijk="3,4,5"/>
+						</TriangleList>
+					</TriangleBatch>
+					<TriangleBatch ver="0">
+						<VertexTable>
+							<Vertex xyz="-522,101,172" uv="2029,1024" rgba="-1,-1,-1,-1"/>
+							<Vertex xyz="-477,74,172" uv="-207,202" rgba="-1,-1,-1,-1"/>
+							<Vertex xyz="-477,95,172" uv="-207,1024" rgba="-1,-1,-1,-1"/>
+							<Vertex xyz="-522,80,172" uv="2029,202" rgba="-1,-1,-1,-1"/>
+						</VertexTable>
+						<TriangleList>
+							<Triangle ijk="0,1,2"/>
+							<Triangle ijk="0,3,1"/>
 						</TriangleList>
 					</TriangleBatch>
 				</DisplayList>
 			</ShapeMesh>
 			<PropertyList>
-				<Property v="5C,0,1"/>
+				<Property v="5C,0,D"/>
 				<Property v="5F,0,0"/>
 			</PropertyList>
 		</Model>
@@ -396,9 +405,9 @@
 					<F3DEX2 cmd="D9FFFFFF,200400"/>
 					<TriangleBatch ver="0">
 						<VertexTable>
-							<Vertex xyz="-229,157,140" uv="-4095,1024"/>
+							<Vertex xyz="-226,157,139" uv="-4095,1024"/>
 							<Vertex xyz="-306,156,171" uv="-679,1024"/>
-							<Vertex xyz="-229,129,140" uv="-4095,0"/>
+							<Vertex xyz="-226,129,139" uv="-4095,0"/>
 							<Vertex xyz="-307,127,171" uv="-641,0"/>
 							<Vertex xyz="-391,136,198" uv="2725,0"/>
 							<Vertex xyz="-433,149,198" uv="4090,0"/>
@@ -418,7 +427,7 @@
 				</DisplayList>
 			</ShapeMesh>
 			<PropertyList>
-				<Property v="5C,0,1"/>
+				<Property v="5C,0,D"/>
 				<Property v="5F,0,0"/>
 			</PropertyList>
 		</Model>
@@ -437,7 +446,7 @@
 							<Vertex xyz="-155,68,-548" uv="1440,171"/>
 							<Vertex xyz="-241,76,-548" uv="3425,171"/>
 							<Vertex xyz="-234,122,-548" uv="3425,1024"/>
-							<Vertex xyz="-152,103,-548" uv="1368,1024"/>
+							<Vertex xyz="-152,98,-548" uv="1368,1024"/>
 							<Vertex xyz="-19,108,-548" uv="-1824,1024"/>
 						</VertexTable>
 						<TriangleList>
@@ -453,7 +462,7 @@
 				</DisplayList>
 			</ShapeMesh>
 			<PropertyList>
-				<Property v="5C,0,1"/>
+				<Property v="5C,0,D"/>
 				<Property v="5F,0,0"/>
 			</PropertyList>
 		</Model>

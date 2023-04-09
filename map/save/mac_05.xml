@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="mac_05" author="unnamed" background="nok_bg" textures="mac_tex">
 	<Editor>
-		<Camera pos="-108.867538,113.606796,235.965454" pitch="12.000000" yaw="0.000000"/>
+		<Camera pos="-21.225512,308.097626,482.086517" pitch="24.799995" yaw="346.719910"/>
 		<Camera pos="-276.745636,65536.000000,-332.011688"/>
 		<Camera pos="65536.000000,134.278320,-240.249680"/>
 		<Camera pos="-385.447906,53.360760,65536.000000"/>
@@ -150,7 +150,7 @@
 		</Node>
 	</ModelTree>
 	<ColliderTree>
-		<Node name="Root" id="35">
+		<Node name="Root" id="36">
 			<Node name="g1" id="5">
 				<Node name="o106" id="0"/>
 				<Node name="o107" id="1"/>
@@ -212,6 +212,7 @@
 				<Node name="o240" id="32"/>
 			</Node>
 			<Node name="MeshCollider" id="34"/>
+			<Node name="MeshCollider" id="35"/>
 		</Node>
 	</ColliderTree>
 	<ZoneTree>
@@ -5675,11 +5676,43 @@
 	</Models>
 	<Colliders>
 		<Collider ver="0" flags="0">
-			<MapObject name="Root" id="35"/>
+			<MapObject name="Root" id="36"/>
 			<HitObject type="ROOT"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="MeshCollider" id="34" hidden="true"/>
+			<MapObject name="MeshCollider" id="35"/>
+			<HitObject type="HIT"/>
+			<HitMesh ver="0">
+				<TriangleBatch ver="0">
+					<VertexTable>
+						<Vertex xyz="45,85,-455" uv="-2676,1024"/>
+						<Vertex xyz="-30,71,-455" uv="-58,1024"/>
+						<Vertex xyz="45,60,-455" uv="-2676,208"/>
+						<Vertex xyz="-129,61,-455" uv="3439,208"/>
+						<Vertex xyz="-30,50,-455" uv="-58,208"/>
+						<Vertex xyz="-129,84,-455" uv="3439,1024"/>
+						<Vertex xyz="45,60,-455" uv="-2676,208"/>
+						<Vertex xyz="-30,71,-455" uv="-58,1024"/>
+						<Vertex xyz="-30,50,-455" uv="-58,208"/>
+						<Vertex xyz="-30,71,-455" uv="-58,1024"/>
+						<Vertex xyz="-129,84,-455" uv="3439,1024"/>
+						<Vertex xyz="-30,50,-455" uv="-58,208"/>
+						<Vertex xyz="-129,84,-455" uv="3439,1024"/>
+						<Vertex xyz="-129,84,-455" uv="3439,1024"/>
+						<Vertex xyz="-30,50,-455" uv="-58,208"/>
+					</VertexTable>
+					<TriangleList>
+						<Triangle ijk="0,1,2" doubleSided="true"/>
+						<Triangle ijk="3,4,5" doubleSided="true"/>
+						<Triangle ijk="6,7,8" doubleSided="true"/>
+						<Triangle ijk="9,10,11" doubleSided="true"/>
+						<Triangle ijk="12,13,14" doubleSided="true"/>
+					</TriangleList>
+				</TriangleBatch>
+			</HitMesh>
+		</Collider>
+		<Collider ver="0" flags="0">
+			<MapObject name="MeshCollider" id="34"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -5723,7 +5756,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o240" id="32" hidden="true" dumped="true" fileOffset="10DC"/>
+			<MapObject name="o240" id="32" dumped="true" fileOffset="10DC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -5779,7 +5812,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o239" id="31" hidden="true" dumped="true" fileOffset="10D0"/>
+			<MapObject name="o239" id="31" dumped="true" fileOffset="10D0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -5897,7 +5930,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o270" id="2F" hidden="true" dumped="true" fileOffset="10B8"/>
+			<MapObject name="o270" id="2F" dumped="true" fileOffset="10B8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -5915,7 +5948,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o154" id="2E" hidden="true" dumped="true" fileOffset="10AC"/>
+			<MapObject name="o154" id="2E" dumped="true" fileOffset="10AC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -5937,7 +5970,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o244" id="2C" hidden="true" dumped="true" fileOffset="1094"/>
+			<MapObject name="o244" id="2C" dumped="true" fileOffset="1094"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -5995,7 +6028,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o110" id="2B" hidden="true" dumped="true" fileOffset="1088"/>
+			<MapObject name="o110" id="2B" dumped="true" fileOffset="1088"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6018,7 +6051,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o126" id="2A" hidden="true" dumped="true" fileOffset="107C"/>
+			<MapObject name="o126" id="2A" dumped="true" fileOffset="107C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6054,7 +6087,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="table" id="29" hidden="true" dumped="true" fileOffset="1070"/>
+			<MapObject name="table" id="29" dumped="true" fileOffset="1070"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6090,7 +6123,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o92" id="28" hidden="true" dumped="true" fileOffset="1064"/>
+			<MapObject name="o92" id="28" dumped="true" fileOffset="1064"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6116,7 +6149,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o90" id="27" hidden="true" dumped="true" fileOffset="1058"/>
+			<MapObject name="o90" id="27" dumped="true" fileOffset="1058"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6164,7 +6197,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o185" id="26" hidden="true" dumped="true" fileOffset="104C"/>
+			<MapObject name="o185" id="26" dumped="true" fileOffset="104C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6253,7 +6286,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="deilit1u" id="25" hidden="true" dumped="true" fileOffset="1040"/>
+			<MapObject name="deilit1u" id="25" dumped="true" fileOffset="1040"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6275,7 +6308,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o291" id="23" hidden="true" dumped="true" fileOffset="1028"/>
+			<MapObject name="o291" id="23" dumped="true" fileOffset="1028"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6311,7 +6344,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="deili1" id="22" hidden="true" dumped="true" fileOffset="101C"/>
+			<MapObject name="deili1" id="22" dumped="true" fileOffset="101C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6329,7 +6362,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o48" id="21" hidden="true" dumped="true" fileOffset="1010"/>
+			<MapObject name="o48" id="21" dumped="true" fileOffset="1010"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6385,7 +6418,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="deilit1" id="20" hidden="true" dumped="true" fileOffset="1004"/>
+			<MapObject name="deilit1" id="20" dumped="true" fileOffset="1004"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6407,7 +6440,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o256k" id="1E" hidden="true" dumped="true" fileOffset="FEC"/>
+			<MapObject name="o256k" id="1E" dumped="true" fileOffset="FEC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6425,7 +6458,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o236" id="1D" hidden="true" dumped="true" fileOffset="FE0"/>
+			<MapObject name="o236" id="1D" dumped="true" fileOffset="FE0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6461,7 +6494,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o184" id="1B" hidden="true" dumped="true" fileOffset="FC8"/>
+			<MapObject name="o184" id="1B" dumped="true" fileOffset="FC8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6497,7 +6530,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o183" id="1A" hidden="true" dumped="true" fileOffset="FBC"/>
+			<MapObject name="o183" id="1A" dumped="true" fileOffset="FBC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6515,7 +6548,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o193k" id="19" hidden="true" dumped="true" fileOffset="FB0"/>
+			<MapObject name="o193k" id="19" dumped="true" fileOffset="FB0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6551,7 +6584,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o13" id="18" hidden="true" dumped="true" fileOffset="FA4"/>
+			<MapObject name="o13" id="18" dumped="true" fileOffset="FA4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6575,7 +6608,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o190k" id="17" hidden="true" dumped="true" fileOffset="F98"/>
+			<MapObject name="o190k" id="17" dumped="true" fileOffset="F98"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6600,7 +6633,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o189k" id="16" hidden="true" dumped="true" fileOffset="F8C"/>
+			<MapObject name="o189k" id="16" dumped="true" fileOffset="F8C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6630,7 +6663,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="tt9" id="15" hidden="true" dumped="true" fileOffset="F80"/>
+			<MapObject name="tt9" id="15" dumped="true" fileOffset="F80"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6648,7 +6681,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="kujira" id="14" hidden="true" dumped="true" fileOffset="F74"/>
+			<MapObject name="kujira" id="14" dumped="true" fileOffset="F74"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6666,7 +6699,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o186" id="13" hidden="true" dumped="true" fileOffset="F68"/>
+			<MapObject name="o186" id="13" dumped="true" fileOffset="F68"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6694,7 +6727,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="8000">
-			<MapObject name="o50" id="12" hidden="true" dumped="true" fileOffset="F5C"/>
+			<MapObject name="o50" id="12" dumped="true" fileOffset="F5C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6724,7 +6757,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="kujira_atari" id="10" hidden="true" dumped="true" fileOffset="F44"/>
+			<MapObject name="kujira_atari" id="10" dumped="true" fileOffset="F44"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6756,7 +6789,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o264" id="F" hidden="true" dumped="true" fileOffset="F38"/>
+			<MapObject name="o264" id="F" dumped="true" fileOffset="F38"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6778,7 +6811,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="sign" id="E" hidden="true" dumped="true" fileOffset="F2C"/>
+			<MapObject name="sign" id="E" dumped="true" fileOffset="F2C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6812,7 +6845,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o212" id="D" hidden="true" dumped="true" fileOffset="F20"/>
+			<MapObject name="o212" id="D" dumped="true" fileOffset="F20"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6840,7 +6873,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="deilit9" id="C" hidden="true" dumped="true" fileOffset="F14"/>
+			<MapObject name="deilit9" id="C" dumped="true" fileOffset="F14"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6858,7 +6891,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o187" id="B" hidden="true" dumped="true" fileOffset="F08"/>
+			<MapObject name="o187" id="B" dumped="true" fileOffset="F08"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6883,7 +6916,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o182" id="A" hidden="true" dumped="true" fileOffset="EFC"/>
+			<MapObject name="o182" id="A" dumped="true" fileOffset="EFC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6901,7 +6934,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o181" id="9" hidden="true" dumped="true" fileOffset="EF0"/>
+			<MapObject name="o181" id="9" dumped="true" fileOffset="EF0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6923,7 +6956,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="kaimen" id="8" hidden="true" dumped="true" fileOffset="EE4"/>
+			<MapObject name="kaimen" id="8" dumped="true" fileOffset="EE4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6943,7 +6976,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o206" id="7" hidden="true" dumped="true" fileOffset="ED8"/>
+			<MapObject name="o206" id="7" dumped="true" fileOffset="ED8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6967,7 +7000,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o36" id="6" hidden="true" dumped="true" fileOffset="ECC"/>
+			<MapObject name="o36" id="6" dumped="true" fileOffset="ECC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7004,7 +7037,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="deilitne" id="4" hidden="true" dumped="true" fileOffset="EB4"/>
+			<MapObject name="deilitne" id="4" dumped="true" fileOffset="EB4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7022,7 +7055,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="deiline" id="3" hidden="true" dumped="true" fileOffset="EA8"/>
+			<MapObject name="deiline" id="3" dumped="true" fileOffset="EA8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7040,7 +7073,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o115" id="2" hidden="true" dumped="true" fileOffset="E9C"/>
+			<MapObject name="o115" id="2" dumped="true" fileOffset="E9C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7086,7 +7119,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o107" id="1" hidden="true" dumped="true" fileOffset="E90"/>
+			<MapObject name="o107" id="1" dumped="true" fileOffset="E90"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7104,7 +7137,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
-			<MapObject name="o106" id="0" hidden="true" dumped="true" fileOffset="E84"/>
+			<MapObject name="o106" id="0" dumped="true" fileOffset="E84"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
