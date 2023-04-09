@@ -1,4 +1,4 @@
-#string:19:000
+#message:19:000
 {
 	[Style Tattle]
 	[EnableCDownNext]This is the west entrance to[BR]
@@ -9,9 +9,9 @@
 	emblem on the ground are symbols[BR]
 	of this fair town.  [BR]
 	[Wait][Next]
-	Goomba Village, where my house[BR]
-	is, is a brief journey west from[BR]
-	here.[BR]
+	Goomba Village, where the goombas[BR]
+	reside, is a brief journey[BR]
+	west from here.[BR]
 	[Wait][Next]
 	You'll find a very smart Toad[BR]
 	named Russ T. living in this town.[BR]
@@ -24,7 +24,7 @@
 	[Pause 10]Oh yeah! There's also a Dojo.[Wait][End]
 }
 
-#string:19:001
+#message:19:001
 {
 	[Style Tattle]
 	[EnableCDownNext]This is the central area of Toad[BR]
@@ -57,14 +57,12 @@
 	opening his own specialty shop.[Wait][End]
 }
 
-#string:19:002
+#message:19:002
 {
 	[Style Tattle]
 	[EnableCDownNext]Miss. Tayce T., a famous local[BR]
 	cook, lives around here.[BR]
 	[Wait][Next]
-	I'm pretty sure my mom wants to[BR]
-	learn cooking from her.[BR]
 	[Pause 15]Tayce T. will cook for you if you[BR]
 	take ingredients to her.[BR]
 	[Wait][Next]
@@ -76,7 +74,7 @@
 	wandering in.[Wait][End]
 }
 
-#string:19:003
+#message:19:003
 {
 	[Style Tattle]
 	[EnableCDownNext]There's Toad Town Station.[BR]
@@ -89,12 +87,10 @@
 	And there's also Oink-Oink Farm,[BR]
 	where they raise Li'l-Oinks.[BR]
 	[Pause 10]Raising Li'l-Oinks costs coins.[BR]
-	[Wait][Next]
-	My dad said there's a Playroom [BR]
-	here, but I don't see it...[Wait][End]
+	[Wait][End]
 }
 
-#string:19:004
+#message:19:004
 {
 	[Style Tattle]
 	[EnableCDownNext]This is the residential area of[BR]
@@ -105,7 +101,7 @@
 	pretty quiet.[Wait][End]
 }
 
-#string:19:005
+#message:19:005
 {
 	[Style Tattle]
 	[EnableCDownNext]This is Toad Town's port. It's[BR]
@@ -116,7 +112,7 @@
 	the pier and gaze at the sea.[Wait][End]
 }
 
-#string:19:009
+#message:19:009
 {
 	[Style Tattle]
 	[EnableCDownNext]Peach's Castle[Pause 3].[Pause 3].[Pause 3]. [BR]
@@ -126,7 +122,7 @@
 	now. How awful![Wait][End]
 }
 
-#string:19:01C
+#message:19:01C
 {
 	[Style Tattle]
 	[EnableCDownNext]This place feels strange and[BR]
@@ -137,7 +133,7 @@
 	Summit.[Wait][End]
 }
 
-#string:19:01D
+#message:19:01D
 {
 	[Style Tattle]
 	[EnableCDownNext]This is Shooting Star Summit.[BR]
@@ -148,7 +144,7 @@
 	embraces the sky.[Wait][End]
 }
 
-#string:19:022
+#message:19:022
 {
 	[Style Tattle]
 	[EnableCDownNext]This is the house of an amazingly[BR]
@@ -166,7 +162,7 @@
 	spiritual cushion.[Wait][End]
 }
 
-#string:19:023
+#message:19:023
 {
 	[Style Tattle]
 	[EnableCDownNext]We're in Toad Town Tunnels.[BR]
@@ -178,7 +174,7 @@
 	"dank" is more like it.[Wait][End]
 }
 
-#string:19:039
+#message:19:039
 {
 	[Style Tattle]
 	[EnableCDownNext]According to Goombaria,[BR]
@@ -189,62 +185,47 @@
 	exactly what, though...[Wait][End]
 }
 
-#string:19:03A
+#message:19:03A
 {
 	[Style Tattle]
 	[EnableCDownNext]This is Goomba Village.[BR]
-	[Pause 10]My family lives here.[BR]
 	[Wait][Next]
 	There's also a Toad House, which,[BR]
 	as you probably know, is a good[BR]
 	place to take a rest.[BR]
-	[Wait][Next]
-	That big tree near my house is a[BR]
-	great place to get Goomnuts.[Wait][End]
+	[Wait][End]
 }
 
-#string:19:03B
+#message:19:03B
 {
 	[Style Tattle]
-	[EnableCDownNext]These are the woods behind my[BR]
-	house.[BR]
-	[Wait][Next]
-	Until a little while ago,[BR]
-	Goombaria and I used to play[BR]
-	hide-and-seek here...[BR]
-	[Wait][Next]
-	But there have been a lot of[BR]
-	evil Goombas and Paragoombas[BR]
-	spotted in the area, so Mom[BR]
-	doesn't let us play anymore.[Wait][End]
+	[EnableCDownNext]
+	These are the woods behind[br]
+	Goombario's home.[br]
+	The enemy goombas seem[br]
+	to have left luckily.B[br]
+	[Wait][End]
 }
 
-#string:19:03C
+#message:19:03C
 {
 	[Style Tattle]
-	[EnableCDownNext]I think this is Jr. Troopa's[BR]
+	[EnableCDownNext]
+	I think this is Jr. Troopa's[BR]
 	secret base.[BR]
-	[Wait][Next]
-	That crazy kid![BR]
-	[Pause 5]Whenever I try to explore in[BR]
-	there, he freaks out.[BR]
-	[Pause 5]He needs to chill.[Wait][End]
+	[Wait][End]
 }
 
-#string:19:03D
+#message:19:03D
 {
 	[Style Tattle]
-	[EnableCDownNext]These are the woods behind my[BR]
-	house.[BR]
-	[Pause 10]Careful! There are many bad[BR]
-	Goombas around here.[BR]
-	[Wait][Next]
-	Sorry... I'm sure that you can[BR]
-	probably take care of yourself,[BR]
-	huh?[Wait][End]
+	These are the woods behind[br]
+	Goombario's home.[br]
+	The enemy goombas seem[br]
+	to have left luckily.A[br]
 }
 
-#string:19:03E
+#message:19:03E
 {
 	[Style Tattle]
 	[EnableCDownNext]Did you know...[BR]
@@ -256,7 +237,7 @@
 	spots us.[Wait][End]
 }
 
-#string:19:03F
+#message:19:03F
 {
 	[Style Tattle]
 	[EnableCDownNext]Look, [Pause 5]Mario![BR]
@@ -265,7 +246,7 @@
 	don't you think?[Wait][End]
 }
 
-#string:19:040
+#message:19:040
 {
 	[Style Tattle]
 	[EnableCDownNext]If we go east a bit farther,[BR]
@@ -276,14 +257,14 @@
 	Town.[Wait][End]
 }
 
-#string:19:041
+#message:19:041
 {
 	[Style Tattle]
 	[EnableCDownNext]There're lots of bad Goombas[BR]
 	around these parts.[Wait][End]
 }
 
-#string:19:042
+#message:19:042
 {
 	[Style Tattle]
 	[EnableCDownNext]I think there was a bridge[BR]
@@ -292,32 +273,29 @@
 	[Wait][Next]
 	If we head east, we'll get to[BR]
 	Toad Town. If we head west,[BR]
-	we'll come to my house in Goomba[BR]
-	Village.[Wait][End]
+	we'll come to Goomba Village[BR]
+	[Wait][End]
 }
 
-#string:19:043
+#message:19:043
 {
 	[Style Tattle]
 	[EnableCDownNext]Ah, the outskirts of Toad Town.[BR]
 	[Wait][Next]
 	To the east is Toad Town.[BR]
-	[Pause 5]If we go west, we'll reach my[BR]
-	hometown, Goomba Village.[Wait][End]
+	[Pause 5]If we go west, we'll reach[br]
+	 Goomba Village.[br]
+	 [Wait][End]
 }
 
-#string:19:044
+#message:19:044
 {
 	[Style Tattle]
-	[EnableCDownNext]It's your house![BR]
-	[Pause 5]Cool! Nice landscaping![BR]
-	[Wait][Next]
-	I like my house, but yours is even[BR]
-	nicer. Did you do the decorating[BR]
-	yourself?[Wait][End]
+	[EnableCDownNext]It's our house![BR]
+	[Wait][End]
 }
 
-#string:19:045
+#message:19:045
 {
 	[Style Tattle]
 	[EnableCDownNext]To the west of here is Toad[BR]
@@ -329,7 +307,7 @@
 	Bros. Fortress.[Wait][End]
 }
 
-#string:19:046
+#message:19:046
 {
 	[Style Tattle]
 	[EnableCDownNext]It's always pleasant around[BR]
@@ -341,14 +319,14 @@
 	live around here.[Wait][End]
 }
 
-#string:19:047
+#message:19:047
 {
 	[Style Tattle]
 	[EnableCDownNext]Koopas like to live around[BR]
 	Pleasant Path because there's[BR]
 	plenty of water for them to[BR]
 	lounge in.[BR]
-	[Wait][Next]
+	[wait][next]
 	Koopa Village is down this way.[BR]
 	[Wait][Next]
 	If you want to go to Koopa[BR]
@@ -357,7 +335,7 @@
 	going straight.[Wait][End]
 }
 
-#string:19:048
+#message:19:048
 {
 	[Style Tattle]
 	[EnableCDownNext]It's Koopa Village.[BR]
@@ -369,7 +347,7 @@
 	the fortress, huh?[Wait][End]
 }
 
-#string:19:049
+#message:19:049
 {
 	[Style Tattle]
 	[EnableCDownNext]The house with the yellowish[BR]
