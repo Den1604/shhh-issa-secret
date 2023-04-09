@@ -9,6 +9,7 @@
         Set *GF_KMR02_ReturnedWithGoompa .True
         Set *GF_StartedChapter1 .True
         Set *GF_NOK02_Item_StarPiece .True
+        Set *GF_MAC02_Gift_MagicalSeed1 .True
     EndThread
     Call  InterpPlayerYaw   (  90`  0` )
     Call  SetPlayerPos  (  -50`  30`  -80` )

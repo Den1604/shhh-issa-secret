@@ -5,7 +5,7 @@
     SetGroup  0000001B
     Call  UseExitHeading    ( 0000003C ~Entry:Entry2 )
     Exec  ExitWalk
-    Call  GotoMap   ( "kmr_05" 00000002 ) % kmr_03
+    Call  GotoMap   ( "kmr_31" 00000000 ) % kmr_03
     Wait  100`
     Return
     End
