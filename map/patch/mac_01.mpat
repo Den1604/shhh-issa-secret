@@ -81,7 +81,7 @@
   Exec  $Script_80262604
   Call  SetCamSpeed   ( .Cam:Default *Fixed[2.0] )
   Call $GetStarPieceCount ( *Var[0] )
-  If *Var[0] > 42`
+  If *Var[0] > 0000002A
     Set *GotEnoughEggs .True
   EndIf
   Return
