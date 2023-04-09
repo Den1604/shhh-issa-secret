@@ -203,7 +203,7 @@
 	These are the woods behind[br]
 	Goombario's home.[br]
 	The enemy goombas seem[br]
-	to have left luckily.B[br]
+	to have left luckily.[br]
 	[Wait][End]
 }
 
@@ -219,10 +219,11 @@
 #message:19:03D
 {
 	[Style Tattle]
+	[EnableCDownNext]
 	These are the woods behind[br]
-	Goombario's home.[br]
-	The enemy goombas seem[br]
-	to have left luckily.[br]
+	Goombario's home.[Pause:10][br]
+	I wonder what is in that[br]
+	cave[Pause:5].[Pause:5].[Pause:5].[br]
 	[Wait][End]
 }
 

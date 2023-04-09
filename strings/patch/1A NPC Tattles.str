@@ -20,9 +20,7 @@
 	[EnableCDownNext]This is a Koopa Troopa from the[BR]
 	excavation team.[BR]
 	[Pause 5]The team is assisting Kolorado.[BR]
-	[Wait][Next]
-	That looks like hard work.[BR]
-	[Pause 5]Doing chores in this heat? Ugh![Wait][End]
+	[Wait][End]
 }
 
 #message:1A:002
