@@ -7,6 +7,8 @@
     Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Item802452E0 .ItemSpawnMode:Fixed_NeverVanish *GF_MAC00_Item_StarPiece )
     Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_00 )
     Bind  $Script_80245260 .Trigger:WallPressA ~Collider:sign 00000001 00000000
+    Call  MakeEntity    ( .Entity:Signpost ~Vec4d:Signpost 80000000 )
+	Call  AssignScript    ( $Script_ReadSign_Marker )
     Return
     End
 }
@@ -34,4 +36,13 @@
     Call  BindNpcInteract   ( .Npc:Self $Script_Interact_802539EC )
     Return
     End
+}
+
+#new:Script $Script_ReadSign_Marker
+{
+	Call  DisablePlayerInput        ( .True )
+	Call  ShowMessageAtScreenPos    ( 002F000D 000000A0 00000028 )
+	Call  DisablePlayerInput        ( .False )
+	Return
+	End
 }

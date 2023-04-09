@@ -232,8 +232,8 @@
     Call  802D1270		( 00000140 FFFFFFBA *Fixed[3.0] )
     Call  PanToTarget	( .Cam:Default 00000000 00000000 )
     Exec  $Script_80243B64
-    Call  ModifyColliderFlags ( 00000000 ~Collider:o245 00000000 )
-    Call  ModifyColliderFlags ( 00000000 ~Collider:o246 00000000 )
+    Call  ModifyColliderFlags ( 00000001 ~Collider:o245 7FFFFE00 )
+    Call  ModifyColliderFlags ( 00000001 ~Collider:o246 7FFFFE00 )
     Call  DisablePlayerInput	( .False )
 %   1D0:  Call  802D1270		( 000001CC FFFFFFBA *Fixed[3.0] )
 %   1E8:  Call  802D1270		( 0000023A FFFFFF56 *Fixed[3.0] )

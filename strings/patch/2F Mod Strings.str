@@ -188,3 +188,11 @@ We are off to celebrate[br]
 Easter in Shiver City![br]
 [Wait][End]
 }
+
+#message:2F:00D
+{
+[Style Sign]
+Dojo closed for egg[br]
+hunting festivities.[br]
+[Wait][End]
+}
