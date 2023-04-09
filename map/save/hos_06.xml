@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="hos_06" author="unnamed" background="hos_bg" textures="hos_tex">
 	<Editor>
-		<Camera pos="88.735809,69.878876,291.066956" pitch="46.399998" yaw="340.320587"/>
-		<Camera pos="0.000000,65536.000000,0.000000"/>
+		<Camera pos="-254.496246,97.574478,284.184448" pitch="12.879998" yaw="16.800009"/>
+		<Camera pos="-168.867355,65536.000000,153.843491"/>
 		<Camera pos="65536.000000,235.000000,0.000000"/>
 		<Camera pos="0.000000,235.000000,65536.000000"/>
 	</Editor>
@@ -359,7 +359,7 @@
 		</Node>
 	</ZoneTree>
 	<MarkerTree>
-		<Node name="Root" id="8">
+		<Node name="Root" id="9">
 			<Node name="Entrances" id="0">
 				<Node name="Entry0" id="FFFFFFFF"/>
 			</Node>
@@ -372,6 +372,7 @@
 			</Node>
 			<Node name="Egg1" id="6"/>
 			<Node name="Egg2" id="7"/>
+			<Node name="SignGoHere" id="8"/>
 		</Node>
 	</MarkerTree>
 	<LightSets>
@@ -12416,6 +12417,18 @@
 						<Vertex xyz="-131,0,166"/>
 						<Vertex xyz="-124,100,159"/>
 						<Vertex xyz="-124,0,159"/>
+						<Vertex xyz="-136,0,193"/>
+						<Vertex xyz="-136,100,193"/>
+						<Vertex xyz="-149,100,176"/>
+						<Vertex xyz="-136,0,193"/>
+						<Vertex xyz="-149,100,176"/>
+						<Vertex xyz="-149,0,176"/>
+						<Vertex xyz="-176,0,149"/>
+						<Vertex xyz="-176,100,149"/>
+						<Vertex xyz="-192,100,135"/>
+						<Vertex xyz="-176,0,149"/>
+						<Vertex xyz="-192,100,135"/>
+						<Vertex xyz="-192,0,135"/>
 					</VertexTable>
 					<TriangleList>
 						<Triangle ijk="0,1,2"/>
@@ -12494,6 +12507,10 @@
 						<Triangle ijk="77,78,79"/>
 						<Triangle ijk="79,78,80"/>
 						<Triangle ijk="79,80,81"/>
+						<Triangle ijk="82,83,84"/>
+						<Triangle ijk="85,86,87"/>
+						<Triangle ijk="88,89,90"/>
+						<Triangle ijk="91,92,93"/>
 					</TriangleList>
 				</TriangleBatch>
 			</HitMesh>
@@ -12831,7 +12848,7 @@
 			<HitObject type="GROUP"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o48" id="C" dumped="true" fileOffset="1850"/>
+			<MapObject name="o48" id="C" hidden="true" dumped="true" fileOffset="1850"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12850,7 +12867,7 @@
 			<Camera type="TYPE_6" flag="true" boomLength="400.000000" boomPitch="17.000000" viewPitch="-7.000000" posA="-19,0,-38" posB="-88,0,32" posC="0,0,0"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o47" id="B" dumped="true" fileOffset="1844"/>
+			<MapObject name="o47" id="B" hidden="true" dumped="true" fileOffset="1844"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12871,7 +12888,7 @@
 			<Camera type="TYPE_6" flag="false" boomLength="400.000000" boomPitch="17.000000" viewPitch="-7.000000" posA="-83,0,-102" posB="-152,0,-33" posC="0,0,0"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o46" id="A" dumped="true" fileOffset="1838"/>
+			<MapObject name="o46" id="A" hidden="true" dumped="true" fileOffset="1838"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12896,7 +12913,7 @@
 			<HitObject type="GROUP"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o32" id="8" dumped="true" fileOffset="1820"/>
+			<MapObject name="o32" id="8" hidden="true" dumped="true" fileOffset="1820"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12935,7 +12952,7 @@
 			<HitObject type="GROUP"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o42" id="6" dumped="true" fileOffset="1808"/>
+			<MapObject name="o42" id="6" hidden="true" dumped="true" fileOffset="1808"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12963,7 +12980,7 @@
 			<Camera type="TYPE_6" flag="true" boomLength="400.000000" boomPitch="17.000000" viewPitch="-7.000000" posA="-69,0,-69" posB="41,0,41" posC="0,0,0"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o41" id="5" dumped="true" fileOffset="17FC"/>
+			<MapObject name="o41" id="5" hidden="true" dumped="true" fileOffset="17FC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12989,7 +13006,7 @@
 			<Camera type="TYPE_6" flag="false" boomLength="400.000000" boomPitch="17.000000" viewPitch="-7.000000" posA="-157,0,19" posB="-47,0,128" posC="0,0,0"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o40" id="4" dumped="true" fileOffset="17F0"/>
+			<MapObject name="o40" id="4" hidden="true" dumped="true" fileOffset="17F0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -13014,7 +13031,7 @@
 			<HitObject type="GROUP"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o39" id="2" dumped="true" fileOffset="17D8"/>
+			<MapObject name="o39" id="2" hidden="true" dumped="true" fileOffset="17D8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -13033,7 +13050,7 @@
 			<Camera type="TYPE_2" flag="false" boomLength="450.000000" boomPitch="17.000000" viewPitch="-7.000000" posA="485,315,-23" posB="485,394,-223" posC="315,0,394"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o38" id="1" dumped="true" fileOffset="17CC"/>
+			<MapObject name="o38" id="1" hidden="true" dumped="true" fileOffset="17CC"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -13062,7 +13079,7 @@
 			<Camera type="TYPE_0" flag="false" boomLength="450.000000" boomPitch="17.000000" viewPitch="-7.000000" posA="0,0,0" posB="0,0,-50" posC="0,0,0"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="o36" id="0" dumped="true" fileOffset="17C0"/>
+			<MapObject name="o36" id="0" hidden="true" dumped="true" fileOffset="17C0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -13086,7 +13103,10 @@
 	</Zones>
 	<Markers>
 		<Marker ver="4" type="Root">
-			<MapObject name="Root" id="8"/>
+			<MapObject name="Root" id="9"/>
+		</Marker>
+		<Marker ver="4" type="Position" pos="-156,20,156" yaw="-45.000000">
+			<MapObject name="SignGoHere" id="8"/>
 		</Marker>
 		<Marker ver="4" type="Entity" pos="79,0,247" yaw="0.000000">
 			<MapObject name="Egg2" id="7"/>

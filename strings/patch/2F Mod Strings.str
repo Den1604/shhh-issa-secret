@@ -174,3 +174,11 @@ cutscene of the hack![br]
 (Neither is the Luigi Partner :( )[br]
 [Wait][End]
 }
+
+#message:2F:00C
+{
+[Style Sign]
+We are off to celebrate[br]
+Easter in Shiver City![br]
+[Wait][End]
+}

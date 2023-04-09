@@ -15,6 +15,17 @@
    28:  Call  AssignPanelFlag	( *GF_HOS06_HiddenPanel )
    Call  MakeItemEntity     ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_hos_06_1 )
    Call  MakeItemEntity     ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_hos_06_2 )
+   Call  MakeEntity    ( .Entity:Signpost ~Vec4d:SignGoHere 80000000 )
+	Call  AssignScript    ( $Script_ReadSign_Marker )
    38:  Return
    40:  End
+}
+
+#new:Script $Script_ReadSign_Marker
+{
+	Call  DisablePlayerInput        ( .True )
+	Call  ShowMessageAtScreenPos    ( 002F000C 000000A0 00000028 )
+	Call  DisablePlayerInput        ( .False )
+	Return
+	End
 }
