@@ -19,7 +19,7 @@
   154:  If  *GF_KMR11_ItemBlock_SuperShroom  ==  .False
   164:  	Call  AssignScript	( $Script_80245DCC )
   174:  Else
-  17C:  	Call  MakeEntity		( .Entity:YellowBlock ~Vec4d:Entity80246004 .Item:SuperShroom 80000000 )
+  17C:  	Call  MakeEntity		( .Entity:YellowBlock ~Vec4d:Entity80246004 .Item:Coin 80000000 )
   1A4:  	Call  AssignBlockFlag	( *GF_KMR11_ItemBlock_SuperShroom )
   1B4:  EndIf
   1BC:  Call  MakeEntity		( .Entity:HiddenPanel ~Vec4d:Entity80246044 ~Model:point 80000000 )

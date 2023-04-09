@@ -10,7 +10,7 @@
    7C:  	Call  MakeEntity	( .Entity:Hammer2Block ~Vec4d:Entity802415AC 80000000 )
    A0:  	Call  AssignScript	( $Script_802414A8 )
    B0:  EndIf
-   B8:  Call  MakeEntity		( .Entity:HiddenYellowBlock ~Vec4d:Entity802415E8 .Item:RepelGel 80000000 )
+   B8:  Call  MakeEntity		( .Entity:HiddenYellowBlock ~Vec4d:Entity802415E8 .Item:Coin 80000000 )
    E0:  Call  AssignBlockFlag	( *GF_KMR03_HiddenItem_RepelGel )
    F0:  Call  MakeEntity		( .Entity:BrickBlock ~Vec4d:Entity80241620 80000000 )
   114:  Call  MakeEntity		( .Entity:BrickBlock ~Vec4d:Entity80241644 80000000 )

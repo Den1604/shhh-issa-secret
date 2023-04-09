@@ -1,3 +1,5 @@
+#define .NpcID:Goomama_04           04
+
 @ $Script_MakeEntities
 {
     0:  Switch  *GB_StoryProgress
@@ -25,4 +27,66 @@
   Call  MakeItemEntity	( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_02_2 )
   17C:  Return
   184:  End
+}
+
+@ $Script_Interact_8024C808 {
+  Switch  *GB_StoryProgress
+    Case  <  .Story:Ch0_GateCrushed % FFFFFF85
+      If  *GF_KMR02_Met_Goomama  ==  .False
+        Call  SpeakToPlayer ( .NpcID:Goomama_04 00A10004 00A10001 00000000 000B0077 ) % Oh, land sakes! Mario! So nice to meet you! My! I' ...
+        Set   *GF_KMR02_Met_Goomama  .True
+      Else
+        Call  SpeakToPlayer ( .NpcID:Goomama_04 00A10004 00A10001 00000000 000B0078 ) % You should know that my son, Goombario, is a big f ...
+      EndIf
+    Case  <  .Story:Ch0_LeftThePlayground % FFFFFF8B
+      Call  SpeakToPlayer ( .NpcID:Goomama_04 00A10004 00A10001 00000000 000B0079 ) % Goompa...? I thought he was fixing the veranda. I  ...
+    Case  <  .Story:Ch0_DefeatedGoombaKing % FFFFFF90
+      If  *GF_KMR02_Goomama_SaidFarewell  ==  .False
+        Call  DisablePartnerAI  ( 00000000 )
+        Call  SpeakToPlayer ( .Npc:Partner 00010008 00010001 00000005 000B007A ) % Mom! I get to go with Mario! I promise when I come ...
+        Call  SetNpcAnimation   ( .Npc:Partner 009D0001 )
+        Wait  10`
+        Call  SpeakToPlayer ( .NpcID:Goomama_04 00A10004 00A10001 00000000 000B007B ) % Oh, my little baby! I can't believe you're going o ...
+        Wait  10`
+        Call  SpeakToPlayer ( .Npc:Partner 00010008 00010001 00000005 000B007C ) % I know, Mom, sheesh. I'll be good.
+        Wait  10`
+        Call  SpeakToPlayer ( .NpcID:Goomama_04 00A10004 00A10001 00000000 000B007D ) % Goombario, you mind your mom! Wear a sweater when  ...
+        Wait  10`
+        Call  SpeakToPlayer ( .Npc:Partner 00010008 00010001 00000005 000B007E ) % Urgh... Mom always nags me...
+        Wait  10`
+        Call  SpeakToPlayer ( .NpcID:Goomama_04 00A10004 00A10001 00000000 000B007F ) % Now hush! Mario, please take good care of my sweet ...
+        Wait  10`
+        Set   *GF_KMR02_Goomama_SaidFarewell  .True
+        Call  EnablePartnerAI ( )
+      Else
+        Call  SpeakToPlayer ( .NpcID:Goomama_04 00A10004 00A10001 00000000 000B0080 ) % Mario, please take good care of my sweet little Go ...
+      EndIf
+    Case  <  .Story:Ch3_StarSpiritRescued % FFFFFFF1
+      Call  SpeakToPlayer ( .NpcID:Goomama_04 00A10004 00A10001 00000000 000B0081 ) % Oh, land sakes! Mario! Is my Goombario bothering y ...
+      Call  GetCurrentPartnerID   ( *Var0 )
+      % If  *Var0  ==  .Partner:Goombario % 1
+      %   Call  DisablePartnerAI  ( 00000000 )
+      %   Call  SpeakToNpc        ( .Npc:Partner 00010008 00010001 00000000 .NpcID:Goomama_04 000B0082 ) % Ugh... Mom! C'mon, cut it out!
+      %   Call  EnablePartnerAI ( )
+      % EndIf
+    Case  <  .Story:Ch7_StarSpritDeparted % 59
+      Call  GetCurrentPartnerID   ( *Var0 )
+      If  *Var0  !=  .Partner:Goombario % 1
+        Call  SpeakToPlayer ( .NpcID:Goomama_04 00A10004 00A10001 00000000 000B0083 ) % I heard that Toad Town has finally calmed down a b ...
+      Else
+        Call  SpeakToPlayer     ( .NpcID:Goomama_04 00A10004 00A10001 00000000 000B0084 ) % Goombario, c'mere. I'm sure you're working hard. L ...
+        Call  DisablePartnerAI  ( 00000000 )
+        Call  SpeakToNpc        ( .Npc:Partner 00010008 00010001 00000000 .NpcID:Goomama_04 000B0085 ) % C'mon, Mom, quit it!
+        Call  EnablePartnerAI ( )
+      EndIf
+    Case  >=  .Story:Ch7_StarSpritDeparted % 59
+      Call  GetCurrentPartnerID   ( *Var0 )
+      If  *Var0  !=  .Partner:Goombario % 1
+        Call  SpeakToPlayer ( .NpcID:Goomama_04 00A10004 00A10001 00000000 000B0086 ) % I do love to shop, but the problem with Toad Town  ...
+      Else
+        Call  SpeakToPlayer ( .NpcID:Goomama_04 00A10004 00A10001 00000000 000B0087 ) % Goombario, good luck, sweetie!
+      EndIf
+  EndSwitch
+  Return
+  End
 }
