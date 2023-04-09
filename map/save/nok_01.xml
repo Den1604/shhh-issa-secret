@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="nok_01" author="unnamed" background="nok_bg" textures="nok_tex">
 	<Editor>
-		<Camera pos="282.504120,141.883667,444.157654" pitch="10.320000" yaw="337.359985"/>
+		<Camera pos="514.093750,453.246796,809.111450" pitch="55.920002" yaw="354.000000"/>
 		<Camera pos="280.839600,65536.000000,16.916252"/>
 		<Camera pos="65536.000000,21.000000,0.000000"/>
 		<Camera pos="308.600830,54.275364,65536.000000"/>
@@ -11156,7 +11156,7 @@
 			<Movement type="Stationary" data="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite sprite="2B" palette="0" animations="2,2,3,3,1,1,8,8,3,3,3,3,3,3,3,3"/>
 		</Marker>
-		<Marker ver="4" type="NPC" pos="356,0,166" yaw="270.000000">
+		<Marker ver="4" type="NPC" pos="356,-1000,166" yaw="270.000000">
 			<MapObject name="ChuckQuizmo_15" id="E"/>
 			<Movement type="Stationary" data="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite sprite="AF" palette="0" animations="1,2,3,3,1,1,0,0,3,3,3,3,3,3,3,3"/>

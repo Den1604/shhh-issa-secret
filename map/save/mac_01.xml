@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="mac_01" author="unnamed" background="nok_bg" textures="mac_tex">
 	<Editor>
-		<Camera pos="242.460648,93.047760,603.014893" pitch="10.760003" yaw="0.800038"/>
+		<Camera pos="-205.665192,103.370972,377.676575" pitch="18.760004" yaw="0.960061"/>
 		<Camera pos="-391.311218,65536.000000,62.405712"/>
 		<Camera pos="65536.000000,32767.000000,-167.862000"/>
 		<Camera pos="32767.000000,-16.477795,65536.000000"/>
@@ -13338,7 +13338,7 @@
 		<Marker ver="4" type="Group">
 			<MapObject name="NPCs" id="34"/>
 		</Marker>
-		<Marker ver="4" type="NPC" pos="-440,20,-140" yaw="30.000000">
+		<Marker ver="4" type="NPC" pos="-440,-1000,-140" yaw="30.000000">
 			<MapObject name="ChuckQuizmo_05" id="33"/>
 			<Movement type="Stationary" data="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite sprite="AF" palette="0" animations="1,2,3,3,1,1,0,0,3,3,3,3,3,3,3,3"/>

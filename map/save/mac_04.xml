@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="mac_04" author="unnamed" background="nok_bg" textures="mac_tex">
 	<Editor>
-		<Camera pos="0.188807,189.711731,536.106873" pitch="17.960005" yaw="358.453918"/>
+		<Camera pos="247.364655,280.951752,767.426453" pitch="13.320013" yaw="330.293762"/>
 		<Camera pos="-310.238251,65536.000000,113.183647"/>
 		<Camera pos="65536.000000,54.000000,62.000000"/>
 		<Camera pos="-390.517700,95.970581,65536.000000"/>
@@ -10693,7 +10693,7 @@
 			<Movement type="Stationary" data="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite sprite="20" palette="0" animations="1,5,8,8,1,1,1,1,1,1,1,1,1,1,1,1"/>
 		</Marker>
-		<Marker ver="4" type="NPC" pos="57,20,-114" yaw="270.000000">
+		<Marker ver="4" type="NPC" pos="57,-1000,-114" yaw="270.000000">
 			<MapObject name="ChuckQuizmo_20" id="18"/>
 			<Movement type="Stationary" data="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite sprite="AF" palette="0" animations="1,2,3,3,1,1,0,0,3,3,3,3,3,3,3,3"/>
@@ -10763,7 +10763,7 @@
 			<Movement type="Stationary" data="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite sprite="88" palette="0" animations="1,2,3,3,1,0,0,0,0,0,0,0,0,0,0,0"/>
 		</Marker>
-		<Marker ver="4" type="NPC" pos="410,20,-200" yaw="270.000000">
+		<Marker ver="4" type="NPC" pos="410,-1000,-200" yaw="270.000000">
 			<MapObject name="ChetRippo_13" id="A"/>
 			<Movement type="Stationary" data="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite sprite="A6" palette="0" animations="1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
