@@ -26,7 +26,7 @@
         Wait 10`
         Call PopSong ( )
         Wait 30`
-        Call PushSong  ( .Song:PeachSneaking 00000000 )
+        Call PushSong  ( .Song:OverthereStair 00000000 )
     EndIf
     Return
     End
@@ -34,7 +34,7 @@
 
 @ $Script_SetupMusic {
     If *SawEgg == .True
-        Call  SetMusicTrack ( 00000000 .Song:PeachSneaking 00000000 00000008 )
+        Call  SetMusicTrack ( 00000000 .Song:OverthereStair 00000000 00000008 )
         Call  ClearAmbientSounds ( 250` )
     Else
         Call  SetMusicTrack ( 00000000 .Song:PleasantPath 00000000 00000006 )
