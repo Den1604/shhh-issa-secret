@@ -1,0 +1,386 @@
+#string:19:000
+{
+	[Style Tattle]
+	[EnableCDownNext]This is the west entrance to[BR]
+	Toad Town. In case you couldn't[BR]
+	tell, it's the main gate.[BR]
+	[Wait][Next]
+	The fancy gate and the star[BR]
+	emblem on the ground are symbols[BR]
+	of this fair town.  [BR]
+	[Wait][Next]
+	Goomba Village, where my house[BR]
+	is, is a brief journey west from[BR]
+	here.[BR]
+	[Wait][Next]
+	You'll find a very smart Toad[BR]
+	named Russ T. living in this town.[BR]
+	[Wait][Next]
+	He knows lots of useful[BR]
+	information for adventurers.[BR]
+	[Wait][Next]
+	You'll also find shops that sell[BR]
+	various items.[BR]
+	[Pause 10]Oh yeah! There's also a Dojo.[Wait][End]
+}
+
+#string:19:001
+{
+	[Style Tattle]
+	[EnableCDownNext]This is the central area of Toad[BR]
+	Town, a plaza in front of[BR]
+	Princess Peach's Castle.[BR]
+	[Wait][Next]
+	Pleasant Path begins to the[BR]
+	east of here.[BR]
+	[Wait][Next]
+	This used to be a bustling area[BR]
+	before Bowser's attack. Guests[BR]
+	at the castle were always in[BR]
+	and out.[BR]
+	[Wait][Next]
+	And tourists came from all over[BR]
+	to see the castle.[BR]
+	[Wait][Next]
+	The wizard Merlon also lives[BR]
+	around here. If you get stuck,[BR]
+	his fortune-telling might just[BR]
+	help you out![BR]
+	[Wait][Next]
+	There's also a Toad House where[BR]
+	you can take a short rest and[BR]
+	a post office where you can pick[BR]
+	up mail for your party members.[BR]
+	[Wait][Next]
+	Also, over by the flower garden,[BR]
+	there's a guy named Rowf who's[BR]
+	opening his own specialty shop.[Wait][End]
+}
+
+#string:19:002
+{
+	[Style Tattle]
+	[EnableCDownNext]Miss. Tayce T., a famous local[BR]
+	cook, lives around here.[BR]
+	[Wait][Next]
+	I'm pretty sure my mom wants to[BR]
+	learn cooking from her.[BR]
+	[Pause 15]Tayce T. will cook for you if you[BR]
+	take ingredients to her.[BR]
+	[Wait][Next]
+	Oh yeah! Forever Forest lies to[BR]
+	the east,[BR]
+	[Wait][Next]
+	so a Toad watchman stands guard[BR]
+	there and prevents people from[BR]
+	wandering in.[Wait][End]
+}
+
+#string:19:003
+{
+	[Style Tattle]
+	[EnableCDownNext]There's Toad Town Station.[BR]
+	[Wait][Next]
+	It's a station for the Dry Dry[BR]
+	Railroad. From there, you can[BR]
+	take the train to scenic[BR]
+	Mt. Rugged.[BR]
+	[Wait][Next]
+	And there's also Oink-Oink Farm,[BR]
+	where they raise Li'l-Oinks.[BR]
+	[Pause 10]Raising Li'l-Oinks costs coins.[BR]
+	[Wait][Next]
+	My dad said there's a Playroom [BR]
+	here, but I don't see it...[Wait][End]
+}
+
+#string:19:004
+{
+	[Style Tattle]
+	[EnableCDownNext]This is the residential area of[BR]
+	Toad Town. It's mostly homes.[BR]
+	[Pause 10]But there's also a shop.[BR]
+	[Wait][Next]
+	For Toad Town, this area is[BR]
+	pretty quiet.[Wait][End]
+}
+
+#string:19:005
+{
+	[Style Tattle]
+	[EnableCDownNext]This is Toad Town's port. It's[BR]
+	home to the only restaurant in[BR]
+	town.[BR]
+	[Wait][Next]
+	I like to stand at the end of[BR]
+	the pier and gaze at the sea.[Wait][End]
+}
+
+#string:19:009
+{
+	[Style Tattle]
+	[EnableCDownNext]Peach's Castle[Pause 3].[Pause 3].[Pause 3]. [BR]
+	[Pause 3]used to be here.[BR]
+	[Wait][Next]
+	There's not even a trace of it[BR]
+	now. How awful![Wait][End]
+}
+
+#string:19:01C
+{
+	[Style Tattle]
+	[EnableCDownNext]This place feels strange and[BR]
+	mysterious, doesn't it?[BR]
+	[Wait][Next]
+	If we go east from here, we'll[BR]
+	eventually get to Shooting Star[BR]
+	Summit.[Wait][End]
+}
+
+#string:19:01D
+{
+	[Style Tattle]
+	[EnableCDownNext]This is Shooting Star Summit.[BR]
+	[Pause 10]Stars are really...uh, shooting.[BR]
+	[Wait][Next]
+	People say that this place,[BR]
+	like no other, reaches up and[BR]
+	embraces the sky.[Wait][End]
+}
+
+#string:19:022
+{
+	[Style Tattle]
+	[EnableCDownNext]This is the house of an amazingly[BR]
+	gorgeous woman, the fortune-[BR]
+	teller Merluvlee.[BR]
+	[Wait][Next]
+	Merlow, who collects Star Pieces,[BR]
+	also lives here.[BR]
+	[Wait][Next]
+	This house pulses with psychic[BR]
+	power. Can you feel it?[BR]
+	[Wait][Next]
+	It feels...weird. It feels like[BR]
+	I'm floating on some sort of[BR]
+	spiritual cushion.[Wait][End]
+}
+
+#string:19:023
+{
+	[Style Tattle]
+	[EnableCDownNext]We're in Toad Town Tunnels.[BR]
+	[Pause 10]Eew... I wonder what's making[BR]
+	the water drip from up there?[BR]
+	[Wait][Next]
+	At best, I guess this place[BR]
+	could be called "damp". Although[BR]
+	"dank" is more like it.[Wait][End]
+}
+
+#string:19:039
+{
+	[Style Tattle]
+	[EnableCDownNext]According to Goombaria,[BR]
+	[Pause 10]this is where you landed.[BR]
+	[Wait][Next]
+	Something about this clearing[BR]
+	feels weird. I can't really say[BR]
+	exactly what, though...[Wait][End]
+}
+
+#string:19:03A
+{
+	[Style Tattle]
+	[EnableCDownNext]This is Goomba Village.[BR]
+	[Pause 10]My family lives here.[BR]
+	[Wait][Next]
+	There's also a Toad House, which,[BR]
+	as you probably know, is a good[BR]
+	place to take a rest.[BR]
+	[Wait][Next]
+	That big tree near my house is a[BR]
+	great place to get Goomnuts.[Wait][End]
+}
+
+#string:19:03B
+{
+	[Style Tattle]
+	[EnableCDownNext]These are the woods behind my[BR]
+	house.[BR]
+	[Wait][Next]
+	Until a little while ago,[BR]
+	Goombaria and I used to play[BR]
+	hide-and-seek here...[BR]
+	[Wait][Next]
+	But there have been a lot of[BR]
+	evil Goombas and Paragoombas[BR]
+	spotted in the area, so Mom[BR]
+	doesn't let us play anymore.[Wait][End]
+}
+
+#string:19:03C
+{
+	[Style Tattle]
+	[EnableCDownNext]I think this is Jr. Troopa's[BR]
+	secret base.[BR]
+	[Wait][Next]
+	That crazy kid![BR]
+	[Pause 5]Whenever I try to explore in[BR]
+	there, he freaks out.[BR]
+	[Pause 5]He needs to chill.[Wait][End]
+}
+
+#string:19:03D
+{
+	[Style Tattle]
+	[EnableCDownNext]These are the woods behind my[BR]
+	house.[BR]
+	[Pause 10]Careful! There are many bad[BR]
+	Goombas around here.[BR]
+	[Wait][Next]
+	Sorry... I'm sure that you can[BR]
+	probably take care of yourself,[BR]
+	huh?[Wait][End]
+}
+
+#string:19:03E
+{
+	[Style Tattle]
+	[EnableCDownNext]Did you know...[BR]
+	[Pause 10]...there are good Goombas and[BR]
+	bad Goombas?[BR]
+	[Wait][Next]
+	A bad Goomba will try to pick[BR]
+	a fight with us the second it[BR]
+	spots us.[Wait][End]
+}
+
+#string:19:03F
+{
+	[Style Tattle]
+	[EnableCDownNext]Look, [Pause 5]Mario![BR]
+	[Pause 5]There's a Save Block.[BR]
+	[Pause 10]Might be a good idea to use it,[BR]
+	don't you think?[Wait][End]
+}
+
+#string:19:040
+{
+	[Style Tattle]
+	[EnableCDownNext]If we go east a bit farther,[BR]
+	we'll find a bridge.[BR]
+	[Wait][Next]
+	Once we cross it, we'll be a hop,[BR]
+	skip and a jump away from Toad[BR]
+	Town.[Wait][End]
+}
+
+#string:19:041
+{
+	[Style Tattle]
+	[EnableCDownNext]There're lots of bad Goombas[BR]
+	around these parts.[Wait][End]
+}
+
+#string:19:042
+{
+	[Style Tattle]
+	[EnableCDownNext]I think there was a bridge[BR]
+	between Toad Town and Goomba[BR]
+	Village.[BR]
+	[Wait][Next]
+	If we head east, we'll get to[BR]
+	Toad Town. If we head west,[BR]
+	we'll come to my house in Goomba[BR]
+	Village.[Wait][End]
+}
+
+#string:19:043
+{
+	[Style Tattle]
+	[EnableCDownNext]Ah, the outskirts of Toad Town.[BR]
+	[Wait][Next]
+	To the east is Toad Town.[BR]
+	[Pause 5]If we go west, we'll reach my[BR]
+	hometown, Goomba Village.[Wait][End]
+}
+
+#string:19:044
+{
+	[Style Tattle]
+	[EnableCDownNext]It's your house![BR]
+	[Pause 5]Cool! Nice landscaping![BR]
+	[Wait][Next]
+	I like my house, but yours is even[BR]
+	nicer. Did you do the decorating[BR]
+	yourself?[Wait][End]
+}
+
+#string:19:045
+{
+	[Style Tattle]
+	[EnableCDownNext]To the west of here is Toad[BR]
+	Town,[BR]
+	[Pause 10]and to the east is Koopa Village.[BR]
+	[Wait][Next]
+	If we go even farther east,[BR]
+	we'll eventually reach Koopa[BR]
+	Bros. Fortress.[Wait][End]
+}
+
+#string:19:046
+{
+	[Style Tattle]
+	[EnableCDownNext]It's always pleasant around[BR]
+	here. That's why we call this[BR]
+	place Pleasant Path.[BR]
+	[Pause 10]It's nice and warm today, too.[BR]
+	[Wait][Next]
+	Incidentally, lots of Koopas[BR]
+	live around here.[Wait][End]
+}
+
+#string:19:047
+{
+	[Style Tattle]
+	[EnableCDownNext]Koopas like to live around[BR]
+	Pleasant Path because there's[BR]
+	plenty of water for them to[BR]
+	lounge in.[BR]
+	[Wait][Next]
+	Koopa Village is down this way.[BR]
+	[Wait][Next]
+	If you want to go to Koopa[BR]
+	Bros. Fortress, we should take[BR]
+	the upper path and just keep[BR]
+	going straight.[Wait][End]
+}
+
+#string:19:048
+{
+	[Style Tattle]
+	[EnableCDownNext]It's Koopa Village.[BR]
+	[Pause 10]Big surprise! Koopas live here.[BR]
+	[Wait][Next]
+	Recently it seems like some[BR]
+	Bob-ombs have moved here, too.[BR]
+	They must have run away from[BR]
+	the fortress, huh?[Wait][End]
+}
+
+#string:19:049
+{
+	[Style Tattle]
+	[EnableCDownNext]The house with the yellowish[BR]
+	roof is the home of the famous[BR]
+	archaeologist and explorer,[BR]
+	Kolorado.[BR]
+	[Wait][Next]
+	Kolorado's always running from[BR]
+	one mysterious place to another[BR]
+	in order to do research.[BR]
+	[Wait][Next]
+	He's really well respected in his[BR]
+	field.[Wait][End]
+}
