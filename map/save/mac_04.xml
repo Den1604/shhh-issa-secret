@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="mac_04" author="unnamed" background="nok_bg" textures="mac_tex">
 	<Editor>
-		<Camera pos="-94.964966,103.527618,654.819275" pitch="9.000000" yaw="-52.497601"/>
-		<Camera pos="-76.709663,65536.000000,345.263275"/>
+		<Camera pos="137.946732,154.719147,551.268494" pitch="9.480001" yaw="342.293884"/>
+		<Camera pos="-310.238251,65536.000000,113.183647"/>
 		<Camera pos="65536.000000,54.000000,62.000000"/>
-		<Camera pos="0.000000,54.000000,65536.000000"/>
+		<Camera pos="-390.517700,95.970581,65536.000000"/>
 	</Editor>
 	<ModelTree>
-		<Node name="Root" id="AB">
+		<Node name="Root" id="B1">
 			<Node name="g1" id="D">
 				<Node name="o13" id="0"/>
 				<Node name="o2" id="1"/>
@@ -206,15 +206,21 @@
 				<Node name="o292" id="A4"/>
 				<Node name="o288" id="A5"/>
 			</Node>
-			<Node name="g95" id="AA">
+			<Node name="g95" id="B0">
 				<Node name="o459" id="A7"/>
 				<Node name="o460" id="A8"/>
 				<Node name="o461" id="A9"/>
+				<Node name="Split Model" id="AA"/>
+				<Node name="Split Model" id="AB"/>
+				<Node name="Split Model" id="AC"/>
+				<Node name="Split Model" id="AD"/>
+				<Node name="Split Model" id="AE"/>
+				<Node name="Split Model" id="AF"/>
 			</Node>
 		</Node>
 	</ModelTree>
 	<ColliderTree>
-		<Node name="Root" id="4F">
+		<Node name="Root" id="50">
 			<Node name="g1" id="A">
 				<Node name="o37" id="0"/>
 				<Node name="o2" id="1"/>
@@ -302,6 +308,7 @@
 				<Node name="o422" id="4C"/>
 				<Node name="deilite" id="4D"/>
 			</Node>
+			<Node name="MeshCollider" id="4F"/>
 		</Node>
 	</ColliderTree>
 	<ZoneTree>
@@ -393,17 +400,209 @@
 	</LightSets>
 	<Models>
 		<Model ver="2" type="ROOT" lightset="1">
-			<MapObject name="Root" id="AB" dumped="true" fileOffset="14734"/>
+			<MapObject name="Root" id="B1" dumped="true" fileOffset="14734"/>
 			<BoundingBox empty="false" min="-750,-100,-625" max="750,209,750"/>
 			<PropertyList>
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="g95" id="AA" dumped="true" fileOffset="146A0"/>
-			<BoundingBox empty="false" min="508,20,-107" max="552,167,-90"/>
+			<MapObject name="g95" id="B0" dumped="true" fileOffset="146A0"/>
+			<BoundingBox empty="false" min="-557,20,-174" max="552,167,214"/>
 			<PropertyList>
 				<Property v="60,0,0"/>
 				<Property v="60,0,1"/>
+			</PropertyList>
+		</Model>
+		<Model ver="2" type="MODEL" lightset="0">
+			<MapObject name="Split Model" id="AF"/>
+			<ShapeMesh ver="3" texture="mac_bunting_1">
+				<DisplayList>
+					<F3DEX2 cmd="E7000000,0"/>
+					<F3DEX2 cmd="D9FDFFFF,0"/>
+					<F3DEX2 cmd="D9FFFFFF,200400"/>
+					<TriangleBatch ver="0">
+						<VertexTable>
+							<Vertex xyz="-307,105,78" uv="-41,1024"/>
+							<Vertex xyz="-239,91,-8" uv="-3459,224"/>
+							<Vertex xyz="-239,120,-8" uv="-3459,1024"/>
+							<Vertex xyz="-307,76,78" uv="-41,224"/>
+						</VertexTable>
+						<TriangleList>
+							<Triangle ijk="0,1,2"/>
+							<Triangle ijk="0,3,1"/>
+						</TriangleList>
+					</TriangleBatch>
+				</DisplayList>
+			</ShapeMesh>
+			<PropertyList>
+				<Property v="5C,0,D"/>
+				<Property v="5F,0,0"/>
+			</PropertyList>
+		</Model>
+		<Model ver="2" type="MODEL" lightset="0">
+			<MapObject name="Split Model" id="AE"/>
+			<ShapeMesh ver="3" texture="mac_bunting_2">
+				<DisplayList>
+					<F3DEX2 cmd="E7000000,0"/>
+					<F3DEX2 cmd="D9FDFFFF,0"/>
+					<F3DEX2 cmd="D9FFFFFF,200400"/>
+					<TriangleBatch ver="0">
+						<VertexTable>
+							<Vertex xyz="-461,100,214" uv="28,1024"/>
+							<Vertex xyz="-461,80,214" uv="28,192"/>
+							<Vertex xyz="-364,96,213" uv="-4095,192"/>
+							<Vertex xyz="-461,100,214" uv="28,1024"/>
+							<Vertex xyz="-364,96,213" uv="-4095,192"/>
+							<Vertex xyz="-364,116,213" uv="-4095,1024"/>
+						</VertexTable>
+						<TriangleList>
+							<Triangle ijk="0,1,2"/>
+							<Triangle ijk="3,4,5"/>
+						</TriangleList>
+					</TriangleBatch>
+					<TriangleBatch ver="0">
+						<VertexTable>
+							<Vertex xyz="-557,116,213" uv="4101,1024"/>
+							<Vertex xyz="-557,96,213" uv="4101,192"/>
+							<Vertex xyz="-461,80,214" uv="28,192"/>
+							<Vertex xyz="-461,100,214" uv="28,1024"/>
+						</VertexTable>
+						<TriangleList>
+							<Triangle ijk="0,1,2"/>
+							<Triangle ijk="0,2,3"/>
+						</TriangleList>
+					</TriangleBatch>
+				</DisplayList>
+			</ShapeMesh>
+			<PropertyList>
+				<Property v="5C,0,D"/>
+				<Property v="5F,0,0"/>
+			</PropertyList>
+		</Model>
+		<Model ver="2" type="MODEL" lightset="0">
+			<MapObject name="Split Model" id="AD"/>
+			<ShapeMesh ver="3" texture="mac_bunting_1">
+				<DisplayList>
+					<F3DEX2 cmd="E7000000,0"/>
+					<F3DEX2 cmd="D9FDFFFF,0"/>
+					<F3DEX2 cmd="D9FFFFFF,200400"/>
+					<TriangleBatch ver="0">
+						<VertexTable>
+							<Vertex xyz="-362,116,155" uv="664,1024"/>
+							<Vertex xyz="-344,86,145" uv="-4,224"/>
+							<Vertex xyz="-344,115,145" uv="-4,1024"/>
+							<Vertex xyz="-362,116,155" uv="664,1024"/>
+							<Vertex xyz="-362,87,155" uv="664,224"/>
+							<Vertex xyz="-344,86,145" uv="-4,224"/>
+						</VertexTable>
+						<TriangleList>
+							<Triangle ijk="0,1,2"/>
+							<Triangle ijk="3,4,5"/>
+						</TriangleList>
+					</TriangleBatch>
+				</DisplayList>
+			</ShapeMesh>
+			<PropertyList>
+				<Property v="5C,0,D"/>
+				<Property v="5F,0,0"/>
+			</PropertyList>
+		</Model>
+		<Model ver="2" type="MODEL" lightset="0">
+			<MapObject name="Split Model" id="AC"/>
+			<ShapeMesh ver="3" texture="mac_bunting_2">
+				<DisplayList>
+					<F3DEX2 cmd="E7000000,0"/>
+					<F3DEX2 cmd="D9FDFFFF,0"/>
+					<F3DEX2 cmd="D9FFFFFF,200400"/>
+					<TriangleBatch ver="0">
+						<VertexTable>
+							<Vertex xyz="0,116,-88" uv="2045,1024"/>
+							<Vertex xyz="72,76,-103" uv="-41,224"/>
+							<Vertex xyz="72,105,-103" uv="-41,1024"/>
+							<Vertex xyz="0,116,-88" uv="2045,1024"/>
+							<Vertex xyz="0,87,-88" uv="2045,224"/>
+							<Vertex xyz="72,76,-103" uv="-41,224"/>
+							<Vertex xyz="72,105,-103" uv="-41,1024"/>
+							<Vertex xyz="142,87,-95" uv="-2050,224"/>
+							<Vertex xyz="142,116,-95" uv="-2050,1024"/>
+							<Vertex xyz="72,105,-103" uv="-41,1024"/>
+							<Vertex xyz="72,76,-103" uv="-41,224"/>
+							<Vertex xyz="142,87,-95" uv="-2050,224"/>
+						</VertexTable>
+						<TriangleList>
+							<Triangle ijk="0,1,2"/>
+							<Triangle ijk="3,4,5"/>
+							<Triangle ijk="6,7,8"/>
+							<Triangle ijk="9,10,11"/>
+						</TriangleList>
+					</TriangleBatch>
+				</DisplayList>
+			</ShapeMesh>
+			<PropertyList>
+				<Property v="5C,0,D"/>
+				<Property v="5F,0,0"/>
+			</PropertyList>
+		</Model>
+		<Model ver="2" type="MODEL" lightset="0">
+			<MapObject name="Split Model" id="AB"/>
+			<ShapeMesh ver="3" texture="mac_bunting_2">
+				<DisplayList>
+					<F3DEX2 cmd="E7000000,0"/>
+					<F3DEX2 cmd="D9FDFFFF,0"/>
+					<F3DEX2 cmd="D9FFFFFF,200400"/>
+					<TriangleBatch ver="0">
+						<VertexTable>
+							<Vertex xyz="349,117,-174" uv="2044,1024"/>
+							<Vertex xyz="429,77,-110" uv="6131,222"/>
+							<Vertex xyz="429,106,-110" uv="6131,1024"/>
+							<Vertex xyz="349,117,-174" uv="2044,1024"/>
+							<Vertex xyz="349,88,-174" uv="2044,222"/>
+							<Vertex xyz="429,77,-110" uv="6131,222"/>
+							<Vertex xyz="429,106,-110" uv="2044,1024"/>
+							<Vertex xyz="508,87,-93" uv="6131,222"/>
+							<Vertex xyz="508,116,-93" uv="6131,1024"/>
+							<Vertex xyz="429,106,-110" uv="2044,1024"/>
+							<Vertex xyz="429,77,-110" uv="2044,222"/>
+							<Vertex xyz="508,87,-93" uv="6131,222"/>
+						</VertexTable>
+						<TriangleList>
+							<Triangle ijk="0,1,2"/>
+							<Triangle ijk="3,4,5"/>
+							<Triangle ijk="6,7,8"/>
+							<Triangle ijk="9,10,11"/>
+						</TriangleList>
+					</TriangleBatch>
+				</DisplayList>
+			</ShapeMesh>
+			<PropertyList>
+				<Property v="5C,0,D"/>
+				<Property v="5F,0,0"/>
+			</PropertyList>
+		</Model>
+		<Model ver="2" type="MODEL" lightset="0">
+			<MapObject name="Split Model" id="AA"/>
+			<ShapeMesh ver="3" texture="mac_bunting_1">
+				<DisplayList>
+					<F3DEX2 cmd="E7000000,0"/>
+					<F3DEX2 cmd="D9FDFFFF,0"/>
+					<F3DEX2 cmd="D9FFFFFF,200400"/>
+					<TriangleBatch ver="0">
+						<VertexTable>
+							<Vertex xyz="142,116,-87" uv="2044,1024"/>
+							<Vertex xyz="320,76,-85" uv="7531,222"/>
+							<Vertex xyz="320,105,-85" uv="7531,1024"/>
+							<Vertex xyz="142,87,-87" uv="2044,222"/>
+						</VertexTable>
+						<TriangleList>
+							<Triangle ijk="0,1,2"/>
+							<Triangle ijk="0,3,1"/>
+						</TriangleList>
+					</TriangleBatch>
+				</DisplayList>
+			</ShapeMesh>
+			<PropertyList>
+				<Property v="5C,0,D"/>
+				<Property v="5F,0,0"/>
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
@@ -7914,8 +8113,68 @@
 	</Models>
 	<Colliders>
 		<Collider ver="0" flags="0">
-			<MapObject name="Root" id="4F"/>
+			<MapObject name="Root" id="50"/>
 			<HitObject type="ROOT"/>
+		</Collider>
+		<Collider ver="0" flags="0">
+			<MapObject name="MeshCollider" id="4F" hidden="true"/>
+			<HitObject type="HIT"/>
+			<HitMesh ver="0">
+				<TriangleBatch ver="0">
+					<VertexTable>
+						<Vertex xyz="349,117,-174" uv="2044,1024"/>
+						<Vertex xyz="429,77,-110" uv="6131,222"/>
+						<Vertex xyz="429,106,-110" uv="6131,1024"/>
+						<Vertex xyz="349,117,-174" uv="2044,1024"/>
+						<Vertex xyz="349,88,-174" uv="2044,222"/>
+						<Vertex xyz="429,77,-110" uv="6131,222"/>
+						<Vertex xyz="429,106,-110" uv="2044,1024"/>
+						<Vertex xyz="508,87,-93" uv="6131,222"/>
+						<Vertex xyz="508,116,-93" uv="6131,1024"/>
+						<Vertex xyz="429,106,-110" uv="2044,1024"/>
+						<Vertex xyz="429,77,-110" uv="2044,222"/>
+						<Vertex xyz="508,87,-93" uv="6131,222"/>
+						<Vertex xyz="142,116,-87" uv="2044,1024"/>
+						<Vertex xyz="320,76,-85" uv="7531,222"/>
+						<Vertex xyz="320,105,-85" uv="7531,1024"/>
+						<Vertex xyz="142,116,-87" uv="2044,1024"/>
+						<Vertex xyz="142,87,-87" uv="2044,222"/>
+						<Vertex xyz="320,76,-85" uv="7531,222"/>
+						<Vertex xyz="0,116,-88" uv="2045,1024"/>
+						<Vertex xyz="72,76,-103" uv="-41,224"/>
+						<Vertex xyz="72,105,-103" uv="-41,1024"/>
+						<Vertex xyz="0,116,-88" uv="2045,1024"/>
+						<Vertex xyz="0,87,-88" uv="2045,224"/>
+						<Vertex xyz="72,76,-103" uv="-41,224"/>
+						<Vertex xyz="72,105,-103" uv="-41,1024"/>
+						<Vertex xyz="142,87,-95" uv="-2050,224"/>
+						<Vertex xyz="142,116,-95" uv="-2050,1024"/>
+						<Vertex xyz="72,105,-103" uv="-41,1024"/>
+						<Vertex xyz="72,76,-103" uv="-41,224"/>
+						<Vertex xyz="142,87,-95" uv="-2050,224"/>
+						<Vertex xyz="-307,105,78" uv="-41,1024"/>
+						<Vertex xyz="-239,91,-8" uv="-3459,224"/>
+						<Vertex xyz="-239,120,-8" uv="-3459,1024"/>
+						<Vertex xyz="-307,105,78" uv="-41,1024"/>
+						<Vertex xyz="-307,76,78" uv="-41,224"/>
+						<Vertex xyz="-239,91,-8" uv="-3459,224"/>
+					</VertexTable>
+					<TriangleList>
+						<Triangle ijk="0,1,2" doubleSided="true"/>
+						<Triangle ijk="3,4,5" doubleSided="true"/>
+						<Triangle ijk="6,7,8" doubleSided="true"/>
+						<Triangle ijk="9,10,11" doubleSided="true"/>
+						<Triangle ijk="12,13,14" doubleSided="true"/>
+						<Triangle ijk="15,16,17" doubleSided="true"/>
+						<Triangle ijk="18,19,20" doubleSided="true"/>
+						<Triangle ijk="21,22,23" doubleSided="true"/>
+						<Triangle ijk="24,25,26" doubleSided="true"/>
+						<Triangle ijk="27,28,29" doubleSided="true"/>
+						<Triangle ijk="30,31,32" doubleSided="true"/>
+						<Triangle ijk="33,34,35" doubleSided="true"/>
+					</TriangleList>
+				</TriangleBatch>
+			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0">
 			<MapObject name="kame" id="4E" dumped="true" fileOffset="16A4"/>
