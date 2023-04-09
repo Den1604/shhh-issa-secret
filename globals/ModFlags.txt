@@ -30,21 +30,32 @@
 01D = Flag_GottenEgg_mac_05_4 = egg_mac_05_4
 01E = Flag_GottenEgg_mac_05_5 = egg_mac_05_5
 
-030 = Flag_GottenEgg_kmr_00_1 = egg_kmr_00_1
-031 = Flag_GottenEgg_kmr_02_1 = egg_kmr_02_1
-032 = Flag_GottenEgg_kmr_02_2 = egg_kmr_02_2
-033 = Flag_GottenEgg_kmr_03_1 = egg_kmr_03_1
-034 = Flag_GottenEgg_kmr_03_2 = egg_kmr_03_2
-035 = Flag_GottenEgg_kmr_04_1 = egg_kmr_04_1
-036 = Flag_GottenEgg_kmr_04_2 = egg_kmr_04_2
-037 = Flag_GottenEgg_kmr_04_3 = egg_kmr_04_3
-038 = Flag_GottenEgg_kmr_05_1 = egg_kmr_05_1
-040 = Flag_GottenEgg_kmr_06_1 = egg_kmr_06_1
-041 = Flag_GottenEgg_kmr_07_1 = egg_kmr_07_1
-042 = Flag_GottenEgg_kmr_07_2 = egg_kmr_07_2
-043 = Flag_GottenEgg_kmr_09_1 = egg_kmr_09_1
-044 = Flag_GottenEgg_kmr_10_1 = egg_kmr_10_1
-045 = Flag_GottenEgg_kmr_10_2 = egg_kmr_10_2
-046 = Flag_GottenEgg_kmr_11_1 = egg_kmr_11_1
-047 = Flag_GottenEgg_kmr_11_2 = egg_kmr_11_2
-048 = Flag_GottenEgg_kmr_11_3 = egg_kmr_11_3
+01F = Flag_GottenEgg_kmr_05_2 = egg_kmr_05_2
+
+020 = Flag_GottenEgg_kmr_00_1 = egg_kmr_00_1
+021 = Flag_GottenEgg_kmr_02_1 = egg_kmr_02_1
+022 = Flag_GottenEgg_kmr_02_2 = egg_kmr_02_2
+023 = Flag_GottenEgg_kmr_03_1 = egg_kmr_03_1
+024 = Flag_GottenEgg_kmr_03_2 = egg_kmr_03_2
+025 = Flag_GottenEgg_kmr_04_1 = egg_kmr_04_1
+026 = Flag_GottenEgg_kmr_04_2 = egg_kmr_04_2
+027 = Flag_GottenEgg_kmr_04_3 = egg_kmr_04_3
+028 = Flag_GottenEgg_kmr_05_1 = egg_kmr_05_1
+029 = Flag_GottenEgg_kmr_06_1 = egg_kmr_06_1
+02A = Flag_GottenEgg_kmr_07_1 = egg_kmr_07_1
+02B = Flag_GottenEgg_kmr_07_2 = egg_kmr_07_2
+02C = Flag_GottenEgg_kmr_09_1 = egg_kmr_09_1
+02D = Flag_GottenEgg_kmr_10_1 = egg_kmr_10_1
+02E = Flag_GottenEgg_kmr_10_2 = egg_kmr_10_2
+02F = Flag_GottenEgg_kmr_11_1 = egg_kmr_11_1
+030 = Flag_GottenEgg_kmr_11_2 = egg_kmr_11_2
+031 = Flag_GottenEgg_kmr_11_3 = egg_kmr_11_3
+
+032 = Flag_GottenEgg_hos_00_1 = egg_hos_00_1
+033 = Flag_GottenEgg_hos_01_1 = egg_hos_01_1
+034 = Flag_GottenEgg_hos_01_2 = egg_hos_01_2
+035 = Flag_GottenEgg_hos_01_3 = egg_hos_01_3
+036 = Flag_GottenEgg_hos_06_1 = egg_hos_06_1
+037 = Flag_GottenEgg_hos_06_2 = egg_hos_06_2
+
+040 = Flag_GottenEgg_kmr_03_3 = egg_kmr_03_3

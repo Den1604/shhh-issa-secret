@@ -8,3 +8,13 @@
 {
 [94]	LA		S8, $Global_ItemHudScripts
 }
+
+@ $Script_MakeEntities
+{
+    0:  Call  MakeEntity		( .Entity:HiddenPanel ~Vec4d:Entity802425B0 ~Model:o4 80000000 )
+   28:  Call  AssignPanelFlag	( *GF_HOS06_HiddenPanel )
+   Call  MakeItemEntity     ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_hos_06_1 )
+   Call  MakeItemEntity     ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_hos_06_2 )
+   38:  Return
+   40:  End
+}

@@ -140,3 +140,10 @@
     00000002 $NpcGroup_Koopa 00000004
 	00000000 00000000 00000000
 }
+
+@ $Script_80242890
+{
+    0:  Call  MakeItemEntity	( .Item:StarPiece ~Vec3d:Item80242890 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_05_2 )
+   24:  Return
+   2C:  End
+}

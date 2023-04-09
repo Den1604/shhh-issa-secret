@@ -1,0 +1,12 @@
+@ $Script_MakeEntities
+{
+    0:  Call  MakeEntity	( .Entity:Signpost ~Vec4d:Entity802428C0 80000000 )
+   24:  Call  AssignScript	( $Script_80242830 )
+   34:  Call  MakeEntity	( .Entity:Signpost ~Vec4d:Entity802428F4 80000000 )
+   58:  Call  AssignScript	( $Script_80242878 )
+   68:  Call  MakeEntity	( .Entity:HiddenPanel ~Vec4d:Entity80242928 ~Model:o239 80000000 )
+   90:  Call  AssignPanelFlag	( *GF_HOS00_HiddenPanel )
+   Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_hos_00_1 )
+   A0:  Return
+   A8:  End
+}

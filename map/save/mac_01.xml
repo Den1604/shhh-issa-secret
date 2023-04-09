@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="mac_01" author="unnamed" background="nok_bg" textures="mac_tex">
 	<Editor>
-		<Camera pos="136.242096,151.779053,579.416382" pitch="12.040000" yaw="359.679993"/>
+		<Camera pos="-391.311218,118.038193,62.405712" pitch="5.800001" yaw="1.600054"/>
 		<Camera pos="373.386505,65536.000000,-167.862000"/>
 		<Camera pos="65536.000000,-16.477795,338.414978"/>
 		<Camera pos="404.438782,68.377403,65536.000000"/>
@@ -509,13 +509,13 @@
 	<Models>
 		<Model ver="2" type="ROOT" lightset="1">
 			<MapObject name="Root" id="D2" dumped="true" fileOffset="1A7B8"/>
-			<BoundingBox empty="false" min="-750,-105,-725" max="750,240,750"/>
+			<BoundingBox empty="false" min="-750,-105,-725" max="772,240,787"/>
 			<PropertyList>
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
 			<MapObject name="g82" id="D1" dumped="true" fileOffset="1A6F0"/>
-			<BoundingBox empty="false" min="-447,0,-325" max="602,117,429"/>
+			<BoundingBox empty="false" min="-118,19,74" max="772,154,787"/>
 			<PropertyList>
 				<Property v="60,0,0"/>
 				<Property v="60,0,1"/>
@@ -523,7 +523,7 @@
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
 			<MapObject name="flo_yellow2" id="D0" dumped="true" fileOffset="1A63C"/>
-			<BoundingBox empty="false" min="-447,0,-325" max="444,117,429"/>
+			<BoundingBox empty="false" min="-118,24,74" max="772,154,787"/>
 			<TransformMatrix m="1.000000,0.000000,0.000000,328.565430,0.000000,1.000000,0.000000,37.000000,0.000000,0.000000,1.000000,399.318604,0.000000,0.000000,0.000000,1.000000"/>
 			<PropertyList>
 				<Property v="60,0,0"/>

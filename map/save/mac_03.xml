@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="mac_03" author="unnamed" background="nok_bg" textures="mac_tex">
 	<Editor>
-		<Camera pos="-404.675629,103.527618,685.074341" pitch="8.999999" yaw="0.000000"/>
+		<Camera pos="-22.895023,149.419144,565.093018" pitch="5.000000" yaw="6.559944"/>
 		<Camera pos="-442.549408,65536.000000,150.298538"/>
 		<Camera pos="65536.000000,54.000000,12.000000"/>
 		<Camera pos="-168.368851,71.388718,65536.000000"/>
@@ -365,12 +365,12 @@
 					<F3DEX2 cmd="D9FFFFFF,200400"/>
 					<TriangleBatch ver="0">
 						<VertexTable>
-							<Vertex xyz="-477,95,172" uv="-207,1024" rgba="-1,-1,-1,-1"/>
-							<Vertex xyz="-440,83,172" uv="-2044,202" rgba="-1,-1,-1,-1"/>
-							<Vertex xyz="-440,104,172" uv="-2044,1024" rgba="-1,-1,-1,-1"/>
-							<Vertex xyz="-477,95,172" uv="-207,1024" rgba="-1,-1,-1,-1"/>
-							<Vertex xyz="-477,74,172" uv="-207,202" rgba="-1,-1,-1,-1"/>
-							<Vertex xyz="-440,83,172" uv="-2044,202" rgba="-1,-1,-1,-1"/>
+							<Vertex xyz="-477,95,172" uv="-207,1024"/>
+							<Vertex xyz="-440,83,172" uv="-2044,202"/>
+							<Vertex xyz="-440,104,172" uv="-2044,1024"/>
+							<Vertex xyz="-477,95,172" uv="-207,1024"/>
+							<Vertex xyz="-477,74,172" uv="-207,202"/>
+							<Vertex xyz="-440,83,172" uv="-2044,202"/>
 						</VertexTable>
 						<TriangleList>
 							<Triangle ijk="0,1,2"/>
@@ -379,10 +379,10 @@
 					</TriangleBatch>
 					<TriangleBatch ver="0">
 						<VertexTable>
-							<Vertex xyz="-522,101,172" uv="2029,1024" rgba="-1,-1,-1,-1"/>
-							<Vertex xyz="-477,74,172" uv="-207,202" rgba="-1,-1,-1,-1"/>
-							<Vertex xyz="-477,95,172" uv="-207,1024" rgba="-1,-1,-1,-1"/>
-							<Vertex xyz="-522,80,172" uv="2029,202" rgba="-1,-1,-1,-1"/>
+							<Vertex xyz="-522,101,172" uv="2029,1024"/>
+							<Vertex xyz="-477,74,172" uv="-207,202"/>
+							<Vertex xyz="-477,95,172" uv="-207,1024"/>
+							<Vertex xyz="-522,80,172" uv="2029,202"/>
 						</VertexTable>
 						<TriangleList>
 							<Triangle ijk="0,1,2"/>

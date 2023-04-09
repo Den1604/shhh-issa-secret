@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="kmr_03" author="unnamed" background="kmr_bg" textures="kmr_tex">
 	<Editor>
-		<Camera pos="277.138458,248.249786,-60.120121" pitch="-10.319957" yaw="317.140076"/>
+		<Camera pos="-124.753761,72.942497,170.188522" pitch="14.000045" yaw="328.659302"/>
 		<Camera pos="0.000000,65536.000000,119.000000"/>
 		<Camera pos="65536.000000,274.093597,119.000000"/>
 		<Camera pos="-105.794746,251.732529,65536.000000"/>
@@ -5049,11 +5049,11 @@
 		<Marker ver="4" type="Root">
 			<MapObject name="Root" id="1C"/>
 		</Marker>
-		<Marker ver="4" type="Entity" pos="-145,0,93" yaw="0.000000">
+		<Marker ver="4" type="Entity" pos="-135,0,82" yaw="0.000000">
 			<MapObject name="Egg2" id="1B"/>
 			<Entity type="FFFFFFFF" flag="" item="StarPiece" itemSpawnMode="Fixed"/>
 		</Marker>
-		<Marker ver="4" type="Entity" pos="219,0,272" yaw="0.000000">
+		<Marker ver="4" type="Entity" pos="200,0,284" yaw="0.000000">
 			<MapObject name="Egg1" id="1A"/>
 			<Entity type="FFFFFFFF" flag="" item="StarPiece" itemSpawnMode="Fixed"/>
 		</Marker>

@@ -21,7 +21,7 @@
   1BC:  Call  MakeItemEntity	( .Item:Coin ~Vec3d:Item802416EC .ItemSpawnMode:Fixed_NeverVanish *GF_KMR03_Item_CoinB )
   1E0:  Call  MakeItemEntity	( .Item:Coin ~Vec3d:Item80241710 .ItemSpawnMode:Fixed_NeverVanish *GF_KMR03_Item_CoinC )
   204:  Call  MakeItemEntity	( .Item:Coin ~Vec3d:Item80241734 .ItemSpawnMode:Fixed_NeverVanish *GF_KMR03_Item_CoinD )
-  228:  Call  MakeItemEntity	( .Item:StarPiece ~Vec3d:Item80241758 .ItemSpawnMode:Fixed_NeverVanish *GF_KMR02_Item_FireFlower )
+  228:  Call  MakeItemEntity	( .Item:StarPiece ~Vec3d:Item80241758 .ItemSpawnMode:Fixed_NeverVanish *egg_kmr_03_3 )
   24C:  Call  MakeEntity		( .Entity:HiddenPanel ~Vec4d:Entity8024177C ~Model:jimen_1 80000000 )
   274:  Call  AssignPanelFlag	( *GF_KMR03_HiddenPanel )
   284:  Call  MakeEntity		( .Entity:HealingBlock ~Vec4d:Entity802417B4 80000000 )

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="kmr_09" author="unnamed" background="kmr_bg" textures="kmr_tex">
 	<Editor>
-		<Camera pos="453.538330,106.956268,172.198959" pitch="5.279999" yaw="357.439911"/>
+		<Camera pos="447.148651,106.797035,77.806999" pitch="7.199995" yaw="1.759903"/>
 		<Camera pos="359.000000,65536.000000,-13.000000"/>
 		<Camera pos="65536.000000,67.000000,-13.000000"/>
 		<Camera pos="359.000000,67.000000,65536.000000"/>
@@ -2334,7 +2334,7 @@
 		</Marker>
 		<Marker ver="4" type="Entity" desc="Entity:BrickBlock" pos="450,60,-15" yaw="0.000000">
 			<MapObject name="Entity802425E8" id="8"/>
-			<Entity type="802EA588" flag="" callback="false" item="StarPiece"/>
+			<Entity type="802EA5AC" flag="" callback="false" item="StarPiece"/>
 		</Marker>
 		<Marker ver="4" type="Entity" desc="Entity:YellowBlock" pos="400,60,-15" yaw="0.000000">
 			<MapObject name="Entity802425B0" id="7"/>
