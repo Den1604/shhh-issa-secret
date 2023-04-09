@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="nok_02" author="unnamed" background="nok_bg" textures="nok_tex">
 	<Editor>
-		<Camera pos="-19.351530,183.657364,657.203430" pitch="18.120016" yaw="1.360434"/>
+		<Camera pos="179.421753,256.809326,859.617493" pitch="32.040028" yaw="354.320404"/>
 		<Camera pos="281.214905,65536.000000,-81.827919"/>
 		<Camera pos="65536.000000,19.000000,-33.000000"/>
 		<Camera pos="0.000000,19.000000,65536.000000"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map name="mac_05" author="unnamed" background="nok_bg" textures="mac_tex">
 	<Editor>
-		<Camera pos="156.918106,518.839233,676.772644" pitch="41.439991" yaw="3.359973"/>
+		<Camera pos="262.623444,113.783752,1034.803711" pitch="42.559925" yaw="355.199982"/>
 		<Camera pos="-276.745636,65536.000000,-332.011688"/>
 		<Camera pos="65536.000000,134.278320,-240.249680"/>
 		<Camera pos="-385.447906,53.360760,65536.000000"/>

@@ -10,6 +10,7 @@
         Set *GF_StartedChapter1 .True
         Set *GF_NOK02_Item_StarPiece .True
         Set *GF_MAC02_Gift_MagicalSeed1 .True
+        Set *GF_KMR20_ReunitedWithLuigi .True
     EndThread
     Call  InterpPlayerYaw   (  90`  0` )
     Call  SetPlayerPos  (  -50`  30`  -80` )

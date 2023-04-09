@@ -1,9 +1,37 @@
+#define .NpcID:ChuckQuizmo_06       06
+#define .NpcID:VannaT_30            1E
+
 @ $Script_MakeEntities {
     Call  MakeEntity        ( .Entity:HiddenPanel ~Vec4d:Entity802452A8 ~Model:o262 80000000 )
     Call  AssignPanelFlag   ( *GF_MAC00_HiddenPanel )
     Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Item802452E0 .ItemSpawnMode:Fixed_NeverVanish *GF_MAC00_Item_StarPiece )
     Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg1 .ItemSpawnMode:Fixed_NeverVanish *egg_mac_00 )
     Bind  $Script_80245260 .Trigger:WallPressA ~Collider:sign 00000001 00000000
+    Return
+    End
+}
+
+@ $NpcGroup_80254564 {
+    .NpcID:ChuckQuizmo_06 $NpcSettings_80253840 ~Vec3f:ChuckQuizmo_06 % 545 20 150
+    00002D09 $Script_Init_80253A1C 00000000 00000000 0000001E
+    ~NoDrops
+    ~Movement:ChuckQuizmo_06
+    ~AnimationTable:ChuckQuizmo_06 % .Sprite:ChuckQuizmo
+    00000000 00000000 $ExtraAnimationList_80254544 001A0002 % He's Chuck Quizmo. He tries to quiz anybody who sp ...
+    %
+    % $NpcGroup_80254564[1F0]
+    .NpcID:VannaT_30 $NpcSettings_80253898 ~Vec3f:VannaT_30 % 500 20 -130
+    00002D09 $Script_Init_80253AA0 00000000 00000000 0000010E
+    ~NoDrops
+    ~Movement:VannaT_30
+    ~AnimationTable:VannaT_30 % .Sprite:VannaT
+    00000000 00000000 $ExtraAnimationList_80254554 001A0012 % That Toad runs this shop. He buys, sells and check ...
+}
+
+@ $Script_Init_80253A1C {
+    Call  SetNpcPos ( .NpcID:ChuckQuizmo_06  460`  -1000`  -130` )
+    Call  SetNpcYaw ( .NpcID:ChuckQuizmo_06  90` )
+    Call  BindNpcInteract   ( .Npc:Self $Script_Interact_802539EC )
     Return
     End
 }

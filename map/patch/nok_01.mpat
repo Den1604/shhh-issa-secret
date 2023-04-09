@@ -1,3 +1,7 @@
+#define .NpcID:Koopa_07             07
+#define .NpcID:Toad_08              08
+#define .NpcID:Koopa_09             09
+
 @ $Script_MakeEntities {
     Call  MakeEntity    ( .Entity:BrickBlock ~Vec4d:Entity80243540 80000000 )
     If  *GF_NOK01_RecoveredShellB  ==  .False
@@ -10,4 +14,44 @@
     0:  Call  MakeItemEntity    ( .Item:StarPiece ~Vec3d:Egg2 .ItemSpawnMode:Fixed_NeverVanish *egg_nok_01_2 )
     Return
     End
+}
+
+@ $NpcGroup_8024F2E8 {
+    .NpcID:Toad_08 $NpcSettings_802437D4 ~Vec3f:Toad_08 % -268 10 68
+    00002909 $Script_Init_80249C4C 00000000 00000000 00000000
+    ~NoDrops
+    ~Movement:Toad_08
+    ~AnimationTable:Toad_08 % .Sprite:Toad
+    00000000 00000000 00000000 001A006A % He's a Toad House employee. He was sent here from  ...
+    %
+    % $NpcGroup_8024F2E8[1F0]
+    .NpcID:Koopa_09 $NpcSettings_8024377C ~Vec3f:Koopa_09 % -73 0 -338
+    00002909 $Script_Init_802497EC 00000000 00000000 0000009D
+    ~NoDrops
+    ~Movement:Koopa_09
+    ~AnimationTable:Koopa_09 % .Sprite:Koopa
+    00000000 00000000 00000000 001A006B % He's a Koopa Troopa merchant who sells goods. He a ...
+    %
+    % $NpcGroup_8024F2E8[3E0]
+    .NpcID:Koopa_07 $NpcSettings_8024377C ~Vec3f:Koopa_07 % 337 17 -162
+    00402909 $Script_Init_8024C1D4 00000000 00000000 00000106
+    ~NoDrops
+    ~Movement:Koopa_07
+    ~AnimationTable:Koopa_07 % .Sprite:Koopa
+    00000000 00000000 00000000 001A006F % This Koopa Troopa obviously loves the radio. He's  ...
+    %
+}
+
+@ $NpcGroupList_8024FAA8 {
+    00000009 $NpcGroup_8024D1F8 00000000
+    00000003 $NpcGroup_8024F2E8 00000000
+    00000001 $NpcGroup_8024E368 00000000
+    00000001 $NpcGroup_8024E558 00000000
+    00000000 00000000 00000000
+}
+
+@ $NpcGroupList_8024FAE4 {
+    00000006 $NpcGroup_8024E748 00000000
+    00000003 $NpcGroup_8024F2E8 00000000
+    00000000 00000000 00000000
 }
