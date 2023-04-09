@@ -198,7 +198,7 @@
   ~NoDrops
   ~Movement:Peach
   ~AnimationTable:Peach % .Sprite:Rowf
-  00000000 00000000 00000000 00000000 % This guy's pretty funky. His name is Rowf. He sell ...
+  00000000 00000000 00000000 $String_PeachTattle % This guy's pretty funky. His name is Rowf. He sell ...
 }
 
 #new:Script $Script_Init_Peach
@@ -233,4 +233,13 @@
   POP RA
   JR RA
   LI V0, 2
+}
+
+#new:String $String_PeachTattle
+{
+	[Style Tattle]
+	[EnableCDownNext]This is the princess, bro![BR]
+	You probably know more[br]
+	about her than me.[BR]
+	[Wait][End]
 }
